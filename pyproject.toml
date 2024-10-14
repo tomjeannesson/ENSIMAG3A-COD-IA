@@ -21,6 +21,8 @@ lint.ignore = [
     "COM819",
     "ISC001",
     "ISC002",
+    "TD003",
+    "FIX002",
 
     # Other
     "PLR0913",          # Less than 5 arguments

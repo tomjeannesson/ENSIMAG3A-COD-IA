@@ -19,31 +19,16 @@ class Extractor:
         self.dataframes = dataframe_list
         self.stat_labels = ["total_points"]
 
-    def extract_athlete(self, name: str) -> list[dict[str, DataPoint]]:
-        """Transforms a list of DataFrames into a list of data stats according to the athlete axis."""
-        res = []
-        for dataframe in self.dataframes:
-            row = dataframe.loc[name]
-            stats = {}
-            for stat in self.stat_labels:
-                column = dataframe[stat]
-                raw = row[stat]
-                rank = len(column[column > raw]) + 1
-                stats[stat] = DataPoint(
-                    raw=raw,
-                    rank=rank,
-                    max=column.max(),
-                )
-            res.append(stats)
-        return res
-
-    def extract_athlete_v2(self, name: str) -> list[dict[str, DataPoint]]:
-        """Transforms a list of DataFrames into a list of data stats according to the athlete axis."""
+    def extract_athlete(self, name: str) -> dict[str, list[DataPoint]]:
+        """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""
         stats = {}
         for stat in self.stat_labels:
+            list_stat = []
             for dataframe in self.dataframes:
-                list_stat = []
-                row = dataframe.loc[name]
+                try:
+                    row = dataframe.loc[name]
+                except KeyError:
+                    continue
                 column = dataframe[stat]
                 raw = row[stat]
                 rank = len(column[column > raw]) + 1
@@ -55,6 +40,24 @@ class Extractor:
                     )
                 )
             stats[stat] = list_stat
+        return stats
 
     def extract_run(self) -> None:
         """Transforms a list of DataFrames into a list of general race stats."""
+        stats = {}
+        for stat in self.stat_labels:
+            list_stat = []
+            for dataframe in self.dataframes:
+                column = dataframe[stat]
+                for run_data in dataframe:
+                    raw = run_data
+                    rank = len(column[column > raw]) + 1
+                    list_stat.append(
+                        DataPoint(
+                            raw=raw,
+                            rank=rank,
+                            max=column.max(),
+                        )
+                    )
+            stats[stat] = list_stat
+        return stats

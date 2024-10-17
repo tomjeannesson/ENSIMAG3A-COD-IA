@@ -93,7 +93,3 @@ class DataSource:
     def query(self, dataframe_list: list[pd.DataFrame], query: str) -> list[pd.DataFrame]:
         """Applies a panda query to all Dataframes of a list."""
         return [dataframe.query(query) for dataframe in dataframe_list]
-
-
-if __name__ == "__main__":
-    source = DataSource("data.json")

@@ -97,3 +97,4 @@ class DataSource:
 
 if __name__ == "__main__":
     source = DataSource("data.json")
+    f = source.filter([[], ["M"], ["2024"], [], ["F"]], "include")

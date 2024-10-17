@@ -37,5 +37,24 @@ class Extractor:
             res.append(stats)
         return res
 
+    def extract_athlete_v2(self, name: str) -> list[dict[str, DataPoint]]:
+        """Transforms a list of DataFrames into a list of data stats according to the athlete axis."""
+        stats = {}
+        for stat in self.stat_labels:
+            for dataframe in self.dataframes:
+                list_stat = []
+                row = dataframe.loc[name]
+                column = dataframe[stat]
+                raw = row[stat]
+                rank = len(column[column > raw]) + 1
+                list_stat.append(
+                    DataPoint(
+                        raw=raw,
+                        rank=rank,
+                        max=column.max(),
+                    )
+                )
+            stats[stat] = list_stat
+
     def extract_run(self) -> None:
         """Transforms a list of DataFrames into a list of general race stats."""

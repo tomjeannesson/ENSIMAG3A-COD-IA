@@ -12,6 +12,15 @@ class DataPoint:
     max: float
 
 
+@dataclass
+class DataRun:
+    """Represents one instance of data."""
+
+    min: float
+    max: float
+    mean: float
+
+
 class Extractor:
     """Transforms a list of DataFrames into a list of data stats."""
 
@@ -53,22 +62,19 @@ class Extractor:
         self.last_extract = ("Athlete", name, stats)
         return stats
 
-    def extract_run(self) -> None:
+    def extract_run(self) -> dict[str, list[DataRun]]:
         """Transforms a list of DataFrames into a list of general race stats."""
         stats = {}
         for stat in self.stat_labels:
             list_stat = []
             for dataframe in self.dataframes:
-                column = dataframe[stat]
-                for run_data in dataframe:
-                    raw = run_data
-                    rank = len(column[column > raw]) + 1
-                    list_stat.append(
-                        DataPoint(
-                            raw=raw,
-                            rank=rank,
-                            max=column.max(),
-                        )
-                    )
+                list_stat = [
+                    *list_stat,
+                    DataRun(
+                        min=dataframe[stat].min(),
+                        max=dataframe[stat].max(),
+                        mean=dataframe[stat].mean(),
+                    ),
+                ]
             stats[stat] = list_stat
         return stats

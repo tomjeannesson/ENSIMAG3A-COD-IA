@@ -27,14 +27,27 @@ class Extractor:
     def __init__(self, dataframe_list: list[pd.DataFrame]) -> None:
         self.dataframes = dataframe_list
         self.stat_labels = ["total_points", "ski_points"]
+        self.last_extract = None
 
     def __str__(self) -> str:  # noqa: D105
-        string = f"{self.last_extract[0]}: {self.last_extract[1]}\n"
-        for key, value in self.last_extract[2].items():
-            string += f"{key} raw:  {" ".join([str(v.raw) for v in value])}\n"
-            string += f"{key} rank: {" ".join([str(v.rank) for v in value])}\n"
-            string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
-        return string
+        if self.last_extract is None:
+            return "Empty extractor."
+        if self.last_extract[0] == "Athlete":
+            string = f"Extract {self.last_extract[0]}: {self.last_extract[1]}\n"
+            for key, value in self.last_extract[2].items():
+                string += f"{key} raw:  {" ".join([str(v.raw) for v in value])}\n"
+                string += f"{key} rank: {" ".join([str(v.rank) for v in value])}\n"
+                string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
+            return string
+        if self.last_extract[0] == "Run":
+            string = f"Extract {self.last_extract[0]}\n"
+            for key, value in self.last_extract[1].items():
+                string += f"{key} min:  {" ".join([str(v.min) for v in value])}\n"
+                string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
+                string += f"{key} mean: {" ".join([str(v.mean) for v in value])}\n"
+            return string
+        error_msg = "Invalid las extract"
+        raise ValueError(error_msg)
 
     def extract_athlete(self, name: str) -> dict[str, list[DataPoint]]:
         """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""
@@ -75,4 +88,5 @@ class Extractor:
                     ),
                 ]
             stats[stat] = list_stat
+        self.last_extract = ("Run", stats)
         return stats

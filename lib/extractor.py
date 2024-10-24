@@ -51,6 +51,14 @@ class Extractor:
         error_msg = "Invalid las extract"
         raise ValueError(error_msg)
 
+    def all_athletes(self) -> set:
+        """Return a set containing all athlete's name from the dataframe."""
+        athlets_name = set()
+        for dataframe in self.dataframes:
+            for name in dataframe.index:
+                athlets_name.add(name)
+        return athlets_name
+
     def extract_athlete(self, name: str) -> dict[str, list[DataPoint]]:
         """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""
         stats = {}

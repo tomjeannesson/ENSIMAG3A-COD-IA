@@ -37,16 +37,16 @@ class Extractor:
         if self.last_extract[0] == "Athlete":
             string = f"Extract {self.last_extract[0]}: {self.last_extract[1]}\n"
             for key, value in self.last_extract[2].items():
-                string += f"{key} raw:  {" ".join([str(v.raw) for v in value])}\n"
-                string += f"{key} rank: {" ".join([str(v.rank) for v in value])}\n"
-                string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
+                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value])}\n"
+                string += f"{key} rank: {" ".join([str(round(v.rank, 2)) for v in value])}\n"
+                string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
             return string
         if self.last_extract[0] == "Run":
             string = f"Extract {self.last_extract[0]}\n"
-            for key, value in self.last_extract[2].items():
-                string += f"{key} min:  {" ".join([str(v.min) for v in value])}\n"
-                string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
-                string += f"{key} mean: {" ".join([str(v.mean) for v in value])}\n"
+            for key, value in self.last_extract[1].items():
+                string += f"{key} min:  {" ".join([str(round(v.min, 2)) for v in value])}\n"
+                string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
+                string += f"{key} mean: {" ".join([str(round(v.mean, 2)) for v in value])}\n"
             return string
         error_msg = "Invalid las extract"
         raise ValueError(error_msg)

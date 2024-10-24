@@ -8,16 +8,18 @@ from dataframe_metadata import DataframeMetadata
 class DataAthlete:
     """Represents one instance of data."""
 
+    metadata: DataframeMetadata
+    athlete: str
     raw: float
     rank: int
     max: float
-    athlete: str
 
 
 @dataclass
 class DataRun:
     """Represents one instance of data."""
 
+    metadata: DataframeMetadata
     min: float
     max: float
     mean: float
@@ -39,13 +41,13 @@ class Extractor:
             string = f"Extract {self.last_extract[0]}: {self.last_extract[1]}\n"
             for key, value in self.last_extract[2].items():
                 string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value])}\n"
+                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value])}\n"
                 string += f"{key} rank: {" ".join([str(round(v.rank, 2)) for v in value])}\n"
                 string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
             return string
         if self.last_extract[0] == "Run":
-            string = f"Extract {self.last_extract[0]}\n"
+            string = f"Extract {self.last_extract[0]}:\n"
             for key, value in self.last_extract[1].items():
-                string += f"{key} min:  {" ".join([str(round(v.min, 2)) for v in value])}\n"
                 string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
                 string += f"{key} mean: {" ".join([str(round(v.mean, 2)) for v in value])}\n"
             return string
@@ -67,10 +69,11 @@ class Extractor:
                 rank = len(column[column > raw]) + 1
                 list_stat.append(
                     DataAthlete(
+                        athlete=name,
+                        metadata=dataframe.metadata,
                         raw=raw,
                         rank=rank,
                         max=column.max(),
-                        athlete=name,
                     )
                 )
             stats[stat] = list_stat
@@ -86,10 +89,10 @@ class Extractor:
                 list_stat = [
                     *list_stat,
                     DataRun(
+                        metadata=dataframe.metadata,
                         min=dataframe[stat].min(),
                         max=dataframe[stat].max(),
                         mean=dataframe[stat].mean(),
-                        metadata=dataframe.metadata,
                     ),
                 ]
             stats[stat] = list_stat

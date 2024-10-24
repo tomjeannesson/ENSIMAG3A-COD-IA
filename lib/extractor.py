@@ -26,7 +26,7 @@ class Extractor:
 
     def __init__(self, dataframe_list: list[pd.DataFrame]) -> None:
         self.dataframes = dataframe_list
-        self.stat_labels = ["total_points"]
+        self.stat_labels = ["total_points", "ski_points"]
 
     def extract_athlete(self, name: str) -> dict[str, list[DataPoint]]:
         """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""

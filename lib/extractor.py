@@ -1,8 +1,7 @@
 from dataclasses import dataclass
 
 import pandas as pd
-
-from .dataframe_metadata import DataframeMetadata
+from dataframe_metadata import DataframeMetadata
 
 
 @dataclass
@@ -14,6 +13,9 @@ class DataAthlete:
     raw: float
     rank: int
     max: float
+    compare_to_rank: dict
+    compare_to_athlete: dict
+    compare_to_interval: dict
 
 
 @dataclass
@@ -56,7 +58,13 @@ class Extractor:
         error_msg = "Invalid las extract"
         raise ValueError(error_msg)
 
-    def extract_athlete(self, name: str) -> dict[str, list[DataAthlete]]:
+    def extract_athlete(
+        self,
+        name: str,
+        compare_to_rank: int = 1,
+        compare_to_athlete: str | None = None,
+        compare_to_interval: tuple[int] = (1, 6),
+    ) -> dict[str, list[DataAthlete]]:
         """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""
         stats = {}
         for stat in self.stat_labels:
@@ -69,6 +77,13 @@ class Extractor:
                 column = dataframe[stat]
                 raw = row[stat]
                 rank = len(column[column > raw]) + 1
+                rank_compare_value = column.iloc[compare_to_rank - 1]
+                athlete_compare_value = None
+                rank_compare_athlete = None
+                interval_compare_value = column.iloc[compare_to_interval[0] - 1 : compare_to_interval[1] - 1].mean()
+                if compare_to_athlete is not None:
+                    athlete_compare_value = column.loc[compare_to_athlete]
+                    rank_compare_athlete = len(column[column > athlete_compare_value]) + 1
                 list_stat.append(
                     DataAthlete(
                         athlete=name,
@@ -76,6 +91,17 @@ class Extractor:
                         raw=raw,
                         rank=rank,
                         max=column.max(),
+                        compare_to_rank={
+                            "value": compare_to_rank,
+                            "raw": rank_compare_value,
+                            "rank": compare_to_rank,
+                        },
+                        compare_to_athlete={
+                            "value": compare_to_athlete,
+                            "raw": athlete_compare_value,
+                            "rank": rank_compare_athlete,
+                        },
+                        compare_to_interval={"value": compare_to_interval, "raw": interval_compare_value},
                     )
                 )
             stats[stat] = list_stat

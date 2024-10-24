@@ -1,15 +1,17 @@
 from dataclasses import dataclass
 
 import pandas as pd
+from dataframe_metadata import DataframeMetadata
 
 
 @dataclass
-class DataPoint:
+class DataAthlete:
     """Represents one instance of data."""
 
     raw: float
     rank: int
     max: float
+    athlete: str
 
 
 @dataclass
@@ -19,6 +21,7 @@ class DataRun:
     min: float
     max: float
     mean: float
+    metadata: DataframeMetadata
 
 
 class Extractor:
@@ -35,21 +38,21 @@ class Extractor:
         if self.last_extract[0] == "Athlete":
             string = f"Extract {self.last_extract[0]}: {self.last_extract[1]}\n"
             for key, value in self.last_extract[2].items():
-                string += f"{key} raw:  {" ".join([str(v.raw) for v in value])}\n"
-                string += f"{key} rank: {" ".join([str(v.rank) for v in value])}\n"
-                string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
+                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value])}\n"
+                string += f"{key} rank: {" ".join([str(round(v.rank, 2)) for v in value])}\n"
+                string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
             return string
         if self.last_extract[0] == "Run":
             string = f"Extract {self.last_extract[0]}\n"
             for key, value in self.last_extract[1].items():
-                string += f"{key} min:  {" ".join([str(v.min) for v in value])}\n"
-                string += f"{key} max:  {" ".join([str(v.max) for v in value])}\n"
-                string += f"{key} mean: {" ".join([str(v.mean) for v in value])}\n"
+                string += f"{key} min:  {" ".join([str(round(v.min, 2)) for v in value])}\n"
+                string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
+                string += f"{key} mean: {" ".join([str(round(v.mean, 2)) for v in value])}\n"
             return string
         error_msg = "Invalid las extract"
         raise ValueError(error_msg)
 
-    def extract_athlete(self, name: str) -> dict[str, list[DataPoint]]:
+    def extract_athlete(self, name: str) -> dict[str, list[DataAthlete]]:
         """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""
         stats = {}
         for stat in self.stat_labels:
@@ -63,10 +66,11 @@ class Extractor:
                 raw = row[stat]
                 rank = len(column[column > raw]) + 1
                 list_stat.append(
-                    DataPoint(
+                    DataAthlete(
                         raw=raw,
                         rank=rank,
                         max=column.max(),
+                        athlete=name,
                     )
                 )
             stats[stat] = list_stat
@@ -85,6 +89,7 @@ class Extractor:
                         min=dataframe[stat].min(),
                         max=dataframe[stat].max(),
                         mean=dataframe[stat].mean(),
+                        metadata=dataframe.metadata,
                     ),
                 ]
             stats[stat] = list_stat

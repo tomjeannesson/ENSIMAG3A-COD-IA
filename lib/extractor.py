@@ -34,7 +34,7 @@ class Extractor:
 
     def __init__(self, dataframe_list: list[pd.DataFrame]) -> None:
         self.dataframes = dataframe_list
-        self.stat_labels = ["total_points", "ski_points"]
+        self.stat_labels = ["total_points", "ski_points", "air_points", "time_points"]
         self.last_extract = None
 
     def __str__(self) -> str:  # noqa: D105
@@ -72,10 +72,12 @@ class Extractor:
         compare_to_athlete: str | None = None,
         compare_to_interval: tuple[int] = (1, 6),
     ) -> dict[str, dict]:
-        """Transforms a list of DataFrames into a dictionary of a table of data stats according to the athlete axis."""
+        """Transforms a list of DataFrames into a dictionary of dictionary of data stats according to the athlete axis."""
         stats = {}
 
-        def create_dico_stat_athlete(list_stat: float, is_raw: int) -> dict[str, float]:
+        def create_dico_stat_athlete(list_stat: float, is_raw: int = 1) -> dict[str, float]:
+            """Function that create a dictionary of statistics from a table of float values."""
+            """is_raw is used to specify if it's for rank of raw (because min/max are different in that case)."""
             try:
                 quantiles = statistics.quantiles(list_stat, n=4)
                 stdev = statistics.stdev(list_stat)
@@ -131,7 +133,6 @@ class Extractor:
                         compare_to_interval={"value": compare_to_interval, "raw": interval_compare_value},
                     )
                 )
-
                 list_stat_raw.append(raw)
                 list_stat_rank.append(rank)
 
@@ -139,6 +140,7 @@ class Extractor:
             dico_data["raw"] = create_dico_stat_athlete(list_stat=list_stat_raw, is_raw=1)
             dico_data["rank"] = create_dico_stat_athlete(list_stat=list_stat_rank, is_raw=0)
             stats[stat] = dico_data
+
         self.last_extract = ("Athlete", name, stats)
         return stats
 

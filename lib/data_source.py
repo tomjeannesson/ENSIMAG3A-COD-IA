@@ -29,7 +29,12 @@ class DataSource:
                     for place in current_data[circuit][gender][year]:
                         new_data[circuit][gender][year][place] = {}
                         for run in current_data[circuit][gender][year][place]:
-                            dataframe = pd.DataFrame(data=json.loads(current_data[circuit][gender][year][place][run]))
+                            data = json.loads(current_data[circuit][gender][year][place][run])
+                            data["top_air_execution"] = (data["top_air_judge1"] + data["top_air_judge1"]) / 2
+                            data["top_air_points"] = data["top_air_execution"] * data["top_air_coefficient"]
+                            data["bottom_air_execution"] = (data["bottom_air_judge1"] + data["bottom_air_judge1"]) / 2
+                            data["bottom_air_points"] = data["bottom_air_execution"] * data["bottom_air_coefficient"]
+                            dataframe = pd.DataFrame(data=data)
                             dataframe.metadata = DataframeMetadata(
                                 circuit=circuit,
                                 gender=gender,

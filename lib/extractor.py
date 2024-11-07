@@ -34,7 +34,18 @@ class Extractor:
 
     def __init__(self, dataframe_list: list[pd.DataFrame]) -> None:
         self.dataframes = dataframe_list
-        self.stat_labels = ["total_points", "ski_points", "air_points", "time_points"]
+        self.stat_labels = [
+            "total_points",
+            "ski_points",
+            "air_points",
+            "time_points",
+            "ski_base",
+            "ski_deduction_total",
+            "top_air_execution",
+            "top_air_points",
+            "bottom_air_execution",
+            "bottom_air_points",
+        ]
         self.last_extract = None
 
     def __str__(self) -> str:  # noqa: D105

@@ -2,8 +2,7 @@ import statistics
 from dataclasses import dataclass
 
 import pandas as pd
-
-from .dataframe_metadata import DataframeMetadata
+from dataframe_metadata import DataframeMetadata
 
 
 @dataclass
@@ -231,7 +230,7 @@ class Extractor:
         """Create a normalize dataframe with athletes data."""
         filtered_labels = [label for label in self.stat_labels if label not in exceptions]
 
-        data = [[attributes[label]["rank"]["mean"] for label in filtered_labels] for athlete, attributes in athletes_data.items()]
+        data = [[attributes[label]["raw"]["mean"] for label in filtered_labels] for athlete, attributes in athletes_data.items()]
         athlete_names = list(athletes_data.keys())
 
         df_athletes = pd.DataFrame(data, columns=filtered_labels, index=athlete_names)

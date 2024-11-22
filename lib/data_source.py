@@ -3,8 +3,7 @@ from collections.abc import Callable
 from pathlib import Path
 
 import pandas as pd
-
-from .dataframe_metadata import DataframeMetadata
+from dataframe_metadata import DataframeMetadata
 
 
 class DataSource:

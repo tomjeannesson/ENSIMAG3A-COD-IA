@@ -94,6 +94,15 @@ class Extractor:
                 athletes_name.add(name)
         return athletes_name
 
+    # def extract_athlete_simple(
+    #     self,
+    #     name: str,
+    # ) -> dict[str, dict]:
+    #     """Transforms a list of Dataframes into a dictionary of data"""
+    #     res = {} # noqa: ERA001
+    #     for dataframe in self.dataframes:
+    #         for index, row in dataframe.iterrows():
+
     def extract_athlete(
         self,
         name: str,

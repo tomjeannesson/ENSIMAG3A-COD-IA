@@ -35,16 +35,34 @@ class Extractor:
     def __init__(self, dataframe_list: list[pd.DataFrame]) -> None:
         self.dataframes = dataframe_list
         self.stat_labels = [
-            "total_points",
-            "ski_points",
-            "air_points",
+            "result",
+            "time",
             "time_points",
-            "ski_base",
-            "ski_deduction_total",
+            "top_air_judge1",
+            "top_air_judge2",
+            "top_air_coefficient",
             "top_air_execution",
             "top_air_points",
+            "bottom_air_judge1",
+            "bottom_air_judge2",
+            "bottom_air_coefficient",
             "bottom_air_execution",
             "bottom_air_points",
+            "air_points",
+            "ski_judge1",
+            "ski_judge2",
+            "ski_judge3",
+            "ski_judge4",
+            "ski_judge5",
+            "ski_deduction_judge1",
+            "ski_deduction_judge2",
+            "ski_deduction_judge3",
+            "ski_deduction_judge4",
+            "ski_deduction_judge5",
+            "ski_base",
+            "ski_deduction_total",
+            "ski_points",
+            "total_points",
         ]
         self.last_extract = None
 
@@ -54,10 +72,10 @@ class Extractor:
         if self.last_extract[0] == "Athlete":
             string = f"Extract {self.last_extract[0]}: {self.last_extract[1]}\n"
             for key, value in self.last_extract[2].items():
-                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value])}\n"
-                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value])}\n"
-                string += f"{key} rank: {" ".join([str(round(v.rank, 2)) for v in value])}\n"
-                string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value])}\n"
+                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value["data"]])}\n"
+                string += f"{key} raw:  {" ".join([str(round(v.raw, 2)) for v in value["data"]])}\n"
+                string += f"{key} rank: {" ".join([str(round(v.rank, 2)) for v in value["data"]])}\n"
+                string += f"{key} max:  {" ".join([str(round(v.max, 2)) for v in value["data"]])}\n"
             return string
         if self.last_extract[0] == "Run":
             string = f"Extract {self.last_extract[0]}:\n"
@@ -92,12 +110,43 @@ class Extractor:
         compare_to_athlete: str | None = None,
         compare_to_interval: tuple[int] = (1, 6),
     ) -> dict[str, dict]:
-        """Transforms a list of DataFrames into a dictionary of dictionary of data stats according to the athlete axis."""
+        """Transforms a list of DataFrames into a dictionary of dictionary of data stats according to the athlete axis.
+
+        Example data returned:
+        'air_points':
+                {'data': [DataAthlete(metadata=<races.utils.data_processing.dataframe_metadata.DataframeMetadata object at 0xffff90267650>,
+                                    athlete='MOUILLE Thibaud',
+                                    raw=np.float64(12.23),
+                                    rank=1,
+                                    max=np.float64(12.23),
+                                    compare_to_rank={'rank': 1,
+                                                    'raw': np.float64(12.23),
+                                                    'value': 1},
+                                    compare_to_athlete={'rank': None,
+                                                        'raw': None,
+                                                        'value': None},
+                                    compare_to_interval={'raw': np.float64(9.364),
+                                                        'value': (1, 6)})],
+                'rank': {'max': 1,
+                        'mean': 1.0,
+                        'min': 1,
+                        'q1': 1,
+                        'q2': 1,
+                        'std': 0},
+                'raw': {'max': np.float64(12.23),
+                        'mean': np.float64(12.23),
+                        'min': np.float64(12.23),
+                        'q1': np.float64(12.23),
+                        'q2': np.float64(12.23),
+                        'std': 0}}
+        """
         stats = {}
 
         def create_dico_stat_athlete(list_stat: float, is_raw: int = 1) -> dict[str, float]:
-            """Function that create a dictionary of statistics from a table of float values."""
-            """is_raw is used to specify if it's for rank of raw (because min/max are different in that case)."""
+            """Function that create a dictionary of statistics from a table of float values.
+
+            is_raw is used to specify if it's for rank of raw (because min/max are different in that case).
+            """
             try:
                 quantiles = statistics.quantiles(list_stat, n=4)
                 stdev = statistics.stdev(list_stat)
@@ -125,7 +174,7 @@ class Extractor:
                     continue
                 column = dataframe[stat]
                 raw = row[stat]
-                rank = len(column[column > raw]) + 1
+                rank = len(column[column < raw]) + 1 if stat in ("result", "time") else len(column[column > raw]) + 1
                 rank_compare_value = column.iloc[compare_to_rank - 1]
                 athlete_compare_value = None
                 rank_compare_athlete = None
@@ -157,10 +206,13 @@ class Extractor:
                 list_stat_rank.append(rank)
 
             dico_data["data"] = list_stat
-            dico_data["raw"] = create_dico_stat_athlete(list_stat=list_stat_raw, is_raw=1)
-            dico_data["rank"] = create_dico_stat_athlete(list_stat=list_stat_rank, is_raw=0)
+            list_stat_raw = [float(elem) for elem in list_stat_raw if elem is not None]
+            list_stat_rank = [float(elem) for elem in list_stat_rank if elem is not None]
+            if len(list_stat_raw) > 0:
+                dico_data["raw"] = create_dico_stat_athlete(list_stat=list_stat_raw, is_raw=1)
+            if len(list_stat_rank) > 0:
+                dico_data["rank"] = create_dico_stat_athlete(list_stat=list_stat_rank, is_raw=0)
             stats[stat] = dico_data
-
         self.last_extract = ("Athlete", name, stats)
         return stats
 
@@ -187,7 +239,7 @@ class Extractor:
         """Create a normalize dataframe with athletes data."""
         filtered_labels = [label for label in self.stat_labels if label not in exceptions]
 
-        data = [[attributes[label]["rank"]["mean"] for label in filtered_labels] for athlete, attributes in athletes_data.items()]
+        data = [[attributes[label]["raw"]["mean"] for label in filtered_labels] for athlete, attributes in athletes_data.items()]
         athlete_names = list(athletes_data.keys())
 
         df_athletes = pd.DataFrame(data, columns=filtered_labels, index=athlete_names)

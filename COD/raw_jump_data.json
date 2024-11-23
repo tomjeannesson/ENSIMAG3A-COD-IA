@@ -1,0 +1,4110 @@
+{
+    "WC": {
+        "M": {
+            "2024": {
+                "leaderboard": [
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.35,
+                        "top_air_points": 8.77,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 8.45,
+                        "bottom_air_points": 8.87
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.85,
+                        "top_air_points": 8.24,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.7,
+                        "bottom_air_points": 8.09
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 7.82,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.5,
+                        "bottom_air_points": 7.88
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.25,
+                        "top_air_points": 8.66,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.35,
+                        "bottom_air_points": 8.43
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 6.1,
+                        "top_air_points": 7.32,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 6.8,
+                        "bottom_air_points": 5.58
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 7.82,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 6.56
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.3,
+                        "top_air_points": 6.42,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 6.11
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.05,
+                        "top_air_points": 7.08,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.05,
+                        "bottom_air_points": 5.3
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 6.2,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.7,
+                        "bottom_air_points": 5.9
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.4,
+                        "top_air_points": 7.47,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 6.56
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.15,
+                        "top_air_points": 6.29,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 4.5,
+                        "bottom_air_points": 4.73
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.45,
+                        "top_air_points": 7.44,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.9,
+                        "bottom_air_points": 5.96
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.0,
+                        "top_air_points": 7.04,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.35,
+                        "bottom_air_points": 6.03
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 5.37,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.65,
+                        "bottom_air_points": 4.97
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.65,
+                        "top_air_points": 6.98,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.88,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.4,
+                        "bottom_air_points": 5.63
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 7.52,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 8.15,
+                        "bottom_air_points": 6.68
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.9,
+                        "top_air_points": 6.97,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.15,
+                        "bottom_air_points": 4.53
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.25,
+                        "top_air_points": 6.38,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.8,
+                        "bottom_air_points": 6.87
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.95,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.55,
+                        "bottom_air_points": 5.76
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 4.85,
+                        "top_air_points": 5.09,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 7.27
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.5,
+                        "top_air_points": 4.84,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.95,
+                        "bottom_air_points": 6.01
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 5.5,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.7,
+                        "bottom_air_points": 4.75
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 4.2,
+                        "top_air_points": 4.41,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 5.32
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.75,
+                        "top_air_points": 5.06,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.5,
+                        "bottom_air_points": 4.84
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.05,
+                        "top_air_points": 4.44,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 5.5
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.65,
+                        "top_air_points": 4.97,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.4,
+                        "bottom_air_points": 3.43
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 6.2,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 6.31
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.75,
+                        "top_air_points": 3.3,
+                        "bottom_air_trick": "lG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 3.75,
+                        "bottom_air_points": 3.07
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 3.1,
+                        "top_air_points": 2.54,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 4.8,
+                        "bottom_air_points": 3.41
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.95,
+                        "top_air_points": 4.36,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.95,
+                        "bottom_air_points": 6.01
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 5.19,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.7,
+                        "bottom_air_points": 4.14
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.7,
+                        "top_air_points": 4.14,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.15,
+                        "bottom_air_points": 3.66
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.65,
+                        "top_air_points": 3.21,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 5.45,
+                        "bottom_air_points": 4.47
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.2,
+                        "top_air_points": 7.22,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.7,
+                        "bottom_air_points": 8.09
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.15,
+                        "top_air_points": 8.56,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.95,
+                        "bottom_air_points": 7.02
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.3,
+                        "top_air_points": 8.72,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.8,
+                        "bottom_air_points": 3.84
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.6,
+                        "top_air_points": 5.88,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.75,
+                        "bottom_air_points": 8.14
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.6,
+                        "top_air_points": 6.69,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 4.25,
+                        "bottom_air_points": 4.46
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.2,
+                        "top_air_points": 7.22,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.9,
+                        "bottom_air_points": 6.95
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.6,
+                        "top_air_points": 7.98,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.7,
+                        "bottom_air_points": 6.78
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.95,
+                        "top_air_points": 7.0,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.4,
+                        "bottom_air_points": 3.87
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 8.09,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.0,
+                        "bottom_air_points": 4.4
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.62,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.4,
+                        "bottom_air_points": 5.67
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.2,
+                        "top_air_points": 7.22,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 5.37
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 3.15,
+                        "top_air_points": 3.31,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.55,
+                        "bottom_air_points": 8.64
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.75,
+                        "top_air_points": 6.82,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.45,
+                        "bottom_air_points": 7.52
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 6.7,
+                        "top_air_points": 5.49,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.54
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.65,
+                        "bottom_air_points": 3.69
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.2,
+                        "top_air_points": 6.34,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 4.65,
+                        "bottom_air_points": 3.81
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.5,
+                        "top_air_points": 4.84,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.5,
+                        "bottom_air_points": 6.57
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.99,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.3,
+                        "bottom_air_points": 4.66
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 5.68,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.7,
+                        "bottom_air_points": 5.9
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 7.65,
+                        "top_air_points": 6.27,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.2,
+                        "bottom_air_points": 6.26
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.3,
+                        "top_air_points": 4.66,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.85,
+                        "bottom_air_points": 5.15
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.02,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.5,
+                        "bottom_air_points": 3.96
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.02,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 3.85,
+                        "bottom_air_points": 4.04
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.55,
+                        "top_air_points": 4.88,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.75,
+                        "bottom_air_points": 5.06
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.45,
+                        "top_air_points": 4.8,
+                        "bottom_air_trick": "lG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 4.95,
+                        "bottom_air_points": 4.06
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 5.96,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 4.65,
+                        "bottom_air_points": 4.88
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.75,
+                        "top_air_points": 4.18,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.85,
+                        "bottom_air_points": 3.89
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.75,
+                        "top_air_points": 5.81,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.35,
+                        "bottom_air_points": 4.71
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.02,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.95,
+                        "bottom_air_points": 4.36
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.85,
+                        "top_air_points": 5.91,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.2,
+                        "bottom_air_points": 3.7
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.55,
+                        "top_air_points": 5.61,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.55,
+                        "bottom_air_points": 2.52
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.25,
+                        "top_air_points": 3.74,
+                        "bottom_air_trick": "bF",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 2.4,
+                        "bottom_air_points": 2.11
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 4.55,
+                        "top_air_points": 4.6,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 2.9,
+                        "bottom_air_points": 2.55
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.02,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.45,
+                        "bottom_air_points": 4.8
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.0,
+                        "top_air_points": 3.52,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.35,
+                        "bottom_air_points": 4.39
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.4,
+                        "top_air_points": 3.87,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.65,
+                        "bottom_air_points": 4.01
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.45,
+                        "top_air_points": 3.92,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.7,
+                        "bottom_air_points": 3.26
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.55,
+                        "top_air_points": 4.88,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 2.55,
+                        "bottom_air_points": 1.81
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.35,
+                        "top_air_points": 5.59,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.75,
+                        "bottom_air_points": 4.08
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.35,
+                        "top_air_points": 2.95,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 2.95,
+                        "bottom_air_points": 2.09
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.35,
+                        "top_air_points": 3.83,
+                        "bottom_air_trick": "l",
+                        "bottom_air_coefficient": 0.68,
+                        "bottom_air_execution": 3.0,
+                        "bottom_air_points": 2.04
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.5,
+                        "top_air_points": 5.72,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.35,
+                        "top_air_points": 4.71,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.35,
+                        "top_air_points": 3.83,
+                        "bottom_air_trick": "D",
+                        "bottom_air_coefficient": 0.41,
+                        "bottom_air_execution": 4.9,
+                        "bottom_air_points": 2.01
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.0,
+                        "top_air_points": 5.25,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.55,
+                        "bottom_air_points": 4.6
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.4,
+                        "top_air_points": 8.82,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 8.2,
+                        "bottom_air_points": 8.61
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.45,
+                        "top_air_points": 8.87,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.65,
+                        "bottom_air_points": 8.03
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.25,
+                        "top_air_points": 8.66,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.5,
+                        "bottom_air_points": 7.88
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.15,
+                        "top_air_points": 8.56,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.65,
+                        "bottom_air_points": 8.74
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.75,
+                        "top_air_points": 7.09,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.35,
+                        "bottom_air_points": 6.67
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.6,
+                        "top_air_points": 7.57,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 4.33
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.5,
+                        "top_air_points": 5.78,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.95,
+                        "bottom_air_points": 7.3
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.5,
+                        "top_air_points": 7.48,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.65,
+                        "bottom_air_points": 6.98
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 8.1,
+                        "top_air_points": 9.72,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.9,
+                        "bottom_air_points": 6.07
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.3,
+                        "top_air_points": 6.42,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.65,
+                        "bottom_air_points": 8.74
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.65,
+                        "top_air_points": 7.73,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.6,
+                        "bottom_air_points": 6.93
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 8.94,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.45,
+                        "bottom_air_points": 8.53
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 7.4,
+                        "top_air_points": 6.07,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.54
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.4,
+                        "top_air_points": 8.48,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 7.56
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.25,
+                        "top_air_points": 7.26,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 5.78
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.85,
+                        "top_air_points": 7.19,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.05,
+                        "bottom_air_points": 5.3
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.0,
+                        "top_air_points": 6.16,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.65,
+                        "bottom_air_points": 6.98
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 9.15,
+                        "top_air_points": 8.05,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.8,
+                        "bottom_air_points": 6.86
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 6.56,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.85,
+                        "bottom_air_points": 5.91
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.8,
+                        "top_air_points": 6.87,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 7.4
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.65,
+                        "top_air_points": 6.73,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.95,
+                        "bottom_air_points": 7.0
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 9.0,
+                        "top_air_points": 7.92,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.0,
+                        "bottom_air_points": 5.28
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.2,
+                        "top_air_points": 6.34,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.65,
+                        "bottom_air_points": 6.73
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.25,
+                        "top_air_points": 6.38,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 8.35,
+                        "bottom_air_points": 5.93
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.62,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.85,
+                        "bottom_air_points": 6.91
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.65,
+                        "top_air_points": 5.93,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.55,
+                        "bottom_air_points": 6.62
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.75,
+                        "top_air_points": 7.83,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 5.3,
+                        "bottom_air_points": 4.35
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 7.6,
+                        "top_air_points": 6.23,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.7,
+                        "bottom_air_points": 5.9
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.9,
+                        "top_air_points": 6.07,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 8.3,
+                        "bottom_air_points": 6.81
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.95,
+                        "top_air_points": 7.02,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.75,
+                        "bottom_air_points": 7.09
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.1,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.1,
+                        "bottom_air_points": 6.25
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.1,
+                        "top_air_points": 7.13,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.65,
+                        "bottom_air_points": 5.93
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 5.5,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 8.3,
+                        "bottom_air_points": 7.3
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.05,
+                        "top_air_points": 6.35,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.1,
+                        "bottom_air_points": 6.25
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 6.78,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.85,
+                        "bottom_air_points": 7.19
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.62,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 2.5,
+                        "bottom_air_points": 2.2
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.75,
+                        "top_air_points": 7.83,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 4.9,
+                        "bottom_air_points": 5.15
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.7,
+                        "top_air_points": 6.77,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.85,
+                        "bottom_air_points": 6.91
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.75,
+                        "top_air_points": 5.06,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.2,
+                        "bottom_air_points": 4.4
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.35,
+                        "top_air_points": 8.43,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.9,
+                        "bottom_air_points": 5.19
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.65,
+                        "top_air_points": 4.97,
+                        "bottom_air_trick": "lG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.45,
+                        "bottom_air_points": 6.11
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 6.56,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 5.78
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.75,
+                        "top_air_points": 5.94,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.85,
+                        "bottom_air_points": 5.91
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 4.55,
+                        "top_air_points": 4.78,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 6.41
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.85,
+                        "bottom_air_points": 6.92
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.3,
+                        "top_air_points": 5.54,
+                        "bottom_air_trick": "bL",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.2,
+                        "bottom_air_points": 2.27
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.5,
+                        "top_air_points": 6.6,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.65,
+                        "bottom_air_points": 4.72
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.6,
+                        "top_air_points": 4.93,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.25,
+                        "top_air_points": 6.38,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 1.35,
+                        "bottom_air_points": 1.19
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.85,
+                        "top_air_points": 6.91,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 5.5,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 1.75,
+                        "bottom_air_points": 1.54
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.75,
+                        "top_air_points": 6.82,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.5,
+                        "bottom_air_points": 3.96
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 5.46,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 5.1,
+                        "bottom_air_points": 4.18
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 5.46,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 1.5,
+                        "bottom_air_points": 1.58
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.4,
+                        "top_air_points": 6.72,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.45,
+                        "bottom_air_points": 7.82
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.5,
+                        "top_air_points": 7.48,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 6.56
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.5,
+                        "top_air_points": 7.48,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.0,
+                        "bottom_air_points": 6.3
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.8,
+                        "top_air_points": 8.19,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.5,
+                        "bottom_air_points": 8.59
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.85,
+                        "top_air_points": 7.79,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.5,
+                        "bottom_air_points": 6.6
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.8,
+                        "top_air_points": 6.86,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 4.3
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 8.35,
+                        "top_air_points": 6.85,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.75,
+                        "bottom_air_points": 6.82
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.35,
+                        "top_air_points": 7.72,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.15,
+                        "bottom_air_points": 6.21
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.3,
+                        "top_air_points": 7.3,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.85,
+                        "bottom_air_points": 6.03
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.15,
+                        "top_air_points": 6.46,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.4,
+                        "bottom_air_points": 7.47
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.0,
+                        "top_air_points": 7.35,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.65,
+                        "bottom_air_points": 6.72
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.1,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "lG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.4,
+                        "bottom_air_points": 6.07
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.2,
+                        "top_air_points": 7.27,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.8,
+                        "bottom_air_points": 4.83
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.05,
+                        "top_air_points": 7.12,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.25,
+                        "bottom_air_points": 6.38
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.85,
+                        "top_air_points": 6.14,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 4.55,
+                        "top_air_points": 5.46,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 2.4,
+                        "bottom_air_points": 2.42
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.9,
+                        "top_air_points": 6.07,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.75,
+                        "bottom_air_points": 5.94
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.55,
+                        "top_air_points": 5.83,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.6,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.75,
+                        "top_air_points": 6.82,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.45,
+                        "bottom_air_points": 5.68
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.9,
+                        "top_air_points": 7.83,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.35,
+                        "bottom_air_points": 5.59
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.45,
+                        "top_air_points": 8.53,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 6.2
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.5,
+                        "top_air_points": 7.48,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 4.47
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 5.68,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.45,
+                        "bottom_air_points": 4.58
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.8,
+                        "top_air_points": 7.14,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.6,
+                        "bottom_air_points": 6.67
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.9,
+                        "top_air_points": 7.25,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.95,
+                        "bottom_air_points": 5.24
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.88,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.7,
+                        "bottom_air_points": 5.9
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.8,
+                        "top_air_points": 6.87,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.35,
+                        "bottom_air_points": 5.59
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.75,
+                        "top_air_points": 6.82,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 3.65,
+                        "bottom_air_points": 2.99
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.3,
+                        "top_air_points": 5.54,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 5.5
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.3,
+                        "top_air_points": 5.54,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.9,
+                        "bottom_air_points": 5.19
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.7,
+                        "top_air_points": 5.9,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.45,
+                        "bottom_air_points": 5.68
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 5.19,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.2,
+                        "bottom_air_points": 5.46
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.55,
+                        "top_air_points": 4.88,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.6,
+                        "bottom_air_points": 3.98
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.7,
+                        "bottom_air_points": 5.76
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.05,
+                        "top_air_points": 7.12,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.3,
+                        "bottom_air_points": 5.99
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 3.75,
+                        "top_air_points": 3.79,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.75,
+                        "bottom_air_points": 3.3
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.5,
+                        "top_air_points": 5.78,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 4.44
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.6,
+                        "top_air_points": 6.93,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.85,
+                        "bottom_air_points": 6.03
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "lG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 4.96
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.95,
+                        "top_air_points": 5.24,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.8,
+                        "bottom_air_points": 4.12
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.35,
+                        "top_air_points": 7.42,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.2,
+                        "bottom_air_points": 3.7
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.05,
+                        "top_air_points": 4.44,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.65,
+                        "bottom_air_points": 4.01
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.9,
+                        "top_air_points": 7.83,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.8,
+                        "bottom_air_points": 8.19
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.0,
+                        "top_air_points": 6.3,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.35,
+                        "bottom_air_points": 7.72
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.6,
+                        "top_air_points": 7.98,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 8.2,
+                        "bottom_air_points": 7.22
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 5.76,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.1,
+                        "bottom_air_points": 7.46
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.1,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "14op",
+                        "bottom_air_coefficient": 1.22,
+                        "bottom_air_execution": 5.95,
+                        "bottom_air_points": 7.26
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.95,
+                        "top_air_points": 4.36,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.75,
+                        "bottom_air_points": 6.82
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.15,
+                        "top_air_points": 6.29,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 6.5,
+                        "bottom_air_points": 5.33
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.15,
+                        "top_air_points": 5.41,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.0,
+                        "bottom_air_points": 7.07
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.88,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 5.32
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.3,
+                        "top_air_points": 8.38,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.1,
+                        "bottom_air_points": 6.25
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.4,
+                        "top_air_points": 5.67,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.15,
+                        "bottom_air_points": 7.51
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.6,
+                        "top_air_points": 6.69,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.4,
+                        "bottom_air_points": 6.51
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 6.95,
+                        "top_air_points": 5.7,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.35,
+                        "bottom_air_points": 2.95
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.0,
+                        "top_air_points": 6.16,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 5.46,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.1,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.25,
+                        "bottom_air_points": 4.29
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.8,
+                        "top_air_points": 6.86,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.9,
+                        "bottom_air_points": 6.07
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 7.2,
+                        "top_air_points": 5.9,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.0,
+                        "bottom_air_points": 6.16
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.05,
+                        "top_air_points": 6.11,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 6.2
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.35,
+                        "top_air_points": 6.47,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.9,
+                        "bottom_air_points": 4.95
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.76,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.9,
+                        "bottom_air_points": 4.31
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.15,
+                        "top_air_points": 7.22,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.0,
+                        "bottom_air_points": 5.28
+                    },
+                    {
+                        "top_air_trick": "bT",
+                        "top_air_coefficient": 0.68,
+                        "top_air_execution": 5.35,
+                        "top_air_points": 3.64,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.35,
+                        "bottom_air_points": 6.47
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.15,
+                        "top_air_points": 6.29,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.85,
+                        "bottom_air_points": 6.03
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.05,
+                        "top_air_points": 4.44,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.25,
+                        "bottom_air_points": 6.38
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.75,
+                        "top_air_points": 5.94,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 6.56
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.7,
+                        "top_air_points": 7.04,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.9,
+                        "bottom_air_points": 5.19
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.65,
+                        "top_air_points": 4.09,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 5.5
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.6,
+                        "top_air_points": 5.81,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.8,
+                        "bottom_air_points": 6.87
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.4,
+                        "top_air_points": 5.63,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.5,
+                        "bottom_air_points": 5.72
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.55,
+                        "top_air_points": 5.61,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 4.5,
+                        "bottom_air_points": 3.19
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.95,
+                        "top_air_points": 6.12,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.85,
+                        "bottom_air_points": 6.92
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 5.68,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.2,
+                        "bottom_air_points": 6.26
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.7,
+                        "top_air_points": 4.14,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.9,
+                        "bottom_air_points": 5.19
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.55,
+                        "top_air_points": 4.0,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.95,
+                        "bottom_air_points": 5.0
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.1,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.8,
+                        "bottom_air_points": 4.83
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.15,
+                        "top_air_points": 3.65,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 4.85,
+                        "bottom_air_points": 3.44
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.15,
+                        "top_air_points": 3.65,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.2,
+                        "bottom_air_points": 5.46
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.5,
+                        "top_air_points": 3.96,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.15,
+                        "bottom_air_points": 4.37
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.6,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.05,
+                        "top_air_points": 3.56,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.0,
+                        "bottom_air_points": 4.04
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.55,
+                        "top_air_points": 6.64,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 0.5,
+                        "bottom_air_points": 0.51
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 6.11,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 2.7,
+                        "bottom_air_points": 2.38
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 5.68,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.5,
+                        "bottom_air_points": 3.9
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 6.3,
+                        "top_air_points": 7.56,
+                        "bottom_air_trick": "3",
+                        "bottom_air_coefficient": 0.68,
+                        "bottom_air_execution": 0.25,
+                        "bottom_air_points": 0.17
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 4.84,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 5.5
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.25,
+                        "top_air_points": 3.74,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.45,
+                        "bottom_air_points": 3.92
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 3.15,
+                        "top_air_points": 3.18,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.6,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.9,
+                        "top_air_points": 5.19,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 0.7,
+                        "bottom_air_points": 0.62
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.4,
+                        "top_air_points": 6.51,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 0.3,
+                        "bottom_air_points": 0.3
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 4.95,
+                        "top_air_points": 5.0,
+                        "bottom_air_trick": "M",
+                        "bottom_air_coefficient": 0.41,
+                        "bottom_air_execution": 1.1,
+                        "bottom_air_points": 0.45
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.0,
+                        "top_air_points": 5.05,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.0,
+                        "bottom_air_points": 2.64
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 2.8,
+                        "top_air_points": 2.46,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.95,
+                        "bottom_air_points": 3.48
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 9.05,
+                        "top_air_points": 9.5,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 8.35,
+                        "bottom_air_points": 8.77
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.0,
+                        "top_air_points": 8.4,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 8.4,
+                        "bottom_air_points": 7.39
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.25,
+                        "top_air_points": 8.66,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 8.9,
+                        "bottom_air_points": 9.35
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 9.25,
+                        "top_air_points": 8.14,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.3,
+                        "bottom_air_points": 7.67
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.55,
+                        "top_air_points": 7.93,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 8.4,
+                        "bottom_air_points": 7.39
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.25,
+                        "top_air_points": 7.26,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.95,
+                        "bottom_air_points": 7.0
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.2,
+                        "top_air_points": 8.28,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.6,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 6.78,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 7.27
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.6,
+                        "top_air_points": 7.57,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.6,
+                        "bottom_air_points": 6.69
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.4,
+                        "top_air_points": 6.72,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.75,
+                        "bottom_air_points": 5.94
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.4,
+                        "top_air_points": 5.63,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 5.9
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.0,
+                        "top_air_points": 6.06,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.85,
+                        "bottom_air_points": 5.15
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.0,
+                        "top_air_points": 8.4,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.3,
+                        "bottom_air_points": 6.42
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.05,
+                        "top_air_points": 6.35,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.0,
+                        "bottom_air_points": 4.4
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.65,
+                        "top_air_points": 5.93,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.55,
+                        "bottom_air_points": 6.62
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.95,
+                        "top_air_points": 6.25,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 0.45,
+                        "bottom_air_points": 0.45
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.9,
+                        "top_air_points": 7.25,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.54
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.2,
+                        "top_air_points": 7.22,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.15,
+                        "bottom_air_points": 6.29
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.8,
+                        "top_air_points": 6.86,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.95,
+                        "bottom_air_points": 5.0
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.45,
+                        "top_air_points": 5.5,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 5.9
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 8.55,
+                        "top_air_points": 7.01,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 8.6,
+                        "bottom_air_points": 7.57
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 6.8,
+                        "top_air_points": 5.58,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.65,
+                        "bottom_air_points": 5.85
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.7,
+                        "top_air_points": 5.9,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 6.16
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.05,
+                        "top_air_points": 6.2,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.75,
+                        "bottom_air_points": 6.82
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.3,
+                        "top_air_points": 6.42,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 2.85,
+                        "bottom_air_points": 2.88
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.25,
+                        "top_air_points": 6.38,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.65,
+                        "bottom_air_points": 5.71
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.99,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.95,
+                        "bottom_air_points": 4.93
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.5,
+                        "top_air_points": 6.6,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.0,
+                        "bottom_air_points": 5.28
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.15,
+                        "top_air_points": 6.29,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.2,
+                        "bottom_air_points": 4.24
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 6.78,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.8,
+                        "bottom_air_points": 4.83
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.15,
+                        "top_air_points": 4.53,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.54
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 6.31,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.17
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.5,
+                        "top_air_points": 4.84,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 4.75,
+                        "bottom_air_points": 3.89
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 5.68,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 2.85,
+                        "bottom_air_points": 2.51
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.15,
+                        "top_air_points": 8.56,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.9,
+                        "bottom_air_points": 4.9
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.3,
+                        "bottom_air_points": 3.78
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 9.05,
+                        "top_air_points": 7.96,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 4.44
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.6,
+                        "top_air_points": 4.93,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 4.3
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.6,
+                        "top_air_points": 4.05,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 2.55,
+                        "bottom_air_points": 1.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 1.0,
+                        "top_air_points": 0.88,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.35,
+                        "bottom_air_points": 5.59
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 5.5,
+                        "bottom_air_trick": "bL",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 1.0,
+                        "bottom_air_points": 0.71
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.85,
+                        "top_air_points": 5.15,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.35,
+                        "bottom_air_points": 5.4
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 3.5,
+                        "top_air_points": 3.54,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 7.1,
+                        "bottom_air_points": 5.04
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.25,
+                        "top_air_points": 4.62,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.6,
+                        "bottom_air_points": 2.56
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.95,
+                        "top_air_points": 7.0,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 6.4,
+                        "top_air_points": 7.68,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.4,
+                        "top_air_points": 5.63,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.0,
+                        "bottom_air_points": 3.55
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.15,
+                        "top_air_points": 8.56,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.9,
+                        "bottom_air_points": 8.99
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 6.51,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.45,
+                        "bottom_air_points": 7.52
+                    },
+                    {
+                        "top_air_trick": "10oG",
+                        "top_air_coefficient": 1.2,
+                        "top_air_execution": 7.3,
+                        "top_air_points": 8.76,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.35,
+                        "bottom_air_points": 6.67
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.95,
+                        "top_air_points": 7.3,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.0,
+                        "bottom_air_points": 8.08
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.05,
+                        "top_air_points": 5.32,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.15,
+                        "bottom_air_points": 7.22
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.1,
+                        "top_air_points": 6.41,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.55,
+                        "bottom_air_points": 5.83
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.55,
+                        "top_air_points": 7.52,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 8.0,
+                        "bottom_air_points": 7.04
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.1,
+                        "top_air_points": 6.41,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 6.75,
+                        "bottom_air_points": 7.09
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.55,
+                        "top_air_points": 6.88,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 6.34
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 6.78,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.8,
+                        "bottom_air_points": 6.4
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.2,
+                        "top_air_points": 7.56,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 6.34
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.0,
+                        "top_air_points": 6.3,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.75,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.05,
+                        "top_air_points": 6.2,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.65,
+                        "bottom_air_points": 5.71
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.45,
+                        "top_air_points": 7.82,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.95,
+                        "bottom_air_points": 4.22
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.4,
+                        "top_air_points": 6.51,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.85,
+                        "bottom_air_points": 5.15
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.35,
+                        "top_air_points": 4.71,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 8.15,
+                        "bottom_air_points": 6.68
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 8.2,
+                        "top_air_points": 6.72,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.65,
+                        "bottom_air_points": 5.85
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.0,
+                        "top_air_points": 7.04,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.4,
+                        "bottom_air_points": 5.45
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.2,
+                        "top_air_points": 6.34,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.75,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.4,
+                        "top_air_points": 7.39,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.25,
+                        "bottom_air_points": 5.5
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.5,
+                        "top_air_points": 5.72,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.5,
+                        "bottom_air_points": 5.55
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 6.31,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.35,
+                        "bottom_air_points": 2.95
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 6.77,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 5.37
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.35,
+                        "top_air_points": 6.47,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.15,
+                        "bottom_air_points": 3.66
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.25,
+                        "top_air_points": 6.38,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.05,
+                        "bottom_air_points": 5.32
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.15,
+                        "top_air_points": 6.29,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 5.37
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 7.75,
+                        "top_air_points": 7.83,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.9,
+                        "bottom_air_points": 4.31
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.05,
+                        "top_air_points": 2.68,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 5.9,
+                        "bottom_air_points": 6.2
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.85,
+                        "top_air_points": 7.19,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.05,
+                        "bottom_air_points": 5.1
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.85,
+                        "top_air_points": 5.15,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.5,
+                        "bottom_air_points": 3.54
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 5.46,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.7,
+                        "bottom_air_points": 3.26
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.25,
+                        "top_air_points": 6.38,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.35,
+                        "bottom_air_points": 3.38
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.65,
+                        "top_air_points": 6.73,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.55,
+                        "bottom_air_points": 5.76
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.9,
+                        "top_air_points": 6.07,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.7,
+                        "bottom_air_points": 5.76
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.15,
+                        "top_air_points": 5.41,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.7,
+                        "bottom_air_points": 5.02
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.65,
+                        "top_air_points": 4.09,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.55,
+                        "bottom_air_points": 3.94
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.4,
+                        "top_air_points": 6.51,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.45,
+                        "bottom_air_points": 4.49
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 3.3,
+                        "top_air_points": 3.46,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 4.45,
+                        "bottom_air_points": 4.67
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.35,
+                        "top_air_points": 5.59,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 3.2,
+                        "bottom_air_points": 3.23
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.5,
+                        "top_air_points": 6.57,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.65,
+                        "bottom_air_points": 2.59
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.6,
+                        "top_air_points": 4.05,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 3.85,
+                        "bottom_air_points": 3.39
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 6.6,
+                        "top_air_points": 5.41,
+                        "bottom_air_trick": "bL",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.0,
+                        "bottom_air_points": 2.13
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.85,
+                        "top_air_points": 4.27,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 5.01
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.55,
+                        "top_air_points": 4.0,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.35,
+                        "bottom_air_points": 6.03
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 4.75,
+                        "top_air_points": 3.89,
+                        "bottom_air_trick": "bT",
+                        "bottom_air_coefficient": 0.68,
+                        "bottom_air_execution": 2.85,
+                        "bottom_air_points": 1.94
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.15,
+                        "top_air_points": 2.77,
+                        "bottom_air_trick": "lG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 6.55,
+                        "bottom_air_points": 5.37
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.45,
+                        "top_air_points": 5.68,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.1,
+                        "top_air_points": 5.37,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.3,
+                        "top_air_points": 6.42,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 3.05,
+                        "bottom_air_points": 3.2
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.65,
+                        "top_air_points": 6.72,
+                        "bottom_air_trick": "bL",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.3,
+                        "bottom_air_points": 2.34
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 7.5,
+                        "top_air_points": 7.88,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 8.85,
+                        "bottom_air_points": 8.94
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.25,
+                        "top_air_points": 8.33,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.7,
+                        "bottom_air_points": 6.78
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.0,
+                        "top_air_points": 6.3,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.05,
+                        "bottom_air_points": 7.4
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.8,
+                        "top_air_points": 6.87,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 4.0,
+                        "bottom_air_points": 4.2
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 5.4,
+                        "top_air_points": 5.67,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.45,
+                        "bottom_air_points": 6.51
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 6.25,
+                        "top_air_points": 6.56,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 7.85,
+                        "bottom_air_points": 7.93
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 8.05,
+                        "top_air_points": 8.13,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.8,
+                        "bottom_air_points": 6.86
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.4,
+                        "top_air_points": 7.39,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 5.75,
+                        "bottom_air_points": 5.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 8.4,
+                        "top_air_points": 7.39,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.2,
+                        "bottom_air_points": 5.46
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.8,
+                        "top_air_points": 5.98,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.65,
+                        "bottom_air_points": 4.7
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 8.15,
+                        "top_air_points": 8.56,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.35,
+                        "bottom_air_points": 2.38
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.85,
+                        "top_air_points": 5.15,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 4.5,
+                        "bottom_air_points": 3.69
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 8.0,
+                        "top_air_points": 6.56,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.55,
+                        "bottom_air_points": 4.88
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 3.0,
+                        "top_air_points": 3.15,
+                        "bottom_air_trick": "bL",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 4.25,
+                        "bottom_air_points": 3.02
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 6.26,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.7,
+                        "bottom_air_points": 5.02
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.15,
+                        "top_air_points": 5.41,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.8,
+                        "bottom_air_points": 5.1
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.35,
+                        "top_air_points": 5.59,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.55,
+                        "bottom_air_points": 6.62
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.15,
+                        "top_air_points": 5.41,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.0,
+                        "bottom_air_points": 2.13
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.35,
+                        "top_air_points": 6.47,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 4.33
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 6.5,
+                        "top_air_points": 6.57,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 4.8,
+                        "bottom_air_points": 3.41
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 7.2,
+                        "bottom_air_points": 7.56
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.85,
+                        "top_air_points": 5.15,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.54
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.6,
+                        "top_air_points": 4.93,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.8,
+                        "bottom_air_points": 5.1
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.6,
+                        "top_air_points": 4.05,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.0,
+                        "bottom_air_points": 3.52
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 4.95,
+                        "top_air_points": 5.0,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 6.3,
+                        "bottom_air_points": 5.17
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 5.65,
+                        "top_air_points": 5.71,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.25,
+                        "bottom_air_points": 4.62
+                    },
+                    {
+                        "top_air_trick": "7oG",
+                        "top_air_coefficient": 1.01,
+                        "top_air_execution": 4.6,
+                        "top_air_points": 4.65,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 7.95,
+                        "bottom_air_points": 6.52
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.75,
+                        "top_air_points": 5.06,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 4.7,
+                        "bottom_air_points": 3.34
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.5,
+                        "top_air_points": 4.84,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 6.1,
+                        "bottom_air_points": 4.33
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 7.7,
+                        "top_air_points": 6.78,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.15,
+                        "bottom_air_points": 2.24
+                    },
+                    {
+                        "top_air_trick": "bG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 6.2,
+                        "top_air_points": 5.08,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.4,
+                        "bottom_air_points": 4.75
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.7,
+                        "top_air_points": 5.02,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.1,
+                        "bottom_air_points": 4.49
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.25,
+                        "top_air_points": 3.74,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 4.65,
+                        "bottom_air_points": 3.81
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.85,
+                        "top_air_points": 3.39,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.95,
+                        "bottom_air_points": 4.36
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.6,
+                        "top_air_points": 5.81,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 3.6,
+                        "bottom_air_points": 2.56
+                    },
+                    {
+                        "top_air_trick": "lG",
+                        "top_air_coefficient": 0.82,
+                        "top_air_execution": 4.1,
+                        "top_air_points": 3.36,
+                        "bottom_air_trick": "10op",
+                        "bottom_air_coefficient": 1.05,
+                        "bottom_air_execution": 3.7,
+                        "bottom_air_points": 3.89
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.9,
+                        "bottom_air_points": 4.95
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.35,
+                        "top_air_points": 4.71,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 4.85,
+                        "bottom_air_points": 4.9
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.95,
+                        "top_air_points": 4.36,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 4.75,
+                        "bottom_air_points": 4.18
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.15,
+                        "top_air_points": 3.65,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 5.8,
+                        "bottom_air_points": 5.1
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 5.8,
+                        "top_air_points": 5.1,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.25,
+                        "bottom_air_points": 3.73
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 6.35,
+                        "top_air_points": 5.59,
+                        "bottom_air_trick": "bp",
+                        "bottom_air_coefficient": 0.71,
+                        "bottom_air_execution": 5.0,
+                        "bottom_air_points": 3.55
+                    },
+                    {
+                        "top_air_trick": "bdF",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 1.5,
+                        "top_air_points": 1.58,
+                        "bottom_air_trick": "7oG",
+                        "bottom_air_coefficient": 1.01,
+                        "bottom_air_execution": 6.15,
+                        "bottom_air_points": 6.21
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 1.1,
+                        "top_air_points": 0.97,
+                        "bottom_air_trick": "7op",
+                        "bottom_air_coefficient": 0.88,
+                        "bottom_air_execution": 7.0,
+                        "bottom_air_points": 6.16
+                    },
+                    {
+                        "top_air_trick": "bF",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 4.15,
+                        "top_air_points": 3.65,
+                        "bottom_air_trick": "bG",
+                        "bottom_air_coefficient": 0.82,
+                        "bottom_air_execution": 8.0,
+                        "bottom_air_points": 6.56
+                    },
+                    {
+                        "top_air_trick": "7op",
+                        "top_air_coefficient": 0.88,
+                        "top_air_execution": 3.75,
+                        "top_air_points": 3.3,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "10op",
+                        "top_air_coefficient": 1.05,
+                        "top_air_execution": 4.25,
+                        "top_air_points": 4.46,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": 0.0,
+                        "bottom_air_execution": 0.0,
+                        "bottom_air_points": 0.0
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    },
+                    {
+                        "top_air_trick": "NJ",
+                        "top_air_coefficient": null,
+                        "top_air_execution": null,
+                        "top_air_points": null,
+                        "bottom_air_trick": "NJ",
+                        "bottom_air_coefficient": null,
+                        "bottom_air_execution": null,
+                        "bottom_air_points": null
+                    }
+                ]
+            }
+        }
+    }
+}

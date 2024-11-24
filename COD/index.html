@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistiques d'utilisation des sauts</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COD</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="d3.v7.js"></script>
     <script src="PieChartGenerator.js"></script>
-</head>
+    <script src="BarChartGenerator.js"></script>
+  </head>
 
-<body>
-    <h1>Statistiques d'utilisation des sauts</h1>
+  <body>
+    <h1>Statistiques des sauts</h1>
     <div class="charts-container">
-        <div class="chart-wrapper">
-            <h2>Saut du haut</h2>
-            <div id="topTricksPie"></div>
-        </div>
-        <div class="chart-wrapper">
-            <h2>Saut du bas</h2>
-            <div id="bottomTricksPie"></div>
-        </div>
+      <div class="chart-wrapper">
+        <h2>Saut du haut</h2>
+        <div id="topTricksPie"></div>
+      </div>
+      <div class="chart-wrapper">
+        <h2>Saut du bas</h2>
+        <div id="bottomTricksPie"></div>
+      </div>
+      <div class="chart-wrapper">
+        <h2>Top des sauts du haut en score (META)</h2>
+        <div id="topBarChart"></div>
+      </div>
+      <div class="chart-wrapper">
+        <h2>Top des sauts du bas en score (META)</h2>
+        <div id="bottomBarChart"></div>
+      </div>
     </div>
 
-    <script src="TopTrickUsagePie.js"></script>
-    <script src="BottomTrickUsagePie.js"></script>
-</body>
-
+    <script src="TrickUsagePie.js"></script>
+    <script src="BestJumpChart.js"></script>
+  </body>
 </html>

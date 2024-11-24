@@ -69,3 +69,9 @@ svg {
   font-size: 12px; /* Adjust the font size as needed */
   fill: #333; /* Optional: Set the text color */
 }
+
+.bar-legend-text {
+  font-weight: bold;
+  font-size: 12px; /* Adjust the font size as needed */
+  fill: #333; /* Optional: Set the text color */
+}

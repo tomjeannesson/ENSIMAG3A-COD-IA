@@ -51,7 +51,7 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .attr("transform", `translate(${radius + margin * 2},${-radius})`)
 
   const legendRectSize = 11
-  const legendSpacing = 4
+  const legendSpacing = 6
 
   legend
     .selectAll("rect")
@@ -105,6 +105,7 @@ function getCssVariableValue(variableName) {
 }
 
 // Retrieve values
-const widthPie = parseInt(getCssVariableValue('--chart-width'), 10);
-const heightPie = parseInt(getCssVariableValue('--chart-height'), 10);
-const marginPie = parseInt(getCssVariableValue('--chart-margin'), 10);
+const widthPie = parseInt(getCssVariableValue('--chart-width'), 10)
+const heightPie = parseInt(getCssVariableValue('--chart-height'), 10)
+const marginPie = parseInt(getCssVariableValue('--chart-margin'), 10)
+const otherSize = 10

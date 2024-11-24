@@ -50,7 +50,7 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .append("g")
     .attr("transform", `translate(${radius + margin * 2},${-radius})`)
 
-  const legendRectSize = 18
+  const legendRectSize = 11
   const legendSpacing = 4
 
   legend
@@ -75,7 +75,7 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
       (d, i) => i * (legendRectSize + legendSpacing) + legendRectSize / 2
     )
     .attr("dy", ".35em")
-    .style("font-size", "12px")
+    .attr("class", "pie-legend-text") // Assign class here
     .text((d) => `${d.key}: ${d.value}`)
 }
 

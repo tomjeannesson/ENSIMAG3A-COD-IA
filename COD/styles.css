@@ -1,35 +1,94 @@
+:root {
+    --chart-width: 300px;
+    --chart-height: 300px;
+    --chart-margin: 20px;
+}
+
+
+/* Style général du corps de la page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Style du titre principal */
 h1 {
-    margin: 20px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #444;
 }
 
-#chart {
+/* Conteneur des graphiques */
+.charts-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
 }
 
-.bar {
-    fill: steelblue;
+/* Style for each chart */
+.chart-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: var(--chart-width); /* Increased width to accommodate legend */
+    height: var(--chart-height); /* Set a fixed height */
+}  
+
+/* Style des sous-titres des graphiques */
+.chart-wrapper h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10px;
 }
 
-.bar:hover {
-    fill: orange;
+/* Style pour le conteneur SVG */
+.chart-wrapper div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Style pour le SVG */
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style de la légende */
+.legend {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.legend rect {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.legend text {
+    vertical-align: middle;
+}
+
+/* Style des axes */
 .axis path,
 .axis line {
     fill: none;
+    stroke: #ccc;
     shape-rendering: crispEdges;
 }
 
 .axis text {
     font-size: 12px;
+    fill: #666;
 }

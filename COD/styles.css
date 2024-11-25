@@ -95,6 +95,17 @@ h1 {
   /* Set a fixed height */
 }
 
+.chart-wrapper-career {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: var(--chart-width);
+  /* Increased width to accommodate legend */
+  height: var(--chart-height);
+  /* Set a fixed height */
+}
+
 .scatterPlot {
   width: var(--scatterPlot-width);
   height: var(--scatterPlot-height);

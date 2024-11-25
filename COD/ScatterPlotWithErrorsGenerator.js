@@ -9,7 +9,7 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
     // Create SVG container with a background
     const svg = d3.select(`#${id}`)
         .append("svg")
-        .attr("width", "100%")
+        .attr("width", 800)
         .attr("height", 500)
         .attr("viewbox", [0, 0, width, height])
         .append("g")
@@ -19,7 +19,7 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
     svg.append("rect")
         .attr("width", width)
         .attr("height", height)
-        .attr("fill", "#f8f9fa")
+        .attr("fill", "#fff")
         .attr("rx", 8);
 
     // Define scales with padding

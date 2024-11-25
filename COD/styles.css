@@ -61,57 +61,43 @@ h1 {
 }
 
 .content {
-  padding: 20px;
+  padding: 30px;
+  padding-top: 0;
   overflow-y: auto;
   background-color: #f4f4f4;
 }
 
 /* Conteneur des graphiques */
 .charts-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
   gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* Style for each chart */
 .chart-wrapper {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  width: var(--chart-width);
-  /* Increased width to accommodate legend */
-  height: var(--chart-height);
-  /* Set a fixed height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.scatterPlot {
-  width: var(--scatterPlot-width);
-  height: var(--scatterPlot-height);
-}
-
-/* Style des sous-titres des graphiques */
 .chart-wrapper h2 {
   font-size: 18px;
-  font-weight: 400;
   font-weight: bold;
   color: #555;
-  margin-bottom: 0px;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Style pour le conteneur SVG */
-.chart-wrapper div {
+.chart-wrapper>div {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Style pour le SVG */
-svg {
-  max-width: 100%;
-  height: auto;
 }
 
 .pie-legend-text {

@@ -65,7 +65,7 @@ fetch("raw_jump_data.json")
 
             // Chart dimensions and margins
             const containerWidth = 800;
-            const containerHeight = 300;
+            const containerHeight = 500;
             const margin = { top: 20, right: 30, bottom: 50, left: 50 };
 
             // Generate the scatter plot with errors for top air trick

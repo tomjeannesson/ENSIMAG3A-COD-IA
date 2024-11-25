@@ -60,9 +60,8 @@ h1 {
   color: #007bff;
 }
 
-.content {
-  padding: 30px;
-  padding-top: 0;
+.content-jump {
+  padding: 20px;
   overflow-y: auto;
   background-color: #f4f4f4;
 }
@@ -114,4 +113,32 @@ h1 {
   /* Adjust the font size as needed */
   fill: #333;
   /* Optional: Set the text color */
+}
+
+/* Conteneur principal pour les sélections */
+.parameters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Styles pour les sélecteurs */
+.parameters select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+/* Effet de survol pour les sélecteurs */
+.parameters select:hover {
+  border-color: #888;
+}
+
+/* Styles pour les options des sélecteurs */
+.parameters select option {
+  padding: 10px
 }

@@ -7,6 +7,7 @@
   <title>COD</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="d3.v7.js"></script>
+  <script src="script.js"></script>
   <script src="PieChartGenerator.js"></script>
   <script src="BarChartGenerator.js"></script>
   <script src="ScatterPlotWithErrorsGenerator.js"></script>
@@ -16,28 +17,25 @@
   <div class="navbar" id="navbar">
     <label class="navbar-title">Challenge Open Data</label>
     <div class="navbar-links">
-      <a href="#index.html">Jumps</a>
-      <a href="#">Athlete</a>
-      <a href="#">Report (fr)</a>
+      <a href="" class="navbar-jumps">Jumps</a>
+      <a href="" class="navbar-athlete">Athlete</a>
+      <a href="" class="navbar-report">Report (fr)</a>
     </div>
   </div>
 
-  <div class="content" id="content">
+  <div class="content-jump" id="content">
     <div class="parameters">
-      <h1>Statistiques des sauts</h1>
-      <select id="selectGender" class="selectBox">
-        <option value="">Gender</option>
-      </select>
-      <select id="selectCircuit" class="selectBox">
-        <option value="">Circuit</option>
-      </select>
-      <select id="selectYear" class="selectBox">
-        <option value="">Year</option>
-      </select>
-      <select id="selectRun" class="selectBox">
-        <option value="">Run</option>
-      </select>
+      <div id="gender-selection">
+      </div>
+      <div id="circuit-selection">
+      </div>
+      <div id="year-selection">
+      </div>
+      <div id="run-selection">
+      </div>
     </div>
+
+
 
     <div class="charts-container">
 
@@ -70,9 +68,41 @@
 
   </div>
 
+  <div class="content-career" id="content" style="display: none;">
+    <div class="parameters">
+      <h1>Career</h1>
+      <div>
+
+        <label>
+          Season
+        </label>
+        <select id="selectYearCareer" class="selectBox">
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+        <label>
+          Athlete
+        </label>
+        <select id="selectAthleteCareer" class="selectBox">
+        </select>
+      </div>
+    </div>
+    <div class="charts-container">
+      <div class="chart-wrapper" style="width: fit-content; height:fit-content">
+        <h2>Results</h2>
+        <div id="careerResults"></div>
+      </div>
+
+    </div>
+  </div>
+
+
   <script src="GeneralJumpPlot.js"></script>
   <script src="TrickUsagePie.js"></script>
   <script src="BestJumpChart.js"></script>
+  <script src="CareerLoader.js"></script>
+  <script src="DropDownGenerator.js"></script>
 </body>
 
 </html>

@@ -9,13 +9,14 @@
   <script src="d3.v7.js"></script>
   <script src="PieChartGenerator.js"></script>
   <script src="BarChartGenerator.js"></script>
+  <script src="ScatterPlotWithErrorsGenerator.js"></script>
 </head>
 
 <body>
   <div class="navbar" id="navbar">
     <label class="navbar-title">Challenge Open Data</label>
     <div class="navbar-links">
-      <a href="#">Jumps</a>
+      <a href="#index.html">Jumps</a>
       <a href="#">Athlete</a>
       <a href="#">Report (fr)</a>
     </div>
@@ -56,9 +57,20 @@
         <div id="bottomBarChart"></div>
       </div>
     </div>
+
+    <div class="charts-container">
+      <div class="chart-wrapper scatterPlot">
+        <h2>Saut du haut</h2>
+        <div id="topAirScatterPlotContainer"></div>
+      </div>
+      <div class="chart-wrapper scatterPlot">
+        <h2>Saut du bas</h2>
+        <div id="bottomAirScatterPlotContainer"></div>
+      </div>
+    </div>
   </div>
 
-
+  <script src="GeneralJumpPlot.js"></script>
   <script src="TrickUsagePie.js"></script>
   <script src="BestJumpChart.js"></script>
 </body>

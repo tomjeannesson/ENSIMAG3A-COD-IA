@@ -2,6 +2,8 @@
   --chart-width: 300px;
   --chart-height: 280px;
   --chart-margin: 20px;
+  --scatterPlot-width: 800px;
+  --scatterPlot-height: 320px;
 }
 
 /* Style général du corps de la page */
@@ -83,6 +85,11 @@ h1 {
   /* Increased width to accommodate legend */
   height: var(--chart-height);
   /* Set a fixed height */
+}
+
+.scatterPlot {
+  width: var(--scatterPlot-width);
+  height: var(--scatterPlot-height);
 }
 
 /* Style des sous-titres des graphiques */

@@ -10,7 +10,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   color: #333;
 }
 
@@ -21,6 +21,47 @@ h1 {
   font-weight: 300;
   font-weight: bold;
   color: #444;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
 }
 
 /* Conteneur des graphiques */
@@ -38,8 +79,10 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  width: var(--chart-width); /* Increased width to accommodate legend */
-  height: var(--chart-height); /* Set a fixed height */
+  width: var(--chart-width);
+  /* Increased width to accommodate legend */
+  height: var(--chart-height);
+  /* Set a fixed height */
 }
 
 /* Style des sous-titres des graphiques */
@@ -66,12 +109,16 @@ svg {
 
 .pie-legend-text {
   font-weight: bold;
-  font-size: 12px; /* Adjust the font size as needed */
-  fill: #333; /* Optional: Set the text color */
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  fill: #333;
+  /* Optional: Set the text color */
 }
 
 .bar-legend-text {
   font-weight: bold;
-  font-size: 12px; /* Adjust the font size as needed */
-  fill: #333; /* Optional: Set the text color */
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  fill: #333;
+  /* Optional: Set the text color */
 }

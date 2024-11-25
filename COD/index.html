@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COD</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="d3.v7.js"></script>
-    <script src="PieChartGenerator.js"></script>
-    <script src="BarChartGenerator.js"></script>
-  </head>
 
-  <body>
-    <h1>Statistiques des sauts</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COD</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="d3.v7.js"></script>
+  <script src="PieChartGenerator.js"></script>
+  <script src="BarChartGenerator.js"></script>
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <label class="navbar-title">Challenge Open Data</label>
+    <div class="navbar-links">
+      <a href="#">Jumps</a>
+      <a href="#">Athlete</a>
+      <a href="#">Report (fr)</a>
+    </div>
+  </div>
+
+  <div class="content" id="content">
+    <div class="parameters">
+      <h1>Statistiques des sauts</h1>
+      <select id="selectGender" class="selectBox">
+        <option value="">Gender</option>
+      </select>
+      <select id="selectCircuit" class="selectBox">
+        <option value="">Circuit</option>
+      </select>
+      <select id="selectYear" class="selectBox">
+        <option value="">Year</option>
+      </select>
+      <select id="selectRun" class="selectBox">
+        <option value="">Run</option>
+      </select>
+    </div>
+
     <div class="charts-container">
       <div class="chart-wrapper">
         <h2>Saut du haut</h2>
@@ -30,8 +56,11 @@
         <div id="bottomBarChart"></div>
       </div>
     </div>
+  </div>
 
-    <script src="TrickUsagePie.js"></script>
-    <script src="BestJumpChart.js"></script>
-  </body>
+
+  <script src="TrickUsagePie.js"></script>
+  <script src="BestJumpChart.js"></script>
+</body>
+
 </html>

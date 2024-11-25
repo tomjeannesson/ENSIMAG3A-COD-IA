@@ -75,6 +75,14 @@ h1 {
   padding: 20px;
 }
 
+.charts-container-career {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
 /* Style for each chart */
 .chart-wrapper {
   background-color: #fff;

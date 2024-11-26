@@ -6,7 +6,7 @@
  * @param {string|null} selectedCircuit - The selected circuit filter (e.g., 'WC', 'EC') or null for all.
  * @param {string|null} selectedGender - The selected gender filter ('M' or 'F') or null for all.
  * @param {string|null} selectedYear - The selected year filter (e.g., '2024') or null for all.
- * @param {string|null} selectedRun - The selected run filter ('leaderboard' or 'qualifier') or null for all.
+ * @param {string|null} selectedRun - The selected run filter ('leaderboard' or 'qualification') or null for all.
  */
 function collectEntries(
   node,
@@ -46,12 +46,12 @@ function collectEntries(
                       accumulator.push(...yearNode.leaderboard)
                     }
 
-                    // Collect 'qualifier' entries
+                    // Collect 'qualification' entries
                     if (
-                      (selectedRun === null || selectedRun === "qualifier") &&
-                      Array.isArray(yearNode.qualifier)
+                      (selectedRun === null || selectedRun === "qualification") &&
+                      Array.isArray(yearNode.qualification)
                     ) {
-                      accumulator.push(...yearNode.qualifier)
+                      accumulator.push(...yearNode.qualification)
                     }
                   }
                 }

@@ -10,8 +10,8 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
   const svg = d3
     .select(`#${id}`)
     .append("svg")
-    .attr("width", "100%")
-    .attr("height", "100%")
+    .attr("width", containerWidth)
+    .attr("height", containerHeight)
     .attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`)
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`)
@@ -41,7 +41,9 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
     .attr("fill", "#e6f2ff")
 
   // Charger les données GeoJSON personnalisées
-  d3.json("custom.geo.json").then((geojson) => {
+  d3.json(
+    "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
+  ).then((geojson) => {
     // Dessiner la carte
     svg
       .selectAll("path")
@@ -50,14 +52,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
       .append("path")
       .attr("d", path)
       .attr("fill", (d) => {
-        // Vérifiez le nom de la propriété du code pays dans votre fichier personnalisé
-        // Cela peut varier selon la source de votre GeoJSON
-        const count =
-          dataMap.get(
-            d.properties.iso_a3 ||
-              d.properties.ISO_A3 ||
-              d.properties.countryCode
-          ) || 0
+        const count = dataMap.get(d.id) || 0
         return count > 0 ? colorScale(count) : "#f0f0f0"
       })
       .attr("stroke", "#a0a0a0")
@@ -68,12 +63,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
         d3.select(this).attr("stroke", "#333").attr("stroke-width", 2)
 
         // Utilisez le bon nom de propriété pour le nom du pays
-        const count =
-          dataMap.get(
-            d.properties.iso_a3 ||
-              d.properties.ISO_A3 ||
-              d.properties.countryCode
-          ) || 0
+        const count = dataMap.get(d.id) || 0
 
         tooltip
           .style("visibility", "visible")

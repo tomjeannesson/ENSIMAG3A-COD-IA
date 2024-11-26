@@ -60,6 +60,11 @@ h1 {
   color: #007bff;
 }
 
+.navbar-links a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
 .content-jump {
   padding: 15px;
   padding-top: 5px;
@@ -162,4 +167,35 @@ h1 {
 /* Styles pour les options des sélecteurs */
 .parameters select option {
   padding: 10px
+}
+
+
+
+/* Style pour les paragraphes */
+.paragraphe {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #34495e;
+}
+
+.paragraphe h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.paragraphe p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+/* Ajouter un espacement entre les paragraphes */
+.paragraphe+.paragraphe {
+  margin-top: 20px;
 }

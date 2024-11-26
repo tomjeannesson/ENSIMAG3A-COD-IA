@@ -28,17 +28,15 @@ function generateDropdowns(json) {
     const select = document.createElement("select")
     select.id = id
 
-    // Add a default option
-    const defaultOption = document.createElement("option")
-    defaultOption.textContent = defaultText
-    defaultOption.value = ""
-    select.appendChild(defaultOption)
-
     // Add dropdown options
-    options.forEach((option) => {
+    options.forEach((option, index) => {
       const opt = document.createElement("option")
       opt.value = option
       opt.textContent = option
+      if (index === 0) {
+        opt.selected = true // Set the first option as selected
+        onChangeCallback(option) // Initialize the corresponding filter variable
+      }
       select.appendChild(opt)
     })
 

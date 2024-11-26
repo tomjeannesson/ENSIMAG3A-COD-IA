@@ -45,6 +45,9 @@ function generateDropdowns(json) {
     // Add event listener for changes
     select.addEventListener("change", (event) => {
       onChangeCallback(event.target.value)
+      updatePieChart()
+      updateBarChart()
+      updateGeneralJumpChart()
     })
 
     return select

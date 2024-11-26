@@ -9,8 +9,9 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
     // Create SVG container with a background
     const svg = d3.select(`#${id}`)
         .append("svg")
-        .attr("width", containerWidth)
-        .attr("height", containerHeight)
+        .attr("width", 800)
+        .attr("height", 500)
+        .attr("viewbox", [0, 0, width, height])
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -18,14 +19,14 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
     svg.append("rect")
         .attr("width", width)
         .attr("height", height)
-        .attr("fill", "#f8f9fa")
+        .attr("fill", "#fff")
         .attr("rx", 8);
 
     // Define scales with padding
     const x = d3.scaleBand()
         .domain(sortedData.map(d => d.saut))
         .range([0, width])
-        .padding(0.5);
+        .padding(0.4);
 
     const y = d3.scaleLinear()
         .domain([0, d3.max(sortedData, d => d.max) * 1.1]) // Add 10% padding at the top
@@ -126,7 +127,7 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
         .attr("y", d => y(d.mean) - 15)
         .attr("text-anchor", "middle")
         .attr("fill", "#495057")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .attr("font-weight", "bold")
         .attr("opacity", 0)
         .text(d => d.mean.toFixed(1))
@@ -145,7 +146,7 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
         .call(g => g.selectAll(".tick line").attr("stroke", "#adb5bd"))
         .call(g => g.selectAll(".tick text")
             .attr("fill", "#495057")
-            .attr("font-size", "12px"));
+            .attr("font-size", "14px"));
 
     // X-axis
     svg.append("g")
@@ -156,7 +157,7 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
         .call(g => g.selectAll(".tick line").remove())
         .call(g => g.selectAll(".tick text")
             .attr("fill", "#495057")
-            .attr("font-size", "12px")
+            .attr("font-size", "14px")
             .attr("font-weight", "bold"));
 
     // Add hover tooltip
@@ -174,10 +175,12 @@ function generateScatterPlotWithErrors(containerWidth, containerHeight, margin, 
     scatterGroup.on("mouseover", function (event, d) {
         tooltip.style("visibility", "visible")
             .html(`
-                Saut: ${d.saut}<br>
-                Max: ${d.max.toFixed(1)}<br>
-                Moyenne: ${d.mean.toFixed(1)}<br>
-                Min: ${d.min.toFixed(1)}
+            <div style="text-align: center; display: flex; flex-direction: column; font-size: 16px;">
+                <strong>Saut: ${d.saut}</strong>
+                <span>Max: ${d.max.toFixed(1)}</span>
+                <span>Moyenne: ${d.mean.toFixed(1)}</span>
+                <span>Min: ${d.min.toFixed(1)}</span>
+            </div>
             `)
             .style("left", (event.pageX + 10) + "px")
             .style("top", (event.pageY - 10) + "px");

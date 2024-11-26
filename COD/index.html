@@ -20,6 +20,7 @@
     <div class="navbar-links">
       <a href="index.html?section=jumps" class="navbar-jumps active" id="jump">Jumps</a>
       <a href="index.html?section=athlete" class="navbar-athlete" id="athlete">Athlete</a>
+      <a href="index.html?section=general" class="navbar-general" id="general">General</a>
       <a href="report.html" class="navbar-report" id="report">Report (fr)</a>
     </div>
   </div>
@@ -30,7 +31,7 @@
         Jumps
       </h1>
       <div class="parameters" style="margin: 0 auto; display: flex; gap: 10px;">
-        <div id="gender-selection" title="test"></div>
+        <div id="gender-selection"></div>
         <div id="circuit-selection"></div>
         <div id="year-selection"></div>
         <div id="run-selection"></div>
@@ -100,6 +101,26 @@
     </div>
   </div>
 
+
+  <div class="content-general" style="display: none;">
+
+    <div style="display: flex; align-items: center; position: relative; margin-bottom: 15px; padding: 0 15px;">
+      <h1 style="margin: 0; font-size: 33px; font-weight: bold; color: #333; position: absolute; left: 1;">
+        General
+      </h1>
+      <div class="parameters" style="margin: 0 auto; display: flex; gap: 10px;">
+        Need to be updated
+      </div>
+    </div>
+
+
+    <div class="charts-container-career">
+      <div class="chart-wrapper-career" style="width: fit-content; height:fit-content;">
+        <h2>Results</h2>
+        <div id="country-map"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="GeneralJumpUpdater.js"></script>
   <script src="PieChartUpdater.js"></script>

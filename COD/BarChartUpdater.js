@@ -18,10 +18,10 @@ function updateBarChart() {
         selectedRun
       )
 
-      const containerWidth = 300
+      const containerWidth = 380
       const containerHeight = 250
       const margin = { top: 20, right: 30, bottom: 30, left: 40 }
-      
+
       if (allEntries.length > 0) {
         const { topSixTopAir, topSixBottomAir } = processData(allEntries)
 

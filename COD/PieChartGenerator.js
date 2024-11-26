@@ -20,17 +20,9 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .append("g")
     .attr("transform", `translate(${radius + margin},${containerHeight / 2})`);
 
-  // Define an extended color palette
-  const extendedColorPalette = [
-    ...d3.schemeTableau10, // Use Tableau 10 as a base
-    "#a0522d", "#ff69b4", "#1e90ff", "#32cd32", "#ff4500", "#8a2be2", // Additional colors
-    "#deb887", "#00ced1", "#dc143c", "#7fff00", "#9932cc", "#ffa07a" // Add more if needed
-  ];
 
-  const color = d3
-    .scaleOrdinal()
-    .domain(dataReady.map((d) => d.key))
-    .range(extendedColorPalette);
+  const color = (key) => getTrickColor(key);
+
 
   // Generate the pie chart
   const pie = d3.pie().value((d) => d.value);

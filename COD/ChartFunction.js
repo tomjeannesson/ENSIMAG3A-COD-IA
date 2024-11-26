@@ -180,8 +180,8 @@ function processData_minmaxmean(data) {
   }));
 
   // Sort the data by mean score in descending order
-  const sortedTopAirData = topAirData.sort((a, b) => b.mean - a.mean);
-  const sortedBottomAirData = bottomAirData.sort((a, b) => b.mean - a.mean);
+  const sortedTopAirData = topAirData.sort((a, b) => b.mean - a.mean).slice(0, 15);
+  const sortedBottomAirData = bottomAirData.sort((a, b) => b.mean - a.mean).slice(0, 15);
 
   return {
     sortedTopAirData, sortedBottomAirData

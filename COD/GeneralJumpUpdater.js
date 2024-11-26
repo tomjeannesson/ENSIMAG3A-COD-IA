@@ -17,14 +17,14 @@ function updateGeneralJumpChart() {
         selectedYear,
         selectedRun
       )
+      // Chart dimensions and margins
+      const containerWidth = 800
+      const containerHeight = 500
+      const margin = { top: 20, right: 30, bottom: 50, left: 50 }
+      
       if (allEntries.length > 0) {
         const { sortedTopAirData, sortedBottomAirData } =
           processData_minmaxmean(allEntries)
-
-        // Chart dimensions and margins
-        const containerWidth = 800
-        const containerHeight = 500
-        const margin = { top: 20, right: 30, bottom: 50, left: 50 }
 
         // We clear charts
         d3.select("#topAirScatterPlotContainer").selectAll("svg").remove()
@@ -50,6 +50,8 @@ function updateGeneralJumpChart() {
       } else {
         d3.select("#topAirScatterPlotContainer").selectAll("svg").remove()
         d3.select("#bottomAirScatterPlotContainer").selectAll("svg").remove()
+        generateNoDataGraph(containerWidth, containerHeight, "bottomAirScatterPlotContainer")
+        generateNoDataGraph(containerWidth, containerHeight, "topAirScatterPlotContainer")
       }
     })
     .catch((error) => {

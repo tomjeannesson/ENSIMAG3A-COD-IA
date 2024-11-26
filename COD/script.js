@@ -1,13 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document
-    .querySelector(".navbar-athlete")
-    .addEventListener("click", function (event) {
-      event.preventDefault() // Prevent default behavior of the <a> tag
-      document.querySelectorAll(".content-jump").forEach((element) => {
-        element.style.display = "none" // Change CSS property
-      })
-      document.querySelectorAll(".content-career").forEach((element) => {
-        element.style.display = "block" // Change CSS property
-      })
-    })
-})
+  manageLoading()
+});
+
+function manageLoading() {
+  // Récupérer les paramètres de l'URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const section = urlParams.get("section"); // Ex: 'jumps', 'athlete'
+
+  // Activer la section correspondante
+  if (section === "jumps") {
+    document.querySelectorAll(".content-jump").forEach(element => {
+      element.style.display = "block";
+    });
+    document.querySelectorAll(".content-career").forEach(element => {
+      element.style.display = "none";
+    });
+
+    // Ajouter la classe active à "Jumps"
+    document.querySelector(".navbar-jumps").classList.add("active");
+  } else if (section === "athlete") {
+    document.querySelectorAll(".content-career").forEach(element => {
+      element.style.display = "block";
+    });
+    document.querySelectorAll(".content-jump").forEach(element => {
+      element.style.display = "none";
+    });
+
+    // Ajouter la classe active à "Athlete"
+    document.querySelector(".navbar-athlete").classList.add("active");
+  }
+
+  // Assurez-vous de supprimer la classe active des autres liens
+  document.querySelectorAll(".navbar-links a").forEach(link => {
+    if (!link.classList.contains(`navbar-${section}`)) {
+      link.classList.remove("active");
+    }
+  });
+}
+

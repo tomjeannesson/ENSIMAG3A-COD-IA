@@ -18,9 +18,9 @@
   <div class="navbar" id="navbar">
     <label class="navbar-title">Challenge Open Data</label>
     <div class="navbar-links">
-      <a href="" class="navbar-jumps">Jumps</a>
-      <a href="" class="navbar-athlete">Career</a>
-      <a href="" class="navbar-report">Report (fr)</a>
+      <a href="index.html?section=jumps" class="navbar-jumps active" id="jump">Jumps</a>
+      <a href="index.html?section=athlete" class="navbar-athlete" id="athlete">Athlete</a>
+      <a href="report.html" class="navbar-report" id="report">Report (fr)</a>
     </div>
   </div>
 
@@ -47,11 +47,11 @@
         <h2>Bottom Air</h2>
         <div id="bottomTricksPie"></div>
       </div>
-      <div class="chart-wrapper">
+      <div class="chart-wrapper" style="grid-column: 2; grid-row: 1;">
         <h2>Best scoring top airs</h2>
         <div id="topBarChart"></div>
       </div>
-      <div class="chart-wrapper">
+      <div class="chart-wrapper" style="grid-column: 4; grid-row: 1;">
         <h2>Best scoring bottom airs</h2>
         <div id="bottomBarChart"></div>
       </div>

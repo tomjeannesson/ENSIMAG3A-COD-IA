@@ -19,7 +19,7 @@
     <label class="navbar-title">Challenge Open Data</label>
     <div class="navbar-links">
       <a href="" class="navbar-jumps">Jumps</a>
-      <a href="" class="navbar-athlete">Athlete</a>
+      <a href="" class="navbar-athlete">Career</a>
       <a href="" class="navbar-report">Report (fr)</a>
     </div>
   </div>
@@ -39,70 +39,75 @@
 
 
     <div class="charts-container">
-
-      <div class="chart-wrapper" style="grid-column: 1; grid-row: 1;">
-        <h2>Saut du Haut</h2>
+      <div class="chart-wrapper">
+        <h2>Top Air</h2>
         <div id="topTricksPie"></div>
       </div>
-      <div class="chart-wrapper" style="grid-column: 3; grid-row: 1;">
-        <h2>Saut du Bas</h2>
+      <div class="chart-wrapper">
+        <h2>Bottom Air</h2>
         <div id="bottomTricksPie"></div>
       </div>
       <div class="chart-wrapper">
-        <h2>Top des sauts du haut en score</h2>
+        <h2>Best scoring top airs</h2>
         <div id="topBarChart"></div>
       </div>
       <div class="chart-wrapper">
-        <h2>Top des sauts du bas en score</h2>
+        <h2>Best scoring bottom airs</h2>
         <div id="bottomBarChart"></div>
       </div>
 
-      <div class="chart-wrapper" style="grid-column: 1 / 3; grid-row: 2;  overflow-x: auto;">
-        <h2>Saut du Haut avec min/max</h2>
-        <div id="topAirScatterPlotContainer"></div>
-      </div>
-      <div class="chart-wrapper" style="grid-column: 3 / 5; grid-row: 2;">
-        <h2>Saut du Bas avec min/max</h2>
-        <div id="bottomAirScatterPlotContainer"></div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="content-career" id="content" style="display: none;">
-    <div class="">
-      <h1>Career</h1>
-      <div>
-        <label>
-          Season
-        </label>
-        <select id="selectYearCareer" class="selectBox">
-          <option value="2024">2024</option>
-          <option value="2023">2023</option>
-          <option value="2022">2022</option>
-        </select>
-        <label>
-          Athlete
-        </label>
-        <select id="selectAthleteCareer" class="selectBox">
-        </select>
+      <div class="charts-container">
+        <div class="chart-wrapper scatterPlot">
+          <h2>Top air</h2>
+          <div id="topAirScatterPlotContainer"></div>
+        </div>
+        <div class="chart-wrapper scatterPlot">
+          <h2>Bottom air</h2>
+          <div id="bottomAirScatterPlotContainer"></div>
+        </div>
       </div>
     </div>
-    <div class="charts-container-career">
-      <div class="chart-wrapper-career" style="width: fit-content; height:fit-content">
-        <h2>Results</h2>
-        <div id="careerResults"></div>
+
+
+    <div class="content-career" id="content" style="display: none;">
+      <div class="">
+        <h1>Career</h1>
+        <div>
+          <label>
+            Season
+          </label>
+          <select id="selectYearCareer" class="selectBox">
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+          </select>
+          <label>
+            Athlete
+          </label>
+          <select id="selectAthleteCareer" class="selectBox">
+          </select>
+        </div>
       </div>
+      <div class="charts-container-career" style="display: grid; grid-template-columns:repeat(8, 1fr);">
+        <div class="chart-wrapper-career" style="width: fit-content; height:fit-content; grid-column:1 / 6;">
+          <h2>Results</h2>
+          <div id="careerResults"></div>
+        </div>
+        <div class="chart-wrapper-career" style="width: fit-content; height:fit-content; grid-column:6 / 9;">
+          <h2>Profile</h2>
+          <div id="careerSpider"></div>
+        </div>
 
+      </div>
     </div>
-  </div>
 
 
-  <script src="GeneralJumpUpdater.js"></script>
-  <script src="PieChartUpdater.js"></script>
-  <script src="BarChartUpdater.js"></script>
-  <script src="CareerLoader.js"></script>
-  <script src="DropDownGenerator.js"></script>
+    <script src="GeneralJumpUpdater.js"></script>
+    <script src="PieChartUpdater.js"></script>
+    <script src="BarChartUpdater.js"></script>
+    <script src="CareerLoader.js"></script>
+    <script src="DropDownGenerator.js"></script>
+    <script src="SpiderLoader.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
  * @param {string|null} selectedCircuit - The selected circuit filter (e.g., 'WC', 'EC') or null for all.
  * @param {string|null} selectedGender - The selected gender filter ('M' or 'F') or null for all.
  * @param {string|null} selectedYear - The selected year filter (e.g., '2024') or null for all.
- * @param {string|null} selectedRun - The selected run filter ('leaderboard' or 'qualifier') or null for all.
+ * @param {string|null} selectedRun - The selected run filter ('leaderboard' or 'qualification') or null for all.
  */
 function collectEntries(
   node,
@@ -46,12 +46,12 @@ function collectEntries(
                       accumulator.push(...yearNode.leaderboard)
                     }
 
-                    // Collect 'qualifier' entries
+                    // Collect 'qualification' entries
                     if (
-                      (selectedRun === null || selectedRun === "qualifier") &&
-                      Array.isArray(yearNode.qualifier)
+                      (selectedRun === null || selectedRun === "qualification") &&
+                      Array.isArray(yearNode.qualification)
                     ) {
-                      accumulator.push(...yearNode.qualifier)
+                      accumulator.push(...yearNode.qualification)
                     }
                   }
                 }
@@ -125,54 +125,110 @@ function processData(data) {
 }
 
 function processData_minmaxmean(data) {
-  const topAirScores = {};
-  const bottomAirScores = {};
+  const topAirScores = {}
+  const bottomAirScores = {}
 
   data.forEach((entry) => {
-    const { top_air_trick, top_air_points, bottom_air_trick, bottom_air_points } = entry;
+    const {
+      top_air_trick,
+      top_air_points,
+      bottom_air_trick,
+      bottom_air_points,
+    } = entry
 
     if (top_air_trick && top_air_points) {
       if (!topAirScores[top_air_trick]) {
-        topAirScores[top_air_trick] = { min: top_air_points, max: top_air_points, total: top_air_points, count: 1 };
+        topAirScores[top_air_trick] = {
+          min: top_air_points,
+          max: top_air_points,
+          total: top_air_points,
+          count: 1,
+        }
       } else {
-        topAirScores[top_air_trick].min = Math.min(topAirScores[top_air_trick].min, top_air_points);
-        topAirScores[top_air_trick].max = Math.max(topAirScores[top_air_trick].max, top_air_points);
-        topAirScores[top_air_trick].total += top_air_points;
-        topAirScores[top_air_trick].count += 1;
+        topAirScores[top_air_trick].min = Math.min(
+          topAirScores[top_air_trick].min,
+          top_air_points
+        )
+        topAirScores[top_air_trick].max = Math.max(
+          topAirScores[top_air_trick].max,
+          top_air_points
+        )
+        topAirScores[top_air_trick].total += top_air_points
+        topAirScores[top_air_trick].count += 1
       }
     }
 
     if (bottom_air_trick && bottom_air_points) {
       if (!bottomAirScores[bottom_air_trick]) {
-        bottomAirScores[bottom_air_trick] = { min: bottom_air_points, max: bottom_air_points, total: bottom_air_points, count: 1 };
+        bottomAirScores[bottom_air_trick] = {
+          min: bottom_air_points,
+          max: bottom_air_points,
+          total: bottom_air_points,
+          count: 1,
+        }
       } else {
-        bottomAirScores[bottom_air_trick].min = Math.min(bottomAirScores[bottom_air_trick].min, bottom_air_points);
-        bottomAirScores[bottom_air_trick].max = Math.max(bottomAirScores[bottom_air_trick].max, bottom_air_points);
-        bottomAirScores[bottom_air_trick].total += bottom_air_points;
-        bottomAirScores[bottom_air_trick].count += 1;
+        bottomAirScores[bottom_air_trick].min = Math.min(
+          bottomAirScores[bottom_air_trick].min,
+          bottom_air_points
+        )
+        bottomAirScores[bottom_air_trick].max = Math.max(
+          bottomAirScores[bottom_air_trick].max,
+          bottom_air_points
+        )
+        bottomAirScores[bottom_air_trick].total += bottom_air_points
+        bottomAirScores[bottom_air_trick].count += 1
       }
     }
   })
 
-  const topAirData = Object.entries(topAirScores).map(([trick, { min, max, total, count }]) => ({
-    saut: trick,
-    min: min,
-    max: max,
-    mean: total / count // Calculate the mean score
-  }));
+  const topAirData = Object.entries(topAirScores).map(
+    ([trick, { min, max, total, count }]) => ({
+      saut: trick,
+      min: min,
+      max: max,
+      mean: total / count, // Calculate the mean score
+    })
+  )
 
-  const bottomAirData = Object.entries(bottomAirScores).map(([trick, { min, max, total, count }]) => ({
-    saut: trick,
-    min: min,
-    max: max,
-    mean: total / count // Calculate the mean score
-  }));
+  const bottomAirData = Object.entries(bottomAirScores).map(
+    ([trick, { min, max, total, count }]) => ({
+      saut: trick,
+      min: min,
+      max: max,
+      mean: total / count, // Calculate the mean score
+    })
+  )
 
   // Sort the data by mean score in descending order
-  const sortedTopAirData = topAirData.sort((a, b) => b.mean - a.mean).slice(0, 15);
-  const sortedBottomAirData = bottomAirData.sort((a, b) => b.mean - a.mean).slice(0, 15);
+  const sortedTopAirData = topAirData
+    .sort((a, b) => b.mean - a.mean)
+    .slice(0, 15)
+  const sortedBottomAirData = bottomAirData
+    .sort((a, b) => b.mean - a.mean)
+    .slice(0, 15)
 
   return {
-    sortedTopAirData, sortedBottomAirData
+    sortedTopAirData,
+    sortedBottomAirData,
   }
+}
+
+function generateNoDataGraph(width, height, id) {
+  // Select the chart container and append an SVG element
+  const svg = d3
+    .select(`#${id}`)
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+
+  // Append text to the SVG
+  svg
+    .append("text")
+    .attr("x", width / 2)
+    .attr("y", height / 2)
+    .attr("text-anchor", "middle")
+    .attr("alignment-baseline", "middle")
+    .style("font-size", "20px") // Adjust font size as needed
+    .style("fill", "#666") // Adjust text color as needed
+    .text("No Data Available")
 }

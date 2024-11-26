@@ -1,4 +1,4 @@
-// Function to generate a pie chart with a responsive legend
+// Function to generate a pie chart with hover effects
 function generatePieChart(containerWidth, containerHeight, margin, data, id) {
   // Calculate available width and height for the pie chart
   const legendWidth = containerWidth * 0.3; // Allocate 30% of the width for the legend
@@ -39,8 +39,21 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
   // Arc generator
   const arcGenerator = d3.arc().innerRadius(0).outerRadius(radius);
 
+  // Create a tooltip div that is hidden by default
+  const tooltip = d3
+    .select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("opacity", 0);
+
   // Draw the pie chart
-  svg
+  const paths = svg
     .selectAll("path")
     .data(data_ready)
     .enter()
@@ -49,7 +62,25 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .attr("fill", (d) => color(d.data.key))
     .attr("stroke", "black")
     .style("stroke-width", "2px")
-    .style("opacity", 0.7);
+    .style("opacity", 0.7)
+    .on("mouseover", function (event, d) {
+      tooltip.style("opacity", 1);
+      d3.select(this).style("opacity", 1).style("stroke-width", "3px");
+      paths.filter(p => p !== d).style("opacity", 0.3); // Dim other segments
+    })
+    .on("mousemove", function (event, d) {
+      const total = d3.sum(dataReady.map((d) => d.value));
+      const percent = ((d.data.value / total) * 100).toFixed(2);
+      tooltip
+        .html(`${d.data.key}: ${percent}%`)
+        .style("left", event.pageX + 10 + "px")
+        .style("top", event.pageY - 25 + "px");
+    })
+    .on("mouseleave", function (event, d) {
+      tooltip.style("opacity", 0);
+      d3.select(this).style("opacity", 0.7).style("stroke-width", "2px");
+      paths.style("opacity", 0.7); // Reset opacity of all segments
+    });
 
   // Add the legend
   const legend = svg
@@ -84,6 +115,7 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .attr("class", "pie-legend-text") // Assign class here
     .text((d) => `${d.key}: ${d.value}`);
 }
+
 
 // Function to group infrequent tricks into 'Other'
 function createOtherField(dataToProcess, minSize) {

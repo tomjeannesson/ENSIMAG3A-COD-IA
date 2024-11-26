@@ -61,6 +61,8 @@ function updatePieChart() {
           "bottomTricksPie"
         )
       } else {
+        d3.select("#topTricksPie").selectAll("svg").remove();
+        d3.select("#bottomTricksPie").selectAll("svg").remove();
         console.error("No valid leaderboard entries found.")
       }
     })

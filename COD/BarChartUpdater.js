@@ -44,6 +44,8 @@ function updateBarChart() {
           "bottomBarChart"
         )
       } else {
+        d3.select("#topBarChart").selectAll("svg").remove()
+        d3.select("#bottomBarChart").selectAll("svg").remove()
         console.error("No valid leaderboard or qualifier entries found.")
       }
     })

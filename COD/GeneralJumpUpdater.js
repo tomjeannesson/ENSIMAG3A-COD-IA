@@ -48,7 +48,8 @@ function updateGeneralJumpChart() {
           "bottomAirScatterPlotContainer"
         )
       } else {
-        console.error("No valid leaderboard or qualifier entries found.")
+        d3.select("#topAirScatterPlotContainer").selectAll("svg").remove()
+        d3.select("#bottomAirScatterPlotContainer").selectAll("svg").remove()
       }
     })
     .catch((error) => {

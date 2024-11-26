@@ -1,15 +1,15 @@
 // Function to generate a pie chart with hover effects
 function generatePieChart(containerWidth, containerHeight, margin, data, id) {
   // Calculate available width and height for the pie chart
-  const legendWidth = containerWidth * 0.3; // Allocate 30% of the width for the legend
-  const chartWidth = containerWidth - legendWidth - margin * 2;
-  const chartHeight = containerHeight - margin * 2;
-  const radius = Math.min(chartWidth, chartHeight) / 2;
+  const legendWidth = containerWidth * 0.3 // Allocate 30% of the width for the legend
+  const chartWidth = containerWidth - legendWidth - margin * 2
+  const chartHeight = containerHeight - margin * 2
+  const radius = Math.min(chartWidth, chartHeight) / 2
 
   // Prepare data for D3.js and sort in descending order
   const dataReady = Object.entries(data)
     .map(([key, value]) => ({ key, value }))
-    .sort((a, b) => b.value - a.value);
+    .sort((a, b) => b.value - a.value)
 
   // Create the SVG container
   const svg = d3
@@ -18,26 +18,16 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .attr("width", containerWidth)
     .attr("height", containerHeight)
     .append("g")
-    .attr("transform", `translate(${radius + margin},${containerHeight / 2})`);
+    .attr("transform", `translate(${radius + margin},${containerHeight / 2})`)
 
-  // Define an extended color palette
-  const extendedColorPalette = [
-    ...d3.schemeTableau10, // Use Tableau 10 as a base
-    "#a0522d", "#ff69b4", "#1e90ff", "#32cd32", "#ff4500", "#8a2be2", // Additional colors
-    "#deb887", "#00ced1", "#dc143c", "#7fff00", "#9932cc", "#ffa07a" // Add more if needed
-  ];
-
-  const color = d3
-    .scaleOrdinal()
-    .domain(dataReady.map((d) => d.key))
-    .range(extendedColorPalette);
+  const color = (key) => getTrickColor(key)
 
   // Generate the pie chart
-  const pie = d3.pie().value((d) => d.value);
-  const data_ready = pie(dataReady);
+  const pie = d3.pie().value((d) => d.value)
+  const data_ready = pie(dataReady)
 
   // Arc generator
-  const arcGenerator = d3.arc().innerRadius(0).outerRadius(radius);
+  const arcGenerator = d3.arc().innerRadius(0).outerRadius(radius)
 
   // Create a tooltip div that is hidden by default
   const tooltip = d3
@@ -50,7 +40,7 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .style("border-width", "1px")
     .style("border-radius", "5px")
     .style("padding", "10px")
-    .style("opacity", 0);
+    .style("opacity", 0)
 
   // Draw the pie chart
   const paths = svg
@@ -62,33 +52,33 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .attr("fill", (d) => color(d.data.key))
     .attr("stroke", "black")
     .style("stroke-width", "2px")
-    .style("opacity", 0.7)
+    .style("opacity", 1)
     .on("mouseover", function (event, d) {
-      tooltip.style("opacity", 1);
-      d3.select(this).style("opacity", 1).style("stroke-width", "3px");
-      paths.filter(p => p !== d).style("opacity", 0.3); // Dim other segments
+      tooltip.style("opacity", 1)
+      d3.select(this).style("opacity", 1).style("stroke-width", "3px")
+      paths.filter((p) => p !== d).style("opacity", 0.3) // Dim other segments
     })
     .on("mousemove", function (event, d) {
-      const total = d3.sum(dataReady.map((d) => d.value));
-      const percent = ((d.data.value / total) * 100).toFixed(2);
+      const total = d3.sum(dataReady.map((d) => d.value))
+      const percent = ((d.data.value / total) * 100).toFixed(2)
       tooltip
         .html(`${d.data.key}: ${percent}%`)
         .style("left", event.pageX + 10 + "px")
-        .style("top", event.pageY - 25 + "px");
+        .style("top", event.pageY - 25 + "px")
     })
     .on("mouseleave", function (event, d) {
-      tooltip.style("opacity", 0);
-      d3.select(this).style("opacity", 0.7).style("stroke-width", "2px");
-      paths.style("opacity", 0.7); // Reset opacity of all segments
-    });
+      tooltip.style("opacity", 0)
+      d3.select(this).style("opacity", 1).style("stroke-width", "2px")
+      paths.style("opacity", 1) // Reset opacity of all segments
+    })
 
   // Add the legend
   const legend = svg
     .append("g")
-    .attr("transform", `translate(${radius + margin * 2},${-radius})`);
+    .attr("transform", `translate(${radius + margin * 2},${-radius})`)
 
-  const legendRectSize = 11;
-  const legendSpacing = 6;
+  const legendRectSize = 11
+  const legendSpacing = 6
 
   legend
     .selectAll("rect")
@@ -99,7 +89,8 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     .attr("y", (d, i) => i * (legendRectSize + legendSpacing))
     .attr("width", legendRectSize)
     .attr("height", legendRectSize)
-    .style("fill", (d) => color(d.key));
+    .style("fill", (d) => color(d.key))
+    .style("opacity", 1)
 
   legend
     .selectAll("text")
@@ -113,37 +104,38 @@ function generatePieChart(containerWidth, containerHeight, margin, data, id) {
     )
     .attr("dy", ".35em")
     .attr("class", "pie-legend-text") // Assign class here
-    .text((d) => `${d.key}: ${d.value}`);
+    .text((d) => `${d.key}: ${d.value}`)
 }
-
 
 // Function to group infrequent tricks into 'Other'
 function createOtherField(dataToProcess, minSize) {
-  const processedData = {};
-  let otherCount = 0;
+  const processedData = {}
+  let otherCount = 0
 
   // Group infrequent tricks into 'Other'
   for (const [trick, count] of Object.entries(dataToProcess)) {
     if (count < minSize) {
-      otherCount += count;
+      otherCount += count
     } else {
-      processedData[trick] = count;
+      processedData[trick] = count
     }
   }
 
   if (otherCount > 0) {
-    processedData["Other"] = otherCount;
+    processedData["Other"] = otherCount
   }
 
-  return processedData;
+  return processedData
 }
 
 // Function to get CSS variable value
 function getCssVariableValue(variableName) {
-  return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(variableName)
+    .trim()
 }
 
 // Retrieve values
-const widthPie = parseInt(getCssVariableValue("--chart-width"), 10);
-const heightPie = parseInt(getCssVariableValue("--chart-height"), 10);
-const marginPie = parseInt(getCssVariableValue("--chart-margin"), 10);
+const widthPie = parseInt(getCssVariableValue("--chart-width"), 10)
+const heightPie = parseInt(getCssVariableValue("--chart-height"), 10)
+const marginPie = parseInt(getCssVariableValue("--chart-margin"), 10)

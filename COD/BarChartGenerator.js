@@ -30,10 +30,7 @@ function generateBarChart(containerWidth, containerHeight, margin, data, id) {
     .range([0, width]);
 
   // Define the color scale using 'Tableau 10' palette
-  const color = d3
-    .scaleOrdinal()
-    .domain(sortedData.map((d) => d.label))
-    .range(d3.schemeTableau10);
+  const color = (key) => getTrickColor(key);
 
   // Create a group for each bar and its label
   const barGroup = svg

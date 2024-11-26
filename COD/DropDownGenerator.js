@@ -24,7 +24,7 @@ function generateDropdowns(json) {
   const runSelection = document.getElementById("run-selection")
 
   // Function to create a dropdown
-  function createDropdown(options, id, tooltipText, onChangeCallback) {
+  function createDropdown(options, id, tooltipText, onChangeCallback, ind) {
     const select = document.createElement("select")
     select.id = id
     select.title = tooltipText;
@@ -34,7 +34,7 @@ function generateDropdowns(json) {
       const opt = document.createElement("option")
       opt.value = option
       opt.textContent = option
-      if (index === 0) {
+      if (index === ind) {
         opt.selected = true // Set the first option as selected
         onChangeCallback(option) // Initialize the corresponding filter variable
       }
@@ -64,6 +64,7 @@ function generateDropdowns(json) {
   circuits[1] = buffer
 
 
+
   // Create and append dropdowns
   const circuitDropdown = createDropdown(
     circuits,
@@ -71,7 +72,8 @@ function generateDropdowns(json) {
     "Select Circuit",
     (value) => {
       selectedCircuit = value
-    }
+    },
+    0
   )
   circuitSelection.appendChild(circuitDropdown)
 
@@ -81,7 +83,8 @@ function generateDropdowns(json) {
     "Select Gender",
     (value) => {
       selectedGender = value
-    }
+    },
+    0
   )
   genderSelection.appendChild(genderDropdown)
 
@@ -91,7 +94,8 @@ function generateDropdowns(json) {
     "Select Year",
     (value) => {
       selectedYear = value
-    }
+    },
+    2
   )
   yearSelection.appendChild(yearDropdown)
 
@@ -101,7 +105,8 @@ function generateDropdowns(json) {
     "Select Run",
     (value) => {
       selectedRun = value
-    }
+    },
+    0
   )
   runSelection.appendChild(runDropdown)
 }

@@ -48,7 +48,8 @@ function collectEntries(
 
                     // Collect 'qualification' entries
                     if (
-                      (selectedRun === null || selectedRun === "qualification") &&
+                      (selectedRun === null ||
+                        selectedRun === "qualification") &&
                       Array.isArray(yearNode.qualification)
                     ) {
                       accumulator.push(...yearNode.qualification)
@@ -231,4 +232,31 @@ function generateNoDataGraph(width, height, id) {
     .style("font-size", "20px") // Adjust font size as needed
     .style("fill", "#666") // Adjust text color as needed
     .text("No Data Available")
+}
+
+const extendedColorPalette = [
+  ...d3.schemeTableau10,
+  "#a0522d",
+  "#ff69b4",
+  "#1e90ff",
+  "#32cd32",
+  "#ff4500",
+  "#8a2be2",
+  "#deb887",
+  "#00ced1",
+  "#dc143c",
+  "#7fff00",
+  "#9932cc",
+  "#ffa07a",
+]
+
+const colorMap = {}
+
+function getTrickColor(trick) {
+  if (!colorMap[trick]) {
+    const colorIndex =
+      Object.keys(colorMap).length % extendedColorPalette.length
+    colorMap[trick] = extendedColorPalette[colorIndex]
+  }
+  return colorMap[trick]
 }

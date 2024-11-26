@@ -36,14 +36,14 @@ function updatePieChart() {
           }
         })
 
-        let otherSize = 0.015*allEntries.length
+        let otherSize = 0.015 * allEntries.length
         // Group infrequent tricks into 'Other'
         const dataBottomJump = createOtherField(bottomAirTrickCounts, otherSize)
         const dataTopJump = createOtherField(topAirTrickCounts, otherSize)
 
         // We clear Pie charts
-        d3.select("#topTricksPie").selectAll("svg").remove();
-        d3.select("#bottomTricksPie").selectAll("svg").remove();
+        d3.select("#topTricksPie").selectAll("svg").remove()
+        d3.select("#bottomTricksPie").selectAll("svg").remove()
 
         // Generate pie charts
         generatePieChart(
@@ -61,8 +61,8 @@ function updatePieChart() {
           "bottomTricksPie"
         )
       } else {
-        d3.select("#topTricksPie").selectAll("svg").remove();
-        d3.select("#bottomTricksPie").selectAll("svg").remove();
+        d3.select("#topTricksPie").selectAll("svg").remove()
+        d3.select("#bottomTricksPie").selectAll("svg").remove()
         console.error("No valid leaderboard entries found.")
       }
     })

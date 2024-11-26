@@ -24,9 +24,10 @@ function generateDropdowns(json) {
   const runSelection = document.getElementById("run-selection")
 
   // Function to create a dropdown
-  function createDropdown(options, id, defaultText, onChangeCallback) {
+  function createDropdown(options, id, tooltipText, onChangeCallback) {
     const select = document.createElement("select")
     select.id = id
+    select.title = tooltipText;
 
     // Add dropdown options
     options.forEach((option, index) => {

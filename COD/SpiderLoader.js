@@ -20,16 +20,24 @@ function createSpiderChart(selectedYear, athlete) {
         .filter((item) => item.race.year === selectedYear)
         .sort(
           (a, b) =>
-            Math.max(...(b.all?.map((r) => r.total_points) || [])) -
-            Math.max(...(a.all?.map((r) => r.total_points) || []))
+            Math.min(
+              ...(a.all
+                ?.filter((r) => r.total_points !== null)
+                .map((r) => r.total_points) || [])
+            ) -
+            Math.min(
+              ...(b.all
+                ?.filter((r) => r.total_points !== null)
+                .map((r) => r.total_points) || [])
+            )
         )
         .filter((_, idx) => idx < 5)
-
+      console.log(filteredData)
       // Prepare data for spider chart
       const chartData = [
         filteredData.reduce((acc, item) => {
           const dataSource = item.all?.sort(
-            (a, b) => b.total_points - a.total_points
+            (a, b) => a.total_points - b.total_points
           )[0]
           if (dataSource === undefined) {
             return acc
@@ -48,11 +56,21 @@ function createSpiderChart(selectedYear, athlete) {
           }
 
           // Add current values
-          acc.total_points += dataSource.total_points
-          acc.ski_points += dataSource.ski_points
-          acc.top_air_points += dataSource.top_air_points
-          acc.bottom_air_points += dataSource.bottom_air_points
-          acc.time_points += dataSource.time_points
+          acc.total_points += item.all?.sort(
+            (a, b) => a.total_points - b.total_points
+          )[0].total_points
+          acc.ski_points += item.all?.sort(
+            (a, b) => a.ski_points - b.ski_points
+          )[0].ski_points
+          acc.top_air_points += item.all?.sort(
+            (a, b) => a.top_air_points - b.top_air_points
+          )[0].top_air_points
+          acc.bottom_air_points += item.all?.sort(
+            (a, b) => a.bottom_air_points - b.bottom_air_points
+          )[0].bottom_air_points
+          acc.time_points += item.all?.sort(
+            (a, b) => a.time_points - b.time_points
+          )[0].time_points
           acc.count++
 
           // Store race information
@@ -64,14 +82,15 @@ function createSpiderChart(selectedYear, athlete) {
           return acc
         }, {}),
       ].map((avgData) => ({
-        total_points: avgData.total_points / avgData.count,
-        ski_points: avgData.ski_points / avgData.count,
-        top_air_points: avgData.top_air_points / avgData.count,
-        bottom_air_points: avgData.bottom_air_points / avgData.count,
-        time_points: avgData.time_points / avgData.count,
+        total_points: 1 / Math.sqrt(avgData.total_points / avgData.count),
+        ski_points: 1 / Math.sqrt(avgData.ski_points / avgData.count),
+        top_air_points: 1 / Math.sqrt(avgData.top_air_points / avgData.count),
+        bottom_air_points:
+          1 / Math.sqrt(avgData.bottom_air_points / avgData.count),
+        time_points: 1 / Math.sqrt(avgData.time_points / avgData.count),
         races: avgData.races,
       }))
-
+      console.log(chartData)
       // If no data, return early
       if (chartData.length === 0) return
 
@@ -98,11 +117,11 @@ function createSpiderChart(selectedYear, athlete) {
 
       // Find max values for each axis to scale the chart
       const maxValues = {
-        total_points: 88.49,
-        ski_points: 55.2,
-        top_air_points: 9.72,
-        bottom_air_points: 9.64,
-        time_points: 20,
+        total_points: 1,
+        ski_points: 1,
+        top_air_points: 1,
+        bottom_air_points: 1,
+        time_points: 1,
       }
 
       // Create scales

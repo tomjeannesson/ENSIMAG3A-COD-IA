@@ -115,4 +115,3 @@ function getCssVariableValue(variableName) {
 const widthPie = parseInt(getCssVariableValue("--chart-width"), 10);
 const heightPie = parseInt(getCssVariableValue("--chart-height"), 10);
 const marginPie = parseInt(getCssVariableValue("--chart-margin"), 10);
-const otherSize = 80;

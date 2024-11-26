@@ -1,9 +1,18 @@
-// Function to recursively collect entries based on selected filters
+/**
+ * Recursively collects entries from the JSON data based on selected filters.
+ *
+ * @param {Object} node - The current node in the JSON structure.
+ * @param {Array} accumulator - The array to accumulate matching entries.
+ * @param {string|null} selectedCircuit - The selected circuit filter (e.g., 'WC', 'EC') or null for all.
+ * @param {string|null} selectedGender - The selected gender filter ('M' or 'F') or null for all.
+ * @param {string|null} selectedYear - The selected year filter (e.g., '2024') or null for all.
+ * @param {string|null} selectedRun - The selected run filter ('leaderboard' or 'qualifier') or null for all.
+ */
 function collectEntries(
   node,
   accumulator,
-  selectedGender,
   selectedCircuit,
+  selectedGender,
   selectedYear,
   selectedRun
 ) {
@@ -11,69 +20,49 @@ function collectEntries(
     return // Base case: non-object or null node
   }
 
-  // Check if the current node matches the selected filters
-  const matchesFilters = (key, selectedValue) =>
-    selectedValue === null || key === selectedValue
+  // Traverse circuits (e.g., 'WC', 'EC')
+  for (const circuitKey in node) {
+    if (node.hasOwnProperty(circuitKey)) {
+      if (selectedCircuit === null || circuitKey === selectedCircuit) {
+        const circuitNode = node[circuitKey]
 
-  // Traverse the keys in the current node
-  for (const key in node) {
-    if (node.hasOwnProperty(key)) {
-      const child = node[key]
+        // Traverse genders ('M', 'F')
+        for (const genderKey in circuitNode) {
+          if (circuitNode.hasOwnProperty(genderKey)) {
+            if (selectedGender === null || genderKey === selectedGender) {
+              const genderNode = circuitNode[genderKey]
 
-      // Apply filtering logic based on the current key
-      if (
-        key === "leaderboard" &&
-        Array.isArray(child) &&
-        matchesFilters(key, selectedRun)
-      ) {
-        accumulator.push(...child)
-      } else if (
-        key === "qualifier" &&
-        Array.isArray(child) &&
-        matchesFilters(key, selectedRun)
-      ) {
-        accumulator.push(...child)
-      } else if (
-        matchesFilters(key, selectedGender) ||
-        matchesFilters(key, selectedCircuit) ||
-        matchesFilters(key, selectedYear) ||
-        matchesFilters(key, selectedRun)
-      ) {
-        collectEntries(
-          child,
-          accumulator,
-          selectedGender,
-          selectedCircuit,
-          selectedYear,
-          selectedRun
-        )
+              // Traverse years (e.g., '2024')
+              for (const yearKey in genderNode) {
+                if (genderNode.hasOwnProperty(yearKey)) {
+                  if (selectedYear === null || yearKey === selectedYear) {
+                    const yearNode = genderNode[yearKey]
+
+                    // Collect 'leaderboard' entries
+                    if (
+                      (selectedRun === null || selectedRun === "leaderboard") &&
+                      Array.isArray(yearNode.leaderboard)
+                    ) {
+                      accumulator.push(...yearNode.leaderboard)
+                    }
+
+                    // Collect 'qualifier' entries
+                    if (
+                      (selectedRun === null || selectedRun === "qualifier") &&
+                      Array.isArray(yearNode.qualifier)
+                    ) {
+                      accumulator.push(...yearNode.qualifier)
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
 }
-
-fetch("raw_jump_data.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`)
-    }
-    return response.json()
-  })
-  .then((data) => {
-    const accumulator = []
-    collectEntries(
-      data,
-      accumulator,
-      selectedGender,
-      selectedCircuit,
-      selectedYear,
-      selectedRun
-    )
-    console.log("Filtered Entries:", accumulator)
-  })
-  .catch((error) => {
-    console.error("Error fetching the JSON file:", error)
-  })
 
 // Function to process leaderboard data
 function processData(data) {

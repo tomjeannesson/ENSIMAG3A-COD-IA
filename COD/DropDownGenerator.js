@@ -58,6 +58,12 @@ function generateDropdowns(json) {
   const years = extractUniqueKeys(json, 2)
   const runs = extractUniqueKeys(json, 3)
 
+  // We switch the first and the second index of circuits
+  let buffer = circuits[0]
+  circuits[0] = circuits[1]
+  circuits[1] = buffer
+
+
   // Create and append dropdowns
   const circuitDropdown = createDropdown(
     circuits,

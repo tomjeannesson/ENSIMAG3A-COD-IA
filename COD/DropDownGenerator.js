@@ -47,6 +47,7 @@ function generateDropdowns(json) {
       onChangeCallback(event.target.value)
       updatePieChart()
       updateBarChart()
+      updateGeneralJumpChart()
     })
 
     return select

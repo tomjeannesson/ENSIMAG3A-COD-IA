@@ -10,7 +10,14 @@ function updatePieChart() {
     .then((data) => {
       // Collect all leaderboard entries recursively
       const allEntries = []
-      collectEntries(data, allEntries, null, null, null, null)
+      collectEntries(
+        data,
+        allEntries,
+        selectedCircuit,
+        selectedGender,
+        selectedYear,
+        selectedRun
+      )
 
       if (allEntries.length > 0) {
         // Count occurrences of 'top_air_trick' and 'bottom_air_trick'
@@ -29,9 +36,14 @@ function updatePieChart() {
           }
         })
 
+        let otherSize = 0.015*allEntries.length
         // Group infrequent tricks into 'Other'
         const dataBottomJump = createOtherField(bottomAirTrickCounts, otherSize)
         const dataTopJump = createOtherField(topAirTrickCounts, otherSize)
+
+        // We clear Pie charts
+        d3.select("#topTricksPie").selectAll("svg").remove();
+        d3.select("#bottomTricksPie").selectAll("svg").remove();
 
         // Generate pie charts
         generatePieChart(

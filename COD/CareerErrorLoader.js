@@ -18,7 +18,6 @@ function createErrorChart(selectedYear, athlete) {
       for (const res of chartData) {
         allRes = allRes.concat(res.all.filter((r) => r.total_points))
       }
-      console.log(allRes)
       const finalData = [
         {
           stat: "total_points",

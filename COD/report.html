@@ -127,10 +127,12 @@
             padding-bottom: 20px;
           "
         >
-          L'interface présente 6 graphiques, répartis en 3 types différents
-          (chaque type est dupliqué pour représenter les sauts du haut et du
-          bas). Un code couleur est associé à chaque type de saut pour une
-          meilleure lisibilité.
+          L'interface propose six graphiques répartis en trois types distincts,
+          chacun étant dupliqué pour représenter les sauts du haut et du bas. Un
+          code couleur est attribué à chaque type de saut pour améliorer la
+          lisibilité. Quatre menus déroulants permettent de filtrer les
+          informations selon l'année, le sexe, le circuit et le statut
+          (qualification ou classement).
         </p>
 
         <h2>Diagrame circulaire</h2>
@@ -142,13 +144,16 @@
             padding-bottom: 20px;
           "
         >
-          Le premier graphique est un diagramme circulaire qui illustre les
-          types de sauts les plus utilisés. En survolant une section avec la
-          souris, une infobulle (tooltip) affiche le nom du saut et son
-          pourcentage de présence. La légende fournit les noms des sauts ainsi
-          que leur fréquence d'apparition. Une catégorie "autres" regroupe tous
-          les types de sauts qui représentent moins de 1.5 % du total des
-          occurrences.
+          Le premier graphique est un diagramme circulaire illustrant les types
+          de sauts les plus utilisés. Au survol de chaque section avec la
+          souris, une infobulle affiche le nom du saut et son pourcentage
+          d'utilisation. La légende indique les noms des sauts ainsi que leur
+          fréquence d'apparition. Une catégorie "autres" regroupe les types de
+          sauts représentant moins de 1,5 % du total des occurrences. Ce
+          graphique permet aux entraîneurs de visualiser rapidement les sauts
+          les plus populaires, facilitant ainsi l'élaboration de stratégies,
+          comme l'exploration de sauts moins représentés pour se démarquer et
+          surprendre le jury.
         </p>
         <img src="camembert1.png" alt="camembert1" style="max-width: 70%" />
         <img src="camembert2.png" alt="camembert2" style="max-width: 70%" />
@@ -161,10 +166,30 @@
             padding-bottom: 20px;
           "
         >
-          Le second graphique est un diagramme en barres présentant les 6
-          meilleurs sauts. La moyenne de chaque saut est calculée, puis les 6
-          plus performants sont sélectionnés. La note est sur 10.
+          Le second graphique est un diagramme en barres affichant les six sauts
+          les mieux notés, sur une échelle de 1 à 10. Bien que cette information
+          soit redondante avec le prochain graphique, sa présentation facilite
+          la lecture et offre aux entraîneurs une visualisation directe des
+          performances des meilleurs sauts.
         </p>
+        <img src="barre.png" alt="barre" style="max-width: 100%" />
+        <h2>Nuage de points</h2>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 80px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+          "
+        >
+          Le dernier graphique est un nuage de points illustrant l'ensemble des
+          sauts effectués. Pour chaque saut, un point central bleu représente la
+          moyenne, tandis qu'une barre noire indique la marge d'erreur,
+          délimitant les performances minimale et maximale. Ce graphique
+          complète le précédent en permettant aux entraîneurs d'évaluer la
+          fiabilité et la difficulté de ces sauts.
+        </p>
+        <img src="nuage.png" alt="nuage" style="max-width: 70%" />
       </div>
     </div>
   </body>

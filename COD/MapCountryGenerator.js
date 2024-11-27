@@ -101,7 +101,15 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
           d3.select(this).classed("selected", false)
 
           d3.select("#pieChart-mf").selectAll("svg").remove()
-          generateNoDataGraph(420, 420, "pieChart-mf")
+          dataMFWorld = getProportionMaleFemaleWorld(data)
+          generateGenderPieChartMF(
+            500,
+            500,
+            margin,
+            dataMFWorld,
+            "Worldwide",
+            "pieChart-mf"
+          )
         } else {
           // Désélectionner le pays précédent (s'il y en avait un)
           previouslySelected.classed("selected", false)

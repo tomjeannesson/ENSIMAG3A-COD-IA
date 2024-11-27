@@ -65,10 +65,30 @@ function updateGeneralMapCountry() {
         generateNoDataGraph(containerWidth, containerHeight, "country-map")
       }
       d3.select("#pieChart-mf").selectAll("svg").remove()
-      generateNoDataGraph(420, 420, "pieChart-mf")
+      dataMFWorld = getProportionMaleFemaleWorld(countryData)
+      generateGenderPieChartMF(
+        500,
+        500,
+        margin,
+        dataMFWorld,
+        "Worldwide",
+        "pieChart-mf"
+      )
     })
     .catch((error) => {
       console.error("Error fetching the JSON file:", error)
     })
 }
 updateGeneralMapCountry()
+
+function getProportionMaleFemaleWorld(data) {
+  return Object.values(data).reduce(
+    (acc, value) => {
+      return {
+        male: acc.male + value.male,
+        female: acc.female + value.female,
+      }
+    },
+    { male: 0, female: 0 }
+  )
+}

@@ -12,9 +12,11 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
     .append("svg")
     .attr("width", containerWidth)
     .attr("height", containerHeight)
-    .attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`)
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`)
+    .attr("viewBox", [0, 0, width, height])
+    .attr(
+      "style",
+      "max-width: 100%; height: auto; height: intrinsic; font-family: system-ui, sans-serif;"
+    )
 
   // Définir la projection (Natural Earth)
   const projection = d3
@@ -29,16 +31,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
 
   // Définir une échelle de couleur en fonction du nombre d'athlètes
   const maxValue = d3.max(data, (d) => d.count) || 1
-  const colorScale = d3
-    .scaleSequential(d3.interpolateBlues)
-    .domain([0, maxValue])
-
-  // Ajouter un arrière-plan pour les océans
-  svg
-    .append("rect")
-    .attr("width", width)
-    .attr("height", height)
-    .attr("fill", "#e6f2ff")
+  const colorScale = d3.scaleSequential(d3.interpolateBlues).domain([-13, 150])
 
   // Charger les données GeoJSON personnalisées
   d3.json(
@@ -53,7 +46,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
       .attr("d", path)
       .attr("fill", (d) => {
         const count = dataMap.get(d.id) || 0
-        return count > 0 ? colorScale(count) : "#f0f0f0"
+        return count > 0 ? colorScale(count) : "#7c7c7c"
       })
       .attr("stroke", "#a0a0a0")
       .attr("stroke-width", 0.5)
@@ -62,7 +55,15 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
         // Highlight the country
         d3.select(this).attr("stroke", "#333").attr("stroke-width", 2)
 
-        // Utilisez le bon nom de propriété pour le nom du pays
+        svg
+          .selectAll("path")
+          .filter(function (otherCountry) {
+            return otherCountry !== d
+          })
+          .transition()
+          .duration(200)
+          .attr("opacity", 0.6)
+
         const count = dataMap.get(d.id) || 0
 
         tooltip
@@ -84,7 +85,48 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
         // Remove highlight
         d3.select(this).attr("stroke", "#a0a0a0").attr("stroke-width", 0.5)
 
+        svg.selectAll("path").transition().duration(200).attr("opacity", 1)
+
         tooltip.style("visibility", "hidden")
+      })
+      .on("click", function (event, d) {
+        const countryCode = d.id
+        const count = dataMap.get(countryCode) || 0
+
+        // Récupérer l'élément actuellement sélectionné
+        const previouslySelected = svg.select(".selected")
+
+        // Si le pays cliqué est déjà sélectionné, le désélectionner
+        if (d3.select(this).classed("selected")) {
+          d3.select(this)
+            .classed("selected", false)
+            .style("stroke", "#a0a0a0")
+            .style("stroke-width", 0.5)
+
+          console.log("Country deselected")
+        } else {
+          // Désélectionner le pays précédent (s'il y en avait un)
+          previouslySelected
+            .classed("selected", false)
+            .style("stroke", "#a0a0a0")
+            .style("stroke-width", 0.5)
+
+          // Sélectionner le nouveau pays
+          svg
+            .selectAll("path")
+            .classed("selected", false)
+            .style("stroke", "#a0a0a0")
+            .style("stroke-width", 0.5)
+
+          d3.select(this)
+            .classed("selected", true)
+            .style("stroke", "#333")
+            .style("stroke-width", 3)
+
+          // Afficher les informations dans la console
+          console.log(`Country code: ${countryCode}`)
+          console.log(`Number of athletes: ${count}`)
+        }
       })
 
     // Le reste du code de la légende reste le même
@@ -156,7 +198,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
       .attr("y", legendHeight + 30)
       .attr("text-anchor", "middle")
       .attr("font-size", "12px")
-      .text("Nombre de participants")
+      .text("Number of athletes by country")
   })
 
   // Ajouter un tooltip
@@ -172,5 +214,5 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
     .style("border-radius", "5px")
     .style("box-shadow", "0 0 10px rgba(0,0,0,0.1)")
     .style("border", "1px solid #ddd")
-    .style("font-size", "14px")
+    .style("font-size", "16px")
 }

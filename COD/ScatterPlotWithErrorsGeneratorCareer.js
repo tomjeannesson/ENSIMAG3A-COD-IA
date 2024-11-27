@@ -208,9 +208,9 @@ function generateScatterPlotWithErrorsCareer(
           `
             <div style="text-align: center; display: flex; flex-direction: column; font-size: 16px;">
                 <strong>stat: ${d.stat}</strong>
-                <span>Max: ${d.max.toFixed(1)}</span>
-                <span>Moyenne: ${d.mean.toFixed(1)}</span>
-                <span>Min: ${d.min.toFixed(1)}</span>
+                <span>Worst: ${d.max.toFixed(1)}</span>
+                <span>Average: ${d.mean.toFixed(1)}</span>
+                <span>Best: ${d.min.toFixed(1)}</span>
             </div>
             `
         )

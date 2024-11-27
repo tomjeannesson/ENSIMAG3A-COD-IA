@@ -72,6 +72,13 @@ h1 {
   background-color: #f4f4f4;
 }
 
+.content-career {
+  padding: 15px;
+  padding-top: 5px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
 /* Conteneur des graphiques */
 .charts-container {
   display: grid;

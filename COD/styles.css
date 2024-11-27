@@ -197,3 +197,11 @@ h1 {
 .paragraphe+.paragraphe {
   margin-top: 5px;
 }
+
+
+.content-general {
+  padding: 15px;
+  padding-top: 5px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}

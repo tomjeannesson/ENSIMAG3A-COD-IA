@@ -98,34 +98,20 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
 
         // Si le pays cliqué est déjà sélectionné, le désélectionner
         if (d3.select(this).classed("selected")) {
-          d3.select(this)
-            .classed("selected", false)
-            .style("stroke", "#a0a0a0")
-            .style("stroke-width", 0.5)
+          d3.select(this).classed("selected", false)
 
           console.log("Country deselected")
         } else {
           // Désélectionner le pays précédent (s'il y en avait un)
-          previouslySelected
-            .classed("selected", false)
-            .style("stroke", "#a0a0a0")
-            .style("stroke-width", 0.5)
+          previouslySelected.classed("selected", false)
 
           // Sélectionner le nouveau pays
-          svg
-            .selectAll("path")
-            .classed("selected", false)
-            .style("stroke", "#a0a0a0")
-            .style("stroke-width", 0.5)
+          svg.selectAll("path").classed("selected", false)
 
-          d3.select(this)
-            .classed("selected", true)
-            .style("stroke", "#333")
-            .style("stroke-width", 3)
+          d3.select(this).classed("selected", true)
 
           // Afficher les informations dans la console
-          console.log(`Country code: ${countryCode}`)
-          console.log(`Number of athletes: ${count}`)
+          generateGenderPieChartMF(800, 500, margin, d, "pieChart-mf")
         }
       })
 

@@ -212,3 +212,8 @@ h1 {
   overflow-y: auto;
   background-color: #f4f4f4;
 }
+
+.selected {
+  stroke: #000;
+  stroke-width: 2;
+}

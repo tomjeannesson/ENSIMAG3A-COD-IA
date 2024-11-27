@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COD</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="navbar" id="navbar">
-        <label class="navbar-title">Challenge Open Data</label>
+      <label class="navbar-title">Challenge Open Data</label>
+      <div class="navbar-links">
         <div class="navbar-links">
-            <div class="navbar-links">
-                <a href="index.html?section=jumps" class="navbar-jumps" id="jump">Jumps</a>
-                <a href="index.html?section=athlete" class="navbar-athlete" id="athlete">Athlete</a>
-                <a href="#" class="navbar-report active" id="report">Report (fr)</a>
-            </div>
+          <a href="index.html?section=jumps" class="navbar-jumps" id="jump"
+            >Jumps</a
+          >
+          <a
+            href="index.html?section=athlete"
+            class="navbar-athlete"
+            id="athlete"
+            >Athlete</a
+          >
+          <a href="#" class="navbar-report active" id="report">Report (fr)</a>
         </div>
+      </div>
     </div>
 
     <div class="content-jump" id="content">
-        <div class="paragraphe">
-            <h1>Membres de l'équipe</h1>
-            <p>Julian COUX - Adame ABDELAZIZ - Tom JEANNESSON</p>
-        </div>
-        <div class="paragraphe">
-            <h1>Introduction</h1>
-            <p style="text-align: justify; padding-right: 80px; padding-left: 80px; padding-bottom: 20px;">Nous sommes tous skieurs, dont Tom qui a été sportif de haut niveau en ski de bosses. Nous avons décidé de construire ce projet autour de cette passion commune. Tom ayant baigné dans ce sport depuis tout petit, il a pu voir les évolutions techniques utilisées par les coachs s’adapter au mieux à leurs athlètes. Les entraînements sont de plus en plus destinés à améliorer les techniques pouvant rapporter plus de points en compétition. Aujourd’hui, les entraîneurs se contentent d’analyses de tableaux Excel faits à la main avec des statistiques quasi inexistantes. L'apport d'outils d'analyse et de visualisation de données pourrait réellement faire avancer ce sport.
-            </p>
-        </div>
-        <div class="paragraphe">
-            <h1>Présentation</h1>
-            <p>A l'issue de chaque course, un fichier de résultats au format PDF est généré. Voici un exemple de ce à quoi il ressemble.</p>
-            <img src="fis-pdf.png" alt="Fis PDF" style="max-width: 70%;">
+      <div class="paragraphe">
+        <h1>Membres de l'équipe</h1>
+        <p>Julian COUX - Adame ABDELAZIZ - Tom JEANNESSON</p>
+      </div>
+      <div class="paragraphe">
+        <h1>Introduction</h1>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 80px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+          "
+        >
+          Nous sommes tous skieurs, dont Tom qui a été sportif de haut niveau en
+          ski de bosses. Nous avons décidé de construire ce projet autour de
+          cette passion commune. Tom ayant baigné dans ce sport depuis tout
+          petit, il a pu voir les évolutions techniques utilisées par les coachs
+          s’adapter au mieux à leurs athlètes. Les entraînements sont de plus en
+          plus destinés à améliorer les techniques pouvant rapporter plus de
+          points en compétition. Aujourd’hui, les entraîneurs se contentent
+          d’analyses de tableaux Excel faits à la main avec des statistiques
+          quasi inexistantes. L'apport d'outils d'analyse et de visualisation de
+          données pourrait réellement faire avancer ce sport.
+        </p>
+      </div>
+      <div class="paragraphe">
+        <h1>Présentation</h1>
+        <p>
+          A l'issue de chaque course, un fichier de résultats au format PDF est
+          généré. Voici un exemple de ce à quoi il ressemble.
+        </p>
+        <img src="fis-pdf.png" alt="Fis PDF" style="max-width: 70%" />
+      </div>
 
-        </div>
+      <div class="paragraphe">
+        <h1>Interface sur les sauts</h1>
+
+        <h2>Graphiques utilisés</h2>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 80px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+          "
+        >
+          L'interface présente 6 graphiques, répartis en 3 types différents
+          (chaque type est dupliqué pour représenter les sauts du haut et du
+          bas). Un code couleur est associé à chaque type de saut pour une
+          meilleure lisibilité.
+        </p>
+
+        <h2>Diagrame circulaire</h2>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 80px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+          "
+        >
+          Le premier graphique est un diagramme circulaire qui illustre les
+          types de sauts les plus utilisés. En survolant une section avec la
+          souris, une infobulle (tooltip) affiche le nom du saut et son
+          pourcentage de présence. La légende fournit les noms des sauts ainsi
+          que leur fréquence d'apparition. Une catégorie "autres" regroupe tous
+          les types de sauts qui représentent moins de 15 % du total des
+          occurrences.
+        </p>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

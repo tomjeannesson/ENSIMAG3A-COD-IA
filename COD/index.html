@@ -10,6 +10,7 @@
     <script src="PieChartGenerator.js"></script>
     <script src="BarChartGenerator.js"></script>
     <script src="ScatterPlotWithErrorsGenerator.js"></script>
+    <script src="PieChartM-F.js"></script>
     <script src="ScatterPlotWithErrorsGeneratorCareer.js"></script>
     <script src="MapCountryGenerator.js"></script>
     <script src="ChartFunction.js"></script>
@@ -169,7 +170,8 @@
           display: flex;
           align-items: center;
           position: relative;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
+          margin-top: 13px;
           padding: 0 15px;
         "
       >
@@ -188,17 +190,29 @@
         <div
           class="parameters"
           style="margin: 0 auto; display: flex; gap: 10px"
-        >
-          Need to be updated
-        </div>
+        ></div>
       </div>
 
-      <div class="charts-container-career">
+      <div
+        class="charts-container-career"
+        style="padding: 0px; padding-top: 8px"
+      >
         <div
           class="chart-wrapper-career"
-          style="width: fit-content; height: fit-content"
+          style="width: fit-content; padding-top: 15px"
         >
+          <h2 style="margin: 0; padding: 0">Number of athletes by country</h2>
           <div id="country-map"></div>
+        </div>
+        <div
+          class="chart-wrapper-career"
+          style="width: fit-content; padding-top: 15px"
+        >
+          <h2 style="margin: 0; padding: 0">Proportion M/F</h2>
+          <div
+            id="pieChart-mf"
+            style="height: 100%; display: flex; flex-direction: column"
+          ></div>
         </div>
       </div>
     </div>

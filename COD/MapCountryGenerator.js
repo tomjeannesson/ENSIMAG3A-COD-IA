@@ -27,10 +27,13 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
   const path = d3.geoPath().projection(projection)
 
   // Préparer les données
-  const dataMap = new Map(data.map((d) => [d.country, d.count]))
+  const dataMap = {}
+  for (const d of data) {
+    dataMap[d.country] = { count: d.count, male: d.male, female: d.female }
+  }
+  console.log(dataMap)
 
   // Définir une échelle de couleur en fonction du nombre d'athlètes
-  const maxValue = d3.max(data, (d) => d.count) || 1
   const colorScale = d3.scaleSequential(d3.interpolateBlues).domain([-13, 150])
 
   // Charger les données GeoJSON personnalisées
@@ -45,7 +48,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
       .append("path")
       .attr("d", path)
       .attr("fill", (d) => {
-        const count = dataMap.get(d.id) || 0
+        const count = dataMap[d.id]?.count || 0
         return count > 0 ? colorScale(count) : "#7c7c7c"
       })
       .attr("stroke", "#a0a0a0")
@@ -64,7 +67,7 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
           .duration(200)
           .attr("opacity", 0.6)
 
-        const count = dataMap.get(d.id) || 0
+        const count = dataMap[d.id]?.count || 0
 
         tooltip
           .style("visibility", "visible")
@@ -90,9 +93,6 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
         tooltip.style("visibility", "hidden")
       })
       .on("click", function (event, d) {
-        const countryCode = d.id
-        const count = dataMap.get(countryCode) || 0
-
         // Récupérer l'élément actuellement sélectionné
         const previouslySelected = svg.select(".selected")
 
@@ -100,7 +100,8 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
         if (d3.select(this).classed("selected")) {
           d3.select(this).classed("selected", false)
 
-          console.log("Country deselected")
+          d3.select("#pieChart-mf").selectAll("svg").remove()
+          generateNoDataGraph(420, 420, "pieChart-mf")
         } else {
           // Désélectionner le pays précédent (s'il y en avait un)
           previouslySelected.classed("selected", false)
@@ -111,7 +112,19 @@ function generateWorldMap(containerWidth, containerHeight, margin, data, id) {
           d3.select(this).classed("selected", true)
 
           // Afficher les informations dans la console
-          generateGenderPieChartMF(800, 500, margin, d, "pieChart-mf")
+          d3.select("#pieChart-mf").selectAll("svg").remove()
+          if (dataMap[d.id]) {
+            generateGenderPieChartMF(
+              500,
+              500,
+              margin,
+              dataMap[d.id],
+              d.properties.name,
+              "pieChart-mf"
+            )
+          } else {
+            generateNoDataGraph(420, 420, "pieChart-mf")
+          }
         }
       })
 

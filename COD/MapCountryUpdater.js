@@ -64,6 +64,8 @@ function updateGeneralMapCountry() {
         d3.select("#country-map").selectAll("svg").remove()
         generateNoDataGraph(containerWidth, containerHeight, "country-map")
       }
+      d3.select("#pieChart-mf").selectAll("svg").remove()
+      generateNoDataGraph(420, 420, "pieChart-mf")
     })
     .catch((error) => {
       console.error("Error fetching the JSON file:", error)

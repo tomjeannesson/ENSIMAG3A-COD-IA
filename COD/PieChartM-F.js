@@ -3,8 +3,10 @@ function generateGenderPieChartMF(
   containerHeight,
   margin,
   data,
+  nameCountry,
   id
 ) {
+  console.log(nameCountry)
   // Calculer les dimensions
   const width = containerWidth - margin.left - margin.right
   const height = containerHeight - margin.top - margin.bottom
@@ -45,7 +47,7 @@ function generateGenderPieChartMF(
   const pie = d3
     .pie()
     .value((d) => d.value)
-    .sort(null) // Ne pas trier pour garder l'ordre original
+    .sort(null)
 
   // Générateur d'arcs
   const arcGenerator = d3
@@ -71,6 +73,30 @@ function generateGenderPieChartMF(
     .attr("fill", (d) => colorScale(d.data.category))
     .attr("stroke", "white")
     .style("stroke-width", "2px")
+    .on("mouseover", function (event, d) {
+      tooltip.style("opacity", 1)
+      d3.select(this).style("opacity", 1).style("stroke-width", "3px")
+      arcs.filter((p) => p !== d).style("opacity", 0.3) // Dim other segments
+    })
+    .on("mousemove", function (event, d) {
+      tooltip
+        .html(
+          `
+            <div style="text-align: center;">
+              <strong>${d.data.category}</strong><br>
+              ${d.data.value} athletes<br>
+              (${((d.data.value / total) * 100).toFixed(1)}%)
+            </div>
+            `
+        )
+        .style("left", `${event.pageX + 10}px`)
+        .style("top", `${event.pageY - 10}px`)
+    })
+    .on("mouseleave", function (event, d) {
+      tooltip.style("opacity", 0)
+      d3.select(this).style("opacity", 1).style("stroke-width", "2px")
+      arcs.style("opacity", 1)
+    })
 
   // Ajouter les pourcentages
   arcs
@@ -86,11 +112,11 @@ function generateGenderPieChartMF(
   svg
     .append("text")
     .attr("x", width / 2)
-    .attr("y", height - 10)
+    .attr("y", height - 5)
     .attr("text-anchor", "middle")
-    .style("font-size", "16px")
+    .style("font-size", "19px")
     .style("font-weight", "bold")
-    .text(data.country)
+    .text(nameCountry)
 
   // Légende
   const legendGroup = svg
@@ -116,4 +142,17 @@ function generateGenderPieChartMF(
     .attr("x", 20)
     .attr("y", 12)
     .text((d) => `${d.category}: ${d.value}`)
+
+  const tooltip = d3
+    .select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("font-size", "15px")
+    .style("opacity", 0)
 }

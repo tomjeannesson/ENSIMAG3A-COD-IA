@@ -15,6 +15,7 @@ function createChart(selectedYear, athlete) {
     })
     .then((data) => {
       const selectElement = document.getElementById("selectAthleteCareer")
+      const options = []
       if (selectElement.children.length === 0) {
         Object.keys(data)
           .sort((a, b) => a.localeCompare(b))
@@ -27,13 +28,13 @@ function createChart(selectedYear, athlete) {
               data[a].results.filter((r) => r.race.year === "2022").length > 0
             ) {
               const option = new Option(a, a)
+              options.push(a)
               selectElement.add(option)
             }
           })
       }
 
-      athlete = athlete || Object.keys(data)[0]
-      console.log(selectedYear, data[athlete].results)
+      athlete = athlete || options[0]
       const results = data[athlete].results
         .filter((r) => r.race.year === selectedYear)
         .sort((a, b) => new Date(a.race.date) - new Date(b.race.date))
@@ -78,7 +79,7 @@ function createChart(selectedYear, athlete) {
         .attr("viewBox", [0, 0, width, height])
         .attr(
           "style",
-          "max-width: 100%; height: auto; height: intrinsic; font-family: system-ui, sans-serif;"
+          "width: 100%; height: 100%; font-family: system-ui, sans-serif;"
         )
         .attr("background-color", "#ffffff")
 

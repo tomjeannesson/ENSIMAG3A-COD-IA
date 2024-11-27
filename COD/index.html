@@ -11,6 +11,7 @@
   <script src="PieChartGenerator.js"></script>
   <script src="BarChartGenerator.js"></script>
   <script src="ScatterPlotWithErrorsGenerator.js"></script>
+  <script src="ScatterPlotWithErrorsGeneratorCareer.js"></script>
   <script src="MapCountryGenerator.js"></script>
   <script src="ChartFunction.js"></script>
 </head>
@@ -71,32 +72,34 @@
 
 
   <div class="content-career" id="content" style="display: none;">
-    <div class="">
-      <h1>Career</h1>
-      <div>
-        <label>
-          Season
-        </label>
+    <div style="display: flex; align-items: center; position: relative; padding: 0 15px;">
+      <h1 style="margin: 0; font-size: 33px; font-weight: bold; color: #333; position: absolute; left: 1;">
+        Jumps
+      </h1>
+      <div class="parameters" style="margin: 0 auto; display: flex; gap: 10px;">
         <select id="selectYearCareer" class="selectBox">
           <option value="2024">2024</option>
           <option value="2023">2023</option>
           <option value="2022">2022</option>
         </select>
-        <label>
-          Athlete
-        </label>
         <select id="selectAthleteCareer" class="selectBox">
         </select>
       </div>
     </div>
-    <div class="charts-container-career" style="display: grid; grid-template-columns:repeat(8, 1fr);">
-      <div class="chart-wrapper-career" style="width: fit-content; height:fit-content; grid-column:1 / 6;">
-        <h2>Results</h2>
-        <div id="careerResults"></div>
+    <div style="display: flex; flex-direction: column;">
+      <div class="charts-container-career">
+        <div class="chart-wrapper-career" style="width: fit-content;">
+          <h2>Profile</h2>
+          <div id="careerSpider"></div>
+        </div>
+        <div class="chart-wrapper-career" style="width: fit-content;">
+          <h2>Results</h2>
+          <div id="careerResults"></div>
+        </div>
       </div>
-      <div class="chart-wrapper-career" style="width: fit-content; height:fit-content; grid-column:6 / 9;">
-        <h2>Profile</h2>
-        <div id="careerSpider"></div>
+      <div class="chart-wrapper-career" style=" margin-left: 20px; margin-right: 20px;">
+        <h2>Performance</h2>
+        <div id="careerError"></div>
       </div>
     </div>
   </div>
@@ -128,6 +131,7 @@
   <script src="PieChartUpdater.js"></script>
   <script src="BarChartUpdater.js"></script>
   <script src="CareerLoader.js"></script>
+  <script src="CareerErrorLoader.js"></script>
   <script src="SpiderLoader.js"></script>
 </body>
 

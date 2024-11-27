@@ -1,10 +1,9 @@
-const width = 600
-const height = 555
+const width = 550
+const height = 550
 const margin = 50
 
 function createSpiderChart(selectedYear, athlete) {
   // Clear any existing chart
-  d3.select("#careerSpider").selectAll("svg").remove()
 
   fetch("careers.json")
     .then((response) => {
@@ -15,6 +14,7 @@ function createSpiderChart(selectedYear, athlete) {
     })
     .then((data) => {
       // Filter data for selected year and athlete
+      d3.select("#careerSpider").selectAll("svg").remove()
       athlete = athlete || Object.keys(data)[0]
       const filteredData = data[athlete].results
         .filter((item) => item.race.year === selectedYear)
@@ -32,7 +32,7 @@ function createSpiderChart(selectedYear, athlete) {
             )
         )
         .filter((_, idx) => idx < 5)
-      console.log(filteredData)
+
       // Prepare data for spider chart
       const chartData = [
         filteredData.reduce((acc, item) => {
@@ -90,7 +90,7 @@ function createSpiderChart(selectedYear, athlete) {
         time_points: 1 / Math.sqrt(avgData.time_points / avgData.count),
         races: avgData.races,
       }))
-      console.log(chartData)
+
       // If no data, return early
       if (chartData.length === 0) return
 
@@ -103,7 +103,7 @@ function createSpiderChart(selectedYear, athlete) {
         .attr("viewBox", [0, 0, width, height])
         .attr(
           "style",
-          "max-width: 100%; height: auto; height: intrinsic; font-family: system-ui, sans-serif;"
+          "width: auto; height: auto; height: intrinsic; font-family: system-ui, sans-serif;"
         )
 
       // Define the axes

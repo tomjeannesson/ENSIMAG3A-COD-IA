@@ -42,8 +42,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -64,8 +64,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -80,8 +80,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -97,8 +97,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -122,8 +122,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -139,8 +139,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -161,8 +161,8 @@
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -172,13 +172,13 @@
           la lecture et offre aux entraîneurs une visualisation directe des
           performances des meilleurs sauts.
         </p>
-        <img src="barre.png" alt="barre" style="max-width: 100%" />
+        <img src="barre.png" alt="barre" style="max-width: 90%" />
         <h2>Nuage de points</h2>
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
@@ -194,39 +194,398 @@
 
       <div class="paragraphe">
         <h1>Interface sur les athlètes</h1>
-
-        <h2>Graphiques utilisés</h2>
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
-          L'interface présente 6 graphiques, répartis en 3 types différents
-          (chaque type est dupliqué pour représenter les sauts du haut et du
-          bas). Un code couleur est associé à chaque type de saut pour une
-          meilleure lisibilité.
+          La page "Athlète" a été conçue pour permettre une analyse complète des
+          performances individuelles d'un athlète au cours d'une saison
+          spécifique. Cette page se divise en trois sections principales :
+          Profile, Results, et Performance, chacune accompagnée de graphiques
+          adaptés aux types de données et objectifs d'analyse. Concernant les
+          données exploitées, nous utilisons tous les résultats des dernières
+          saisons de cet athlètes (toutes les courses auxquels il a participé).
         </p>
 
-        <h2>Diagrame circulaire</h2>
+        <h2>Section Profile : Visualisation radar des performances globales</h2>
         <p
           style="
             text-align: justify;
-            padding-right: 80px;
-            padding-left: 80px;
+            padding-right: 90px;
+            padding-left: 90px;
             padding-bottom: 20px;
           "
         >
-          Le premier graphique est un diagramme circulaire qui illustre les
-          types de sauts les plus utilisés. En survolant une section avec la
-          souris, une infobulle (tooltip) affiche le nom du saut et son
-          pourcentage de présence. La légende fournit les noms des sauts ainsi
-          que leur fréquence d'apparition. Une catégorie "autres" regroupe tous
-          les types de sauts qui représentent moins de 15 % du total des
-          occurrences.
+          <strong style="font-size: 19px">Objectif : <br /></strong>
+          Cette section a pour but de fournir une vue d'ensemble des
+          performances d'un athlète selon plusieurs dimensions, comme les points
+          totaux, les points de temps, les points des sauts (haut et bas) et les
+          points de technique.
         </p>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+            padding-bottom: 20px;
+          "
+        >
+          Le but est de permettre à un athlète de visualiser ses forces et ses
+          faiblesses, par rapport aux autres athlètes. Ce qui permet de cibler
+          son entrainement sur ses points les plus faibles.
+        </p>
+        <p></p>
+        <strong
+          style="
+            font-size: 19px;
+            display: block;
+            color: #576574;
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+          "
+        >
+          Choix de visualisation :
+        </strong>
+        <ul
+          style="
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #576574;
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 130px;
+            padding-bottom: 20px;
+          "
+        >
+          <li>
+            <strong>Graphique radar :</strong> Ce format est idéal pour comparer
+            plusieurs variables ayant des échelles similaires. Il met en
+            évidence les points forts et faibles d'un athlète en un coup d'œil.
+          </li>
+          <li>
+            Chaque axe représente une métrique clé (ex. :
+            <code>total_points</code>, <code>time_points</code>,
+            <code>ski_points</code>).
+          </li>
+          <li>
+            La forme polygonale obtenue montre si les performances sont
+            équilibrées ou dominées par certaines métriques.
+          </li>
+          <li>
+            La performance d’un athlète est évaluée en fonction des résultats du
+            meilleur de la saison, offrant ainsi une analyse équitable et
+            précise de son niveau au cours de cette période.
+          </li>
+        </ul>
+        <div style="display: flex; align-items: center">
+          <img
+            src="radar-athlete.png"
+            alt="radar"
+            style="max-width: 30%; margin-right: 20px; padding-left: 90px"
+          />
+          <div style="flex: 1">
+            <p
+              style="
+                flex: 1;
+                text-align: justify;
+                color: #576574;
+                padding-right: 90px;
+                padding-left: 30px;
+              "
+            >
+              L’analyse des performances de Mikael KINGSBURY lors de la saison
+              2024 met en évidence l’efficacité de ce graphique. Elle révèle que
+              ses points forts résident dans tous les aspects techniques, à
+              l'exception des points liés au temps. Cela indique qu'il réalise
+              des descentes techniquement parfaites, bien que légèrement moins
+              rapides que ses concurrents.
+            </p>
+            <p
+              style="
+                flex: 1;
+                text-align: justify;
+                color: #576574;
+                padding-top: 10px;
+                padding-right: 90px;
+                padding-left: 30px;
+              "
+            >
+              En ayant connaissance de ses résultats (il est actuellement le
+              meilleur dans sa discipline), on peut en déduire que la clé du
+              succès réside davantage dans la maîtrise technique du ski et des
+              sauts que dans la vitesse. Skier rapidement ne suffit pas à
+              garantir une victoire.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="padding-top: 20px">
+          Section Résultats : Historique des classements lors de la saison
+        </h2>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+            padding-bottom: 20px;
+          "
+        >
+          <strong style="font-size: 19px">Objectif : <br /></strong>
+          Cette section vise à montrer l'évolution des résultats de l'athlète au
+          cours de la saison en mettant en lumière ses meilleures et moins
+          bonnes performances.
+        </p>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+            padding-bottom: 20px;
+          "
+        >
+          Le but est de lui donner une vue d'ensemble sur ses résultats. Cela
+          permet, entre autre, de comparer ses résultats et voir une possible
+          progression ou une régression au cours de la saison. Ceci est
+          pertinent pour examiner si un athlète peut être prometteur pour les
+          prochaines saisons ou si au contraire, ses résultats sont en baisse.
+        </p>
+        <p></p>
+        <strong
+          style="
+            font-size: 19px;
+            display: block;
+            color: #576574;
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+          "
+        >
+          Choix de visualisation :
+        </strong>
+        <ul
+          style="
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #576574;
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 130px;
+            padding-bottom: 20px;
+          "
+        >
+          <li>
+            <strong>Graphique en ligne :</strong> Ce type de graphique est
+            parfaitement adapté pour suivre l’évolution d’un athlète au fil de
+            la saison. Il compare ses résultats finaux pour chaque course,
+            permettant ainsi de visualiser rapidement les tendances de
+            performance tout au long de la saison.
+          </li>
+          <li>
+            L’axe horizontal représente les différentes compétitions, avec des
+            étiquettes indiquant les dates et les lieux pour un repérage facile.
+          </li>
+          <li>
+            L’axe vertical illustre les positions obtenues (1er, 2e, etc.), avec
+            un affichage inversé pour placer les meilleures positions en haut,
+            conformément aux conventions visuelles.
+          </li>
+          <li>
+            Les points clés du graphique sont annotés avec les classements
+            correspondants pour une meilleure lisibilité. De plus, en survolant
+            un point avec la souris, des informations détaillées apparaissent,
+            telles que le classement et le score total de l’athlète pour cette
+            course.
+          </li>
+        </ul>
+        <div style="display: flex; align-items: center">
+          <img
+            src="historyResultsChart.png"
+            alt="résultats-athlète"
+            style="max-width: 35%; margin-right: 20px; padding-left: 90px"
+          />
+          <div style="flex: 1">
+            <p
+              style="
+                flex: 1;
+                text-align: justify;
+                color: #576574;
+                padding-right: 90px;
+                padding-left: 30px;
+              "
+            >
+              L’analyse des performances de Mikael KINGSBURY lors de la saison
+              2024 met en évidence son incroyable régularité. Le graphique
+              montre clairement son évolution tout au long de la saison, avec
+              des résultats exceptionnels, constamment dans le top 3, à
+              l’exception d’une course où il chute à la 13ᵉ place. Cette
+              anomalie ressort immédiatement grâce à la visualisation.
+            </p>
+            <p
+              style="
+                flex: 1;
+                text-align: justify;
+                color: #576574;
+                padding-top: 10px;
+                padding-right: 90px;
+                padding-left: 30px;
+              "
+            >
+              Pour l'athlète ou son coach, cette performance inhabituelle invite
+              à une analyse approfondie. Comprendre les raisons de ce résultat
+              (conditions météorologiques, erreurs techniques, pression, etc.)
+              permettrait d’identifier les points d’amélioration et d’éviter
+              qu’une telle situation ne se reproduise à l’avenir. Cela renforce
+              l’intérêt d’un graphique qui ne se limite pas aux tendances
+              générales, mais met également en avant les exceptions nécessitant
+              une attention particulière.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="padding-top: 20px">
+          Section Performances : Analyse avec interval min/max
+        </h2>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+            padding-bottom: 20px;
+          "
+        >
+          <strong style="font-size: 19px">Objectif : <br /></strong> Ce
+          graphique vient compléter de manière pertinente le radar présenté
+          précédemment en offrant une vue plus détaillée des performances de
+          l'athlète pour chaque catégorie de notation. Il met en avant le
+          classement moyen obtenu au cours de la saison pour chaque critère (par
+          exemple, <code>time_points</code>, <code>ski_points</code>, etc.),
+          tout en illustrant l’intervalle de variation, c’est-à-dire le meilleur
+          et le pire classement enregistré pour chaque catégorie. Cette approche
+          permet de visualiser à la fois la constance de l’athlète et les écarts
+          possibles dans ses performances.
+        </p>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+            padding-bottom: 20px;
+          "
+        >
+          L’objectif principal de ce graphique est d’apporter un contexte plus
+          riche à la simple moyenne. En effet, bien qu’une moyenne puisse donner
+          une idée générale des résultats, elle ne reflète pas les fluctuations
+          significatives qui pourraient être critiques pour un athlète ou son
+          entraîneur. Par exemple, un classement moyen élevé, mais accompagné
+          d’un intervalle très large, peut indiquer une performance irrégulière.
+          À l’inverse, une moyenne avec un intervalle restreint témoigne d’une
+          constance dans l’effort.
+        </p>
+        <p
+          style="
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+            padding-bottom: 20px;
+          "
+        >
+          En combinant ces informations, ce graphique devient un outil précieux
+          pour analyser en détail les points forts et faibles de l'athlète dans
+          des contextes variés. Il permet aussi d'identifier les domaines où
+          l'amélioration est la plus nécessaire, tout en mettant en lumière les
+          critères où il excelle de façon constante. Cette analyse fine offre
+          une base solide pour orienter l'entraînement et maximiser les
+          performances futures.
+        </p>
+        <p></p>
+        <strong
+          style="
+            font-size: 19px;
+            display: block;
+            color: #576574;
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 90px;
+          "
+        >
+          Choix de visualisation :
+        </strong>
+        <ul
+          style="
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #576574;
+            text-align: justify;
+            padding-right: 90px;
+            padding-left: 130px;
+            padding-bottom: 20px;
+          "
+        >
+          <li>
+            <strong>Graphique en points avec barres d'erreur :</strong> Chaque
+            métrique est représentée par un point indiquant la moyenne des
+            performances sur la saison.
+          </li>
+          <li>
+            Les barres d’erreur montrent la variabilité (écart-type), permettant
+            d'évaluer la régularité de l'athlète dans chaque catégorie.
+          </li>
+        </ul>
+        <div style="display: flex; align-items: center">
+          <img
+            src="pointGraph-MinMax.png"
+            alt="point-minmax"
+            style="max-width: 35%; margin-right: 20px; padding-left: 90px"
+          />
+          <div style="flex: 1">
+            <p
+              style="
+                flex: 1;
+                text-align: justify;
+                color: #576574;
+                padding-right: 90px;
+                padding-left: 30px;
+              "
+            >
+              Toujours avec l’analyse des performances de Mikael KINGSBURY lors
+              de la saison 2024, on remarque que ses résultats moyens sont très
+              proches de ses meilleurs résultats. Cela traduit une grande
+              constance dans la plupart des catégories, ce qui est le signe d’un
+              athlète exceptionnellement régulier. Cependant, son résultat
+              minimal, nettement plus bas, révèle que lors de rares occasions,
+              ses performances ont été en deçà de ses standards habituels. Ce
+              constat est cohérent avec les observations précédentes sur ses
+              performances globales.
+            </p>
+            <p
+              style="
+                flex: 1;
+                text-align: justify;
+                color: #576574;
+                padding-top: 10px;
+                padding-right: 90px;
+                padding-left: 30px;
+              "
+            >
+              Pour l’athlète ou son coach, ce graphique permet d’identifier
+              précisément les irrégularités qui peuvent survenir dans certaines
+              situations ou catégories spécifiques. En isolant ces moments, il
+              devient possible d'analyser les facteurs ayant contribué à ces
+              résultats plus faibles (erreurs techniques, conditions
+              extérieures, pression de la compétition, etc.) et de mettre en
+              place des stratégies ciblées pour les éviter à l’avenir.
+            </p>
+          </div>
+        </div>
+        <!-- rien -->
       </div>
     </div>
   </body>

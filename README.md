@@ -133,16 +133,10 @@ Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronn
 
 ## 4. Enjeux environnementaux et sociétaux
 
-<<<<<<< HEAD
 ### 4.1. Enjeux sociétaux
 Le ski de bosses, bien moins médiatisé que d'autres sports, dispose de ressources limitées pour des analyses avancées. L'introduction d'un outil basé sur l'IA offrirait une aide précieuse aux entraîneurs et athlètes, en optimisant les performances et en renforçant la compétitivité, même dans des disciplines moins populaires.
 
 Nos observations via des études Open Data montrent une relative parité hommes-femmes dans ce sport, bien que les hommes restent majoritaires. Ces données permettent de mettre en lumière des pistes pour promouvoir davantage l’inclusion et l’équité dans la discipline, contribuant à des avancées sociétales durables dans le sport de haut niveau.
-=======
--partié homme/femme => avec le graph de open data ?
--mise en place d’outils performants open source pour tous les clubs de ski => égalité dans l'entraînement.
--petit jeu de données et algo pas très lourd. L’analyse n’est pas très coûteuse => bien pour l’environnement.
->>>>>>> 9eb7b54fae49ec15b5f80bf20fb1599a381864aa
 ![Proportion H/F](lib/etude_clusters/prop-HF.png)
 
 ### 4.2. Enjeux environnementauxs

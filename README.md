@@ -1,26 +1,28 @@
 # Rapport projet IA
+
 Hugo BRUCKER, Tom JEANNESON, Adame ABDELAZIZ, Julian COUX
 
-
-# 1. Etude du sujet 
+## 1. Etude du sujet
 
 ## 1.1. La question étudiée
-Nous sommes tous skieurs, dont Tom qui a été sportif de haut niveau en ski de bosses. Nous avons décidé de construire ce projet autour de cette passion commune. Tom ayant baigné dans ce sport depuis tout petit, il a pu voir les évolutions techniques utilisées par les coachs s’adapter au mieux à leurs athlètes. Les entraînements sont de plus en plus destinés à améliorer les techniques pouvant rapporter plus de points en compétition. À l’heure de l’explosion de l’intelligence artificielle, celle-ci n’est pas encore utilisée en ski de bosses et peut amener une réelle amélioration au sport. Aujourd’hui, les entraîneurs se contentent d’analyse de tableaux excel fait à la main avec des statistiques quasi inexistantes. L'apport d'outils d’analyses tel que celui-ci serait un grand plus dans le sport. 
+
+Nous sommes tous skieurs, dont Tom qui a été sportif de haut niveau en ski de bosses. Nous avons décidé de construire ce projet autour de cette passion commune. Tom ayant baigné dans ce sport depuis tout petit, il a pu voir les évolutions techniques utilisées par les coachs s’adapter au mieux à leurs athlètes. Les entraînements sont de plus en plus destinés à améliorer les techniques pouvant rapporter plus de points en compétition. À l’heure de l’explosion de l’intelligence artificielle, celle-ci n’est pas encore utilisée en ski de bosses et peut amener une réelle amélioration au sport. Aujourd’hui, les entraîneurs se contentent d’analyse de tableaux excel fait à la main avec des statistiques quasi inexistantes. L'apport d'outils d’analyses tel que celui-ci serait un grand plus dans le sport.
 Ainsi, comment peut-on améliorer ce sport à l’aide d’outils d’IA ?
 
 ## 1.2. Les données à utiliser pour répondre à la question
+
 Nous allons nous pencher sur un jeu de données des compétitions sur le circuit coupe du monde sur les trois dernières saisons (obtenu par Tom, dans le cadre de son PFE).
 
-Les données ont initialement la forme suivante (elles sont contenues dans un PDF de résultats) : 
+Les données ont initialement la forme suivante (elles sont contenues dans un PDF de résultats) :
 ![Tableau de données](lib/etude_clusters/tableau-donnees.png)
 Elles sont ensuite extraites et agrégées dans des dataframes pandas.
 ![Données en DataFrame](lib/etude_clusters/dataframe-donnees.png)
 C’est sur ces dataframes que nous allons travailler.
 
-
-# 2. Travail d'extraction de donnée
+## 2. Travail d'extraction de donnée
 
 ## 2.1. Algorithmes d'extraction
+
 Les premiers algorithmes d'extraction et de transformation des données sont implémentés dans le module *DataSource* ([voir ici](https://github.com/tomjeannesson/ENSIMAG3A-COD-IA/blob/main/lib/data_source.py)).  
 Un des algorithmes initiaux transforme notre base de données (au format JSON, [voir ici](https://raw.githubusercontent.com/tomjeannesson/ENSIMAG3A-COD-IA/refs/heads/main/data.json)) en une structure de données exploitable : une liste de *DataFrames*. Chaque *DataFrame* représente une course et présente les informations de chaque athlète sous forme de tableau, de manière à faciliter l'analyse ultérieure :
 ![Données après extraction](lib/etude_clusters/extraction-donnees.png)
@@ -36,11 +38,12 @@ En plus de ce filtrage par défaut, pour plus de flexibilité, nous avons intég
 Enfin, nous avons ajouté une fonction *query* qui permet d'effectuer des requêtes directement sur les *DataFrames* en utilisant la méthode *query* de Pandas, facilitant ainsi des recherches plus complexes.
 
 ## 2.2. Traitement des données
+
 Afin de pouvoir exploiter les données agrégées dans les Dataframes évoqués ci-dessus, nous avons développé une classe nommé Extractor ([voir ici](https://github.com/tomjeannesson/ENSIMAG3A-COD-IA/blob/main/lib/extractor.py)).
 
 Pour cette classe, on passe au constructeur une liste de Dataframes (récupérés précédemment), et nous venons les regrouper selon une dimension. Pour l’instant, nous pouvons les regrouper pour un athlète (récupérer ses statistiques globales sur l’ensemble de ces Dataframes) ou pour une compétition (récupérer les min, max et moyennes de chacun des critères de notation). Nous avons également comme ambition de faire ce même travail pour la dimension des pays.
 
-# 3. Clustering des Athlètes
+## 3. Clustering des Athlètes
 
 Ce projet utilise des techniques de clustering (K-Means) et de réduction de dimension (PCA) pour analyser et visualiser des données d'athlètes. Il génère des graphiques permettant d'explorer les clusters dans différentes dimensions.
 
@@ -67,21 +70,21 @@ Ce projet utilise des techniques de clustering (K-Means) et de réduction de dim
 
 ## 3.2. Résultats
 
-### 3.2.1. Clustering avec 3 clusters
+### 3.2.1 Clustering avec 3 clusters
 
-#### Pair Plot
+#### 3.2.1.1 Pair Plot
 
 Ce graphique montre les relations entre toutes les variables, avec les clusters colorés en fonction des résultats du modèle.
 
 ![Pair Plot 3 Clusters](lib/etude_clusters/multi_dimensions_cluster_3.png)
 
-#### PCA à 2 dimensions
+#### 3.2.1.2 PCA à 2 dimensions
 
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 3 Clusters](lib/etude_clusters/two_dimensions_cluster_3.png)
 
-### Analyse
+### Analyse 3.2.1
 
 L'analyse des 3 clusters confirme une répartition logique des athlètes en fonction de leurs performances. Les clusters identifiés reflètent trois groupes bien distincts :
 
@@ -93,28 +96,53 @@ Bien que ces observations ne révèlent rien de nouveau, elles valident que la s
 
 ---
 
-### 3.2.2. Clustering avec 4 clusters
+### 3.2.2 Clustering avec 4 clusters
 
 L'analyse avec 3 clusters nous a permis de confirmer une répartition assez simple des athlètes, mais elle n'a pas vraiment apporté de nouvelles informations. Pour affiner l'analyse, nous avons décidé de tester avec 4 clusters. Cette segmentation plus détaillée permet de mieux capturer les différences subtiles entre les athlètes et offre une vision plus précise de leurs performances.
 
-#### Pair Plot
+#### 3.2.2.1 Pair Plot
 
 Ce graphique montre les relations entre toutes les variables, avec les clusters colorés en fonction des résultats du modèle.
 
 ![Pair Plot 4 Clusters](lib/etude_clusters/multi_dimensions_cluster_4.png)
 
-#### PCA à 2 dimensions
+#### 3.2.2.2 PCA à 2 dimensions
 
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 4 Clusters](lib/etude_clusters/two_dimensions_cluster_4.png)
 
+### 3.2.3 Calculs de corrélation
+
+Avant de nous pencher sur des algorithmes de prédiction, nous avons décidé d'étudier la corrélation entre les différentes features de notre jeu de données, afin de bien comprendre comment elles interragissent entre elles.
+
+Voici la correlation entre les six principales features du dataset.
+
+![Corrplot](lib/etude_corrplot/corr.png)
+
+Et voici les correlations entre toutes les features:
+![Corrplot all](lib/etude_corrplot/corr-all.png)
+
+### 3.2.4 Probabilités de qualification en finale
+
+Pour cette partie, nous nous demandons à quel point il est possible de prédire les chances qu'a un athlète de se qualifier en finale d'une coupe du monde.
+Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
+![Final breakpoints](lib/etude_ranks/plot.png)
+
+Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+
 ## 4. Enjeux environnementaux et sociétaux
 
+<<<<<<< HEAD
 ### 4.1. Enjeux sociétaux
 Le ski de bosses, bien moins médiatisé que d'autres sports, dispose de ressources limitées pour des analyses avancées. L'introduction d'un outil basé sur l'IA offrirait une aide précieuse aux entraîneurs et athlètes, en optimisant les performances et en renforçant la compétitivité, même dans des disciplines moins populaires.
 
 Nos observations via des études Open Data montrent une relative parité hommes-femmes dans ce sport, bien que les hommes restent majoritaires. Ces données permettent de mettre en lumière des pistes pour promouvoir davantage l’inclusion et l’équité dans la discipline, contribuant à des avancées sociétales durables dans le sport de haut niveau.
+=======
+-partié homme/femme => avec le graph de open data ?
+-mise en place d’outils performants open source pour tous les clubs de ski => égalité dans l'entraînement.
+-petit jeu de données et algo pas très lourd. L’analyse n’est pas très coûteuse => bien pour l’environnement.
+>>>>>>> 9eb7b54fae49ec15b5f80bf20fb1599a381864aa
 ![Proportion H/F](lib/etude_clusters/prop-HF.png)
 
 ### 4.2. Enjeux environnementauxs

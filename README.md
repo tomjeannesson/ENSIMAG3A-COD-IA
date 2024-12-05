@@ -84,7 +84,7 @@ Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide
 
 ![PCA 2D 3 Clusters](lib/etude_clusters/two_dimensions_cluster_3.png)
 
-### Analyse 3.2.1
+#### 3.2.1.2 Analyse 
 
 L'analyse des 3 clusters confirme une répartition logique des athlètes en fonction de leurs performances. Les clusters identifiés reflètent trois groupes bien distincts :
 
@@ -111,6 +111,24 @@ Ce graphique montre les relations entre toutes les variables, avec les clusters 
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 4 Clusters](lib/etude_clusters/two_dimensions_cluster_4.png)
+
+#### 3.2.2.3 Analyse
+
+##### Analyse Pair Plot
+Cette analyse avec 4 clusters s'avère bien plus pertinente que la précédente, car elle permet d'identifier des groupes de skieurs supplémentaires, offrant une compréhension plus fine des performances. On retrouve toujours un **groupe d'athlètes très performants** (excellents dans tous les domaines) et un **groupe moins performant**, mais ce sont les deux groupes intermédiaires qui rendent cette analyse particulièrement intéressante.
+
+En examinant le graphique Pair Plot, il apparaît clairement que ces deux groupes intermédiaires diffèrent en termes de points obtenus dans certaines catégories. Voici leurs caractéristiques principales :
+- **Athlètes axés sur la technique de saut :** 
+Ces skieurs obtiennent de bons résultats en `air_points`, reflétant une technique de saut très soignée. En revanche, leurs `time_points` sont plus faibles, ce qui indique qu'ils adoptent un rythme de descente plus lent.
+- **Athlètes axés sur la vitesse :** 
+Ces skieurs se démarquent par d'excellents `time_points`, témoignant d'une grande rapidité. Cependant, leurs `air_points` sont plus faibles, traduisant des sauts moins techniques ou moins bien notés.
+
+Ces deux catégories de skieurs de niveau moyen illustrent une tendance intéressante : pour atteindre un niveau intermédiaire, les athlètes semblent se spécialiser soit dans la **vitesse**, au détriment de la technique, soit dans une **meilleure exécution des sauts**, mais avec une descente plus lente. Ces observations pourraient fournir des pistes précieuses pour adapter les stratégies d'entraînement selon les profils des athlètes.
+
+##### Analyse PCA
+Ces observations sont confirmées par l’analyse en composantes principales (PCA) en 2 dimensions. Le graphique met en évidence les **trois groupes principaux** : très performants, moyens et moins performants. 
+Comme indiqué précédemment, le groupe des athlètes moyens se scinde en **deux sous-groupes distincts**, correspondant aux profils déjà identifiés : les skieurs axés sur la vitesse et ceux axés sur la technique de saut.
+
 
 ### 3.2.3 Calculs de corrélation
 

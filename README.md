@@ -113,4 +113,4 @@ Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide
 -partié homme/femme => avec le graph de open data ?
 -mise en place d’outils performants open source pour tous les clubs de ski => égalité dans l'entraînement.
 -petit jeu de données et algo pas très lourd. L’analyse n’est pas très coûteuse => bien pour l’environnement.
-
+![Proportion H/F](lib/etude_clusters/prop-HF.png)

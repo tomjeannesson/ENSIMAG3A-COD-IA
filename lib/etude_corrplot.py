@@ -6,7 +6,7 @@ from data_source import DataSource
 
 source = DataSource("data.json")
 
-dataframe_list = source.filter([["WC"], [], [], [], ["F"]], "include", None)
+dataframe_list = source.filter([["WC"], [], [], [], []], "include", None)
 dataframe = dataframe_list[0]
 
 dataframe = dataframe.drop(
@@ -40,8 +40,9 @@ for _df in dataframe_list[1:]:
     )
     dataframe = pd.concat([dataframe, _df], axis=0)
 
+
 dataframe = dataframe.apply(
-    lambda col: col / (abs(col).max() - abs(col).min()),
+    lambda col: (abs(col) - abs(col).min()) / (abs(col).max() - abs(col).min()),
     axis=0,
 )
 
@@ -54,7 +55,8 @@ corr = dataframe[
         "top_air_points",
         "bottom_air_points",
     ]
-].corr()
+].corr(method="kendall")
+
 
 mask = np.triu(np.ones_like(corr, dtype=bool))
 
@@ -69,7 +71,6 @@ sns.heatmap(
     corr,
     mask=mask,
     cmap=cmap,
-    vmax=0.3,
     center=0,
     square=True,
     linewidths=0.5,
@@ -94,7 +95,6 @@ sns.heatmap(
     corr,
     mask=mask,
     cmap=cmap,
-    vmax=0.3,
     center=0,
     square=True,
     linewidths=0.5,

@@ -84,7 +84,7 @@ Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide
 
 ![PCA 2D 3 Clusters](lib/etude_clusters/two_dimensions_cluster_3.png)
 
-#### 3.2.1.2 Analyse 
+#### 3.2.1.2 Analyse
 
 L'analyse des 3 clusters confirme une répartition logique des athlètes en fonction de leurs performances. Les clusters identifiés reflètent trois groupes bien distincts :
 
@@ -115,20 +115,22 @@ Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide
 #### 3.2.2.3 Analyse
 
 ##### Analyse Pair Plot
+
 Cette analyse avec 4 clusters s'avère bien plus pertinente que la précédente, car elle permet d'identifier des groupes de skieurs supplémentaires, offrant une compréhension plus fine des performances. On retrouve toujours un **groupe d'athlètes très performants** (excellents dans tous les domaines) et un **groupe moins performant**, mais ce sont les deux groupes intermédiaires qui rendent cette analyse particulièrement intéressante.
 
 En examinant le graphique Pair Plot, il apparaît clairement que ces deux groupes intermédiaires diffèrent en termes de points obtenus dans certaines catégories. Voici leurs caractéristiques principales :
-- **Athlètes axés sur la technique de saut :** 
+
+- **Athlètes axés sur la technique de saut :**
 Ces skieurs obtiennent de bons résultats en `air_points`, reflétant une technique de saut très soignée. En revanche, leurs `time_points` sont plus faibles, ce qui indique qu'ils adoptent un rythme de descente plus lent.
-- **Athlètes axés sur la vitesse :** 
+- **Athlètes axés sur la vitesse :**
 Ces skieurs se démarquent par d'excellents `time_points`, témoignant d'une grande rapidité. Cependant, leurs `air_points` sont plus faibles, traduisant des sauts moins techniques ou moins bien notés.
 
 Ces deux catégories de skieurs de niveau moyen illustrent une tendance intéressante : pour atteindre un niveau intermédiaire, les athlètes semblent se spécialiser soit dans la **vitesse**, au détriment de la technique, soit dans une **meilleure exécution des sauts**, mais avec une descente plus lente. Ces observations pourraient fournir des pistes précieuses pour adapter les stratégies d'entraînement selon les profils des athlètes.
 
 ##### Analyse PCA
-Ces observations sont confirmées par l’analyse en composantes principales (PCA) en 2 dimensions. Le graphique met en évidence les **trois groupes principaux** : très performants, moyens et moins performants. 
-Comme indiqué précédemment, le groupe des athlètes moyens se scinde en **deux sous-groupes distincts**, correspondant aux profils déjà identifiés : les skieurs axés sur la vitesse et ceux axés sur la technique de saut.
 
+Ces observations sont confirmées par l’analyse en composantes principales (PCA) en 2 dimensions. Le graphique met en évidence les **trois groupes principaux** : très performants, moyens et moins performants.
+Comme indiqué précédemment, le groupe des athlètes moyens se scinde en **deux sous-groupes distincts**, correspondant aux profils déjà identifiés : les skieurs axés sur la vitesse et ceux axés sur la technique de saut.
 
 ### 3.2.3 Calculs de corrélation
 
@@ -152,12 +154,14 @@ Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronn
 ## 4. Enjeux environnementaux et sociétaux
 
 ### 4.1. Enjeux sociétaux
+
 Le ski de bosses, bien moins médiatisé que d'autres sports, dispose de ressources limitées pour des analyses avancées. L'introduction d'un outil basé sur l'IA offrirait une aide précieuse aux entraîneurs et athlètes, en optimisant les performances et en renforçant la compétitivité, même dans des disciplines moins populaires.
 
 Nos observations via des études Open Data montrent une relative parité hommes-femmes dans ce sport, bien que les hommes restent majoritaires. Ces données permettent de mettre en lumière des pistes pour promouvoir davantage l’inclusion et l’équité dans la discipline, contribuant à des avancées sociétales durables dans le sport de haut niveau.
 ![Proportion H/F](lib/etude_clusters/prop-HF.png)
 
 ### 4.2. Enjeux environnementaux
+
 Grâce à une base de données légère, ce projet a une faible empreinte énergétique, rendant son déploiement respectueux de l’environnement. Par ailleurs, des applications futures pourraient inclure l’optimisation des infrastructures sportives ou la réduction des déplacements des équipes, participant ainsi à des pratiques sportives plus durables.
 
 En combinant progrès technologique, équité sociétale et respect de l’environnement, ce projet démontre que performance et responsabilité peuvent aller de pair.

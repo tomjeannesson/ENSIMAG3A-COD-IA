@@ -23,7 +23,13 @@ class DataframeMetadata:
 
     def to_list(self) -> list[str]:
         """Returns the data in order."""
-        return [self.circuit, self.gender, self.year, self.place, self.run]
+        return [
+            self.circuit,
+            self.gender,
+            self.year,
+            self.place,
+            self.run,
+        ]
 
     def __str__(self) -> str:  # noqa: D105
         return f"Race Metadata: {" ".join(self.to_list())}"

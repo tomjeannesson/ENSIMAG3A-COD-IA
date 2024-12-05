@@ -7,7 +7,7 @@ from extractor import Extractor
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 
-source = DataSource("./../data.json")
+source = DataSource("data.json")
 
 dataframe_list = source.filter([["WC"], ["M"], [], [], ["Q"]], "include", None)
 extractor = Extractor(dataframe_list)
@@ -43,7 +43,7 @@ df_athletes["cluster"] = model.fit_predict(df_athletes)
 print("    model created")  # noqa: T201
 
 """check that the directory exist"""
-output_folder = "etude_clusters"
+output_folder = "lib/etude_clusters"
 os.makedirs(output_folder, exist_ok=True)  # noqa: PTH103
 print("    output_folder created")  # noqa: T201
 

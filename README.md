@@ -12,14 +12,14 @@ Connexion au nash : `ssh -K <identifiant>@nash.ensimag.fr`
 
 --> Doc de ensicompute
 
-
-# Clustering des Athlètes
+## Clustering des Athlètes
 
 Ce projet utilise des techniques de clustering (K-Means) et de réduction de dimension (PCA) pour analyser et visualiser des données d'athlètes. Il génère des graphiques permettant d'explorer les clusters dans différentes dimensions.
 
 ## Description
 
 ### Étapes principales
+
 1. Extraction des données depuis un fichier JSON via une classe `DataSource`.
 2. Prétraitement des données et filtrage des variables pertinentes.
 3. Clustering avec l'algorithme K-Means.
@@ -28,6 +28,7 @@ Ce projet utilise des techniques de clustering (K-Means) et de réduction de dim
    - Un espace réduit à 2 dimensions grâce à la PCA.
 
 ### Bibliothèques utilisées
+
 - **`os`** : Gestion des dossiers.
 - **`matplotlib`** : Création et sauvegarde des graphiques.
 - **`seaborn`** : Visualisation avancée des données.
@@ -41,18 +42,21 @@ Ce projet utilise des techniques de clustering (K-Means) et de réduction de dim
 ### 1. Clustering avec 3 clusters
 
 #### Pair Plot
+
 Ce graphique montre les relations entre toutes les variables, avec les clusters colorés en fonction des résultats du modèle.
 
 ![Pair Plot 3 Clusters](lib/etude_clusters/multi_dimensions_cluster_3.png)
 
 #### PCA à 2 dimensions
+
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 3 Clusters](lib/etude_clusters/two_dimensions_cluster_3.png)
 
-### Analyse 
+#### Analyse
 
 L'analyse des 3 clusters confirme une répartition logique des athlètes en fonction de leurs performances. Les clusters identifiés reflètent trois groupes bien distincts :  
+
 - **Athlètes forts partout** : ils excellent dans tous les domaines évalués.  
 - **Athlètes moyens partout** : ils obtiennent des performances équilibrées, sans exceller ni faiblir significativement.  
 - **Athlètes faibles partout** : leurs scores sont globalement inférieurs sur tous les critères.  
@@ -66,11 +70,24 @@ Bien que ces observations ne révèlent rien de nouveau, elles valident que la s
 L'analyse avec 3 clusters nous a permis de confirmer une répartition assez simple des athlètes, mais elle n'a pas vraiment apporté de nouvelles informations. Pour affiner l'analyse, nous avons décidé de tester avec 4 clusters. Cette segmentation plus détaillée permet de mieux capturer les différences subtiles entre les athlètes et offre une vision plus précise de leurs performances.
 
 #### Pair Plot
+
 Ce graphique montre les relations entre toutes les variables, avec les clusters colorés en fonction des résultats du modèle.
 
 ![Pair Plot 4 Clusters](lib/etude_clusters/multi_dimensions_cluster_4.png)
 
 #### PCA à 2 dimensions
+
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 4 Clusters](lib/etude_clusters/two_dimensions_cluster_4.png)
+
+### 3 Calculs de corrélation
+
+Avant de nous pencher sur des algorithmes de prédiction, nous avons décidé d'étudier la corrélation entre les différentes features de notre jeu de données, afin de bien comprendre comment elles interragissent entre elles.
+
+Voici la correlation entre les six principales features du dataset.
+
+![Corrplot](lib/etude_corrplot/corr.png)
+
+Et voici les correlations entre toutes les features:
+![Corrplot all](lib/etude_corrplot/corr-all.png)

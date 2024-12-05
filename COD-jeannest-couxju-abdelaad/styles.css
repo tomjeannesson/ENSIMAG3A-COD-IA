@@ -1,0 +1,217 @@
+:root {
+  --chart-width: 350px;
+  --chart-height: 280px;
+  --chart-margin: 20px;
+  --scatterPlot-width: 800px;
+  --scatterPlot-height: 320px;
+}
+
+/* Style général du corps de la page */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Style du titre principal */
+h1 {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 300;
+  font-weight: bold;
+  color: #444;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+.navbar-links a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.content-jump {
+  padding: 15px;
+  padding-top: 5px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
+.content-career {
+  padding: 15px;
+  padding-top: 5px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
+/* Conteneur des graphiques */
+.charts-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.charts-container-career {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style for each chart */
+.chart-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-wrapper-career {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  flex-grow: 1;
+}
+
+/* Style des sous-titres des graphiques */
+.chart-wrapper h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  padding: 10px;
+  text-align: center;
+}
+
+.chart-wrapper>div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-legend-text {
+  font-weight: bold;
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  fill: #333;
+  /* Optional: Set the text color */
+}
+
+.bar-legend-text {
+  font-weight: bold;
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  fill: #333;
+  /* Optional: Set the text color */
+}
+
+/* Conteneur principal pour les sélections */
+.parameters {
+  display: flex;
+  gap: 10px;
+}
+
+/* Styles pour les sélecteurs */
+.parameters select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+/* Effet de survol pour les sélecteurs */
+.parameters select:hover {
+  border-color: #888;
+}
+
+/* Styles pour les options des sélecteurs */
+.parameters select option {
+  padding: 10px
+}
+
+
+.paragraphe {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 150px;
+  padding: 15px 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #2d3e50;
+  line-height: 1.8;
+}
+
+.paragraphe h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a252f;
+  margin-bottom: 20px;
+}
+
+.paragraphe p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #576574;
+  margin: 0;
+}
+
+.paragraphe+.paragraphe {
+  margin-top: 10px;
+}
+
+
+.content-general {
+  padding: 15px;
+  padding-top: 5px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
+.selected {
+  stroke: #000;
+  stroke-width: 2;
+}

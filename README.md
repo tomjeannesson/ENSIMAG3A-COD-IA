@@ -123,6 +123,14 @@ Voici la correlation entre les six principales features du dataset.
 Et voici les correlations entre toutes les features:
 ![Corrplot all](lib/etude_corrplot/corr-all.png)
 
+### 3.2.4 Probabilités de qualification en finale
+
+Pour cette partie, nous nous demandons à quel point il est possible de prédire les chances qu'a un athlète de se qualifier en finale d'une coupe du monde.
+Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
+![Final breakpoints](lib/etude_ranks/plot.png)
+
+Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+
 ## 4. Enjeux environnementaux et sociétaux
 
 -partié homme/femme => avec le graph de open data ?

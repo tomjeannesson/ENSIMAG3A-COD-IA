@@ -110,7 +110,14 @@ Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide
 ![PCA 2D 4 Clusters](lib/etude_clusters/two_dimensions_cluster_4.png)
 
 ## 4. Enjeux environnementaux et sociétaux
--partié homme/femme => avec le graph de open data ?
--mise en place d’outils performants open source pour tous les clubs de ski => égalité dans l'entraînement.
--petit jeu de données et algo pas très lourd. L’analyse n’est pas très coûteuse => bien pour l’environnement.
+
+### 4.1. Enjeux sociétaux
+Le ski de bosses, bien moins médiatisé que d'autres sports, dispose de ressources limitées pour des analyses avancées. L'introduction d'un outil basé sur l'IA offrirait une aide précieuse aux entraîneurs et athlètes, en optimisant les performances et en renforçant la compétitivité, même dans des disciplines moins populaires.
+
+Nos observations via des études Open Data montrent une relative parité hommes-femmes dans ce sport, bien que les hommes restent majoritaires. Ces données permettent de mettre en lumière des pistes pour promouvoir davantage l’inclusion et l’équité dans la discipline, contribuant à des avancées sociétales durables dans le sport de haut niveau.
 ![Proportion H/F](lib/etude_clusters/prop-HF.png)
+
+### 4.2. Enjeux environnementauxs
+Grâce à une base de données légère, ce projet a une faible empreinte énergétique, rendant son déploiement respectueux de l’environnement. Par ailleurs, des applications futures pourraient inclure l’optimisation des infrastructures sportives ou la réduction des déplacements des équipes, participant ainsi à des pratiques sportives plus durables.
+
+En combinant progrès technologique, équité sociétale et respect de l’environnement, ce projet démontre que performance et responsabilité peuvent aller de pair.

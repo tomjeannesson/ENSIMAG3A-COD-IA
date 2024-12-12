@@ -11,7 +11,6 @@ from sklearn.svm import SVC
 
 output_folder = "lib/etude_svm"
 os.makedirs(output_folder, exist_ok=True)  # noqa: PTH103
-print("    output_folder created")  # noqa: T201
 source = DataSource("data.json")
 qualifications = source.filter([["WC"], ["M"], [], [], ["Q"]], "include")
 dataframe = qualifications[0]

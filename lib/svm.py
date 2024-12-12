@@ -35,7 +35,9 @@ for _df in qualifications[1:]:
         axis=1,
     )
     dataframe = pd.concat([dataframe, _df], axis=0)
-dataframe = dataframe.apply(
+results = dataframe["result"]
+dataframe = dataframe.drop("result", axis=1).apply(
     lambda col: (abs(col) - abs(col).min()) / (abs(col).max() - abs(col).min()),
     axis=0,
 )
+dataframe["result"] = results

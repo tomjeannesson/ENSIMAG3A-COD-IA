@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 from data_source import DataSource
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_auc_score, roc_curve
 from sklearn.model_selection import train_test_split
 
 """check that the directory exist"""
@@ -63,8 +63,8 @@ dataframe["qualified"] = dataframe["result"] <= qualified_breakpoint
 X = dataframe[["top_air_points", "bottom_air_points", "time_points", "ski_deduction_total", "ski_base"]]
 Y = dataframe["qualified"]
 
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=16)
-model = LogisticRegression(random_state=16)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2)
+model = LogisticRegression()
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
@@ -86,8 +86,16 @@ tick_marks = np.arange(len(class_names))
 plt.xticks(tick_marks, class_names)
 plt.yticks(tick_marks, class_names)
 sns.heatmap(pd.DataFrame(cnf_matrix), annot=True, cmap="YlGnBu", fmt="g")
-ax.xaxis.set_label_position("top")
 plt.title("Confusion matrix", y=1.1)
 plt.ylabel("Actual label")
 plt.xlabel("Predicted label")
 plt.savefig(os.path.join(output_folder, "confusion_matrix.png"))  # noqa: PTH118
+
+plt.close()
+y_pred_proba = model.predict_proba(X_test)[::, 1]
+fpr, tpr, _ = roc_curve(y_test, y_pred_proba)
+auc = roc_auc_score(y_test, y_pred_proba)
+plt.plot(fpr, tpr, label="data 1, auc=" + str(auc))
+plt.legend(loc=4)
+plt.title("Courbe ROC")
+plt.savefig(os.path.join(output_folder, "courbe_roc.png"))  # noqa: PTH118

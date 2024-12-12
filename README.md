@@ -151,6 +151,17 @@ Le travail préalable consiste à s'intéresser au "breakpoints" de points d'ent
 
 Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
 
+### 3.2.4 Régression logistique
+
+Rien à dire pour le moment
+TODO : ajouter l'analyse
+![Final breakpoints](lib/etude_regLin/confusion_matrix.png)
+
+![Final breakpoints](lib/etude_regLin/courbe_roc.png)
+
+
+Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+
 ## 4. Enjeux environnementaux et sociétaux
 
 ### 4.1. Enjeux sociétaux

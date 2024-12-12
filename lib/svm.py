@@ -41,3 +41,5 @@ dataframe = dataframe.drop("result", axis=1).apply(
     axis=0,
 )
 dataframe["result"] = results
+qualified_breakpoint = 16
+dataframe["qualified"] = dataframe["result"] <= qualified_breakpoint

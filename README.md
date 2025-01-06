@@ -155,9 +155,9 @@ Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronn
 
 Rien à dire pour le moment
 TODO : ajouter l'analyse
-![Final breakpoints](lib/etude_regLin/confusion_matrix.png)
+![Final breakpoints](lib/etude_regLog/confusion_matrix.png)
 
-![Final breakpoints](lib/etude_regLin/courbe_roc.png)
+![Final breakpoints](lib/etude_regLog/courbe_roc.png)
 
 
 Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
@@ -176,3 +176,9 @@ Nos observations via des études Open Data montrent une relative parité hommes-
 Grâce à une base de données légère, ce projet a une faible empreinte énergétique, rendant son déploiement respectueux de l’environnement. Par ailleurs, des applications futures pourraient inclure l’optimisation des infrastructures sportives ou la réduction des déplacements des équipes, participant ainsi à des pratiques sportives plus durables.
 
 En combinant progrès technologique, équité sociétale et respect de l’environnement, ce projet démontre que performance et responsabilité peuvent aller de pair.
+
+## 5. Bibliographie
+
+- [Apprentissage non-supervisé avec Python](https://www.youtube.com/watch?v=FTtzd31IAOw)
+- [Régression logistique avec Python](https://www.datacamp.com/fr/tutorial/understanding-logistic-regression-python)
+- [Clustering avec Sklearn](https://scikit-learn.org/1.5/modules/clustering.html)

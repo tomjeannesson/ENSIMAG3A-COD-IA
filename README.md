@@ -193,7 +193,34 @@ En combinant progrès technologique, équité sociétale et respect de l’envir
 
 ## 5. Bibliographie
 
+### 5.1. Cluster
+
+- [Clustering avec Sklearn](https://scikit-learn.org/stable/modules/clustering.html)
 - [Apprentissage non-supervisé avec Python](https://www.youtube.com/watch?v=FTtzd31IAOw)
+
+### 5.2. PCA
+
+- [Analyse en Composantes Principales (PCA) avec Sklearn](https://scikit-learn.org/stable/modules/decomposition.html#pca)
+- [Tutoriel PCA Python](https://www.datacamp.com/tutorial/principal-component-analysis-in-python)
+
+### 5.3. Régression logistique
+
 - [Régression logistique avec Python](https://www.datacamp.com/fr/tutorial/understanding-logistic-regression-python)
-- [Clustering avec Sklearn](https://scikit-learn.org/1.5/modules/clustering.html)
+- [Régression logistique avec Scikit-learn](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+
+### 5.4. SVM
+
+- [SVM avec Python](https://scikit-learn.org/stable/modules/svm.html)
+- [SVM Tutoriel](https://www.datacamp.com/tutorial/svm-classification-scikit-learn-python)
+
+### 5.5. Random Forest
+
+- [Random Forest avec Sklearn](https://scikit-learn.org/stable/modules/ensemble.html#forest)
+- [Random Forest Classifier expliqué](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
+
+### 5.6. Divers
+
 - [Documentation Matplotlib](https://matplotlib.org/stable/index.html)
+- [Numpy Guide](https://numpy.org/doc/stable/)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+

@@ -171,7 +171,7 @@ Un **SVM** (*Support Vector Machine*, ou **machine à vecteurs de support** en f
 - Les jeux de données de petite ou moyenne taille.
 - Les problèmes où les classes sont bien séparées.
 
-![alt text](40282.png)
+![alt text](lib/etude_svm/svm.png)
 
 Le SVM cherche à trouver l'**hyperplan** qui sépare au mieux les données en fonction de leurs catégories (dans un problème de classification). Cet hyperplan est choisi de manière à maximiser la **marge**, c'est-à-dire la distance entre l'hyperplan et les points de données les plus proches, appelés **vecteurs de support**.
 

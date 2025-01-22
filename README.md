@@ -143,17 +143,17 @@ Voici la correlation entre les six principales features du dataset.
 Et voici les correlations entre toutes les features:
 ![Corrplot all](lib/etude_corrplot/corr-all.png)
 
-## 3.4 Probabilités de qualification en finale
+# 5. Modèles de prédiction
+
+## 5.1 Probabilités de qualification en finale
 
 Pour cette partie, nous nous demandons à quel point il est possible de prédire les chances qu'a un athlète de se qualifier en finale d'une coupe du monde.
 Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
 ![Final breakpoints](lib/etude_ranks/plot.png)
 
-# 5. Modèles de prédiction
+## 5.2 Régression logistique
 
-## 5.1 Régression logistique
-
-Notre objectif ici est d'essayer de prédire si un athlète serait qualifié ou non lors d'une compétition, en se basant sur ses résultats. Pour prédire ses résultats on utilise les points de notation principaux: `top_air_points`, `bottom_air_points`, `time_points`, `ski_deduction_total`, `ski_base`. Et nous voulong prédire la variable `qualified`.
+Pour avoir des prédictions fiables, on entraine différents modèles à l'aide d'algorithmes différents. Pour prédire ses résultats on utilise les points de notation principaux: `top_air_points`, `bottom_air_points`, `time_points`, `ski_deduction_total`, `ski_base`. Et nous voulong prédire la variable `qualified`.
 Le problème a été modélisé comme un problème de classification binaire, où la variable cible est « qualifié » (1) ou « non qualifié » (0).
 Concernant la régression logistique...
 
@@ -203,7 +203,7 @@ La courbe ROC montre la performance du modèle à différents seuils de classifi
 #### Conclusion
 Le modèle de régression logistique a permis de prédire avec succès la qualification des athlètes en fonction de leurs performances. Les résultats montrent une bonne précision et des scores équilibrés pour les deux classes, ce qui confirme la pertinence des variables choisies. Cependant, certaines limites persistent, notamment le besoin de tester le modèle sur un jeu de données plus diversifié pour évaluer sa généralisation.
 
-## 5.2 SVM
+## 5.3 SVM
 
 ![Final breakpoints](lib/etude_svm/confusion_matrix.png)
 
@@ -219,14 +219,14 @@ Le SVM cherche à trouver l'**hyperplan** qui sépare au mieux les données en f
 - **Hyperplan** : Une surface de séparation dans un espace multidimensionnel (par exemple, une ligne en 2D, un plan en 3D, etc.).
 - **Vecteurs de support** : Les points de données les plus proches de l'hyperplan, qui influencent sa position.
 
-## 5.3 Random Forest
+## 5.4 Random Forest
 
 Un **Random Forest** (*Forêt Aléatoire*) est un algorithme d’apprentissage supervisé combinant plusieurs arbres de décision pour améliorer la précision et la robustesse des prédictions. Il s’appuie sur deux principes clés :
 
 1. **Bootstrap** : Chaque arbre est entraîné sur un échantillon aléatoire (tiré avec remise) des données d’entraînement.
 2. **Subsampling des features** : À chaque nœud, un sous-ensemble aléatoire des *features* est utilisé pour choisir la meilleure séparation.
 
-### 5.3.1 Principe général
+### 5.4.1 Principe général
 
 1. **Création d'arbres indépendants**  
    Chaque arbre est construit en utilisant :
@@ -241,7 +241,7 @@ Un **Random Forest** (*Forêt Aléatoire*) est un algorithme d’apprentissage s
 3. **Prédiction par vote majoritaire**  
    Pour classer un nouvel échantillon, chaque arbre effectue une prédiction. La classe finale est déterminée par un vote majoritaire des prédictions des arbres.
 
-### 5.3.2 Implémentation
+### 5.4.2 Implémentation
 
 Le code implémente un Random Forest à partir de zéro. Les éléments principaux incluent :
 
@@ -250,7 +250,7 @@ Le code implémente un Random Forest à partir de zéro. Les éléments principa
   - **Fit** : Construire plusieurs arbres en utilisant des échantillons bootstrap et des *features* sélectionnées aléatoirement.
   - **Predict** : Traverser chaque arbre pour prédire la classe d’un échantillon, puis appliquer un vote majoritaire pour la prédiction finale.
 
-### 5.3.3 Avantages et inconvénients
+### 5.4.3 Avantages et inconvénients
 
 - **Avantages** :
   - Robuste aux données bruitées ou non linéaires.

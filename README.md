@@ -2,14 +2,14 @@
 
 Hugo BRUCKER, Tom JEANNESON, Adame ABDELAZIZ, Julian COUX
 
-## 1. Etude du sujet
+# 1. Etude du sujet
 
-## 1.1. La question étudiée
+## 1.1 La question étudiée
 
 Nous sommes tous skieurs, dont Tom qui a été sportif de haut niveau en ski de bosses. Nous avons décidé de construire ce projet autour de cette passion commune. Tom ayant baigné dans ce sport depuis tout petit, il a pu voir les évolutions techniques utilisées par les coachs s’adapter au mieux à leurs athlètes. Les entraînements sont de plus en plus destinés à améliorer les techniques pouvant rapporter plus de points en compétition. À l’heure de l’explosion de l’intelligence artificielle, celle-ci n’est pas encore utilisée en ski de bosses et peut amener une réelle amélioration au sport. Aujourd’hui, les entraîneurs se contentent d’analyse de tableaux excel fait à la main avec des statistiques quasi inexistantes. L'apport d'outils d’analyses tel que celui-ci serait un grand plus dans le sport.
 Ainsi, comment peut-on améliorer ce sport à l’aide d’outils d’IA ?
 
-## 1.2. Les données à utiliser pour répondre à la question
+## 1.2 Les données à utiliser pour répondre à la question
 
 Nous allons nous pencher sur un jeu de données des compétitions sur le circuit coupe du monde sur les trois dernières saisons (obtenu par Tom, dans le cadre de son PFE).
 
@@ -19,9 +19,9 @@ Elles sont ensuite extraites et agrégées dans des dataframes pandas.
 ![Données en DataFrame](lib/etude_clusters/dataframe-donnees.png)
 C’est sur ces dataframes que nous allons travailler.
 
-## 2. Travail d'extraction de donnée
+# 2. Travail d'extraction de donnée
 
-## 2.1. Algorithmes d'extraction
+## 2.1 Algorithmes d'extraction
 
 Les premiers algorithmes d'extraction et de transformation des données sont implémentés dans le module *DataSource* ([voir ici](https://github.com/tomjeannesson/ENSIMAG3A-COD-IA/blob/main/lib/data_source.py)).  
 Un des algorithmes initiaux transforme notre base de données (au format JSON, [voir ici](https://raw.githubusercontent.com/tomjeannesson/ENSIMAG3A-COD-IA/refs/heads/main/data.json)) en une structure de données exploitable : une liste de *DataFrames*. Chaque *DataFrame* représente une course et présente les informations de chaque athlète sous forme de tableau, de manière à faciliter l'analyse ultérieure :
@@ -37,19 +37,19 @@ En plus de ce filtrage par défaut, pour plus de flexibilité, nous avons intég
 
 Enfin, nous avons ajouté une fonction *query* qui permet d'effectuer des requêtes directement sur les *DataFrames* en utilisant la méthode *query* de Pandas, facilitant ainsi des recherches plus complexes.
 
-## 2.2. Traitement des données
+## 2.2 Traitement des données
 
 Afin de pouvoir exploiter les données agrégées dans les Dataframes évoqués ci-dessus, nous avons développé une classe nommé Extractor ([voir ici](https://github.com/tomjeannesson/ENSIMAG3A-COD-IA/blob/main/lib/extractor.py)).
 
 Pour cette classe, on passe au constructeur une liste de Dataframes (récupérés précédemment), et nous venons les regrouper selon une dimension. Pour l’instant, nous pouvons les regrouper pour un athlète (récupérer ses statistiques globales sur l’ensemble de ces Dataframes) ou pour une compétition (récupérer les min, max et moyennes de chacun des critères de notation). Nous avons également comme ambition de faire ce même travail pour la dimension des pays.
 
-## 3. Clustering des Athlètes
+# 3. Clustering des Athlètes
 
 Ce projet utilise des techniques de clustering (K-Means) et de réduction de dimension (PCA) pour analyser et visualiser des données d'athlètes. Il génère des graphiques permettant d'explorer les clusters dans différentes dimensions.
 
-## 3.1. Description
+## 3.1 Description
 
-### 3.1.1. Étapes principales
+### 3.1.1 Étapes principales
 
 1. Extraction des données depuis un fichier JSON via une classe `DataSource`.
 2. Prétraitement des données et filtrage des variables pertinentes.
@@ -134,7 +134,7 @@ Comme indiqué précédemment, le groupe des athlètes moyens se scinde en **deu
 
 
 
-## 4. Calculs de corrélation
+# 4. Calculs de corrélation
 
 Avant de nous pencher sur des algorithmes de prédiction, nous avons décidé d'étudier la corrélation entre les différentes features de notre jeu de données, afin de bien comprendre comment elles interragissent entre elles.
 
@@ -145,15 +145,15 @@ Voici la correlation entre les six principales features du dataset.
 Et voici les correlations entre toutes les features:
 ![Corrplot all](lib/etude_corrplot/corr-all.png)
 
-### 3.4 Probabilités de qualification en finale
+## 3.4 Probabilités de qualification en finale
 
 Pour cette partie, nous nous demandons à quel point il est possible de prédire les chances qu'a un athlète de se qualifier en finale d'une coupe du monde.
 Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
 ![Final breakpoints](lib/etude_ranks/plot.png)
 
-## 5. Modèles de prédiction
+# 5. Modèles de prédiction
 
-### 5.1 Régression logistique
+## 5.1 Régression logistique
 
 Notre objectif ici est d'essayer de prédire si un athlète serait qualifié ou non lors d'une compétition, en se basant sur ses résultats. Pour prédire ses résultats on utilise les points de notation principaux: `top_air_points`, `bottom_air_points`, `time_points`, `ski_deduction_total`, `ski_base`. Et nous voulong prédire la variable `qualified`.
 Le problème a été modélisé comme un problème de classification binaire, où la variable cible est « qualifié » (1) ou « non qualifié » (0).
@@ -200,7 +200,7 @@ La courbe ROC montre la performance du modèle à différents seuils de classifi
 Le modèle de régression logistique a permis de prédire avec succès la qualification des athlètes en fonction de leurs performances. Les résultats montrent une bonne précision et des scores équilibrés pour les deux classes, ce qui confirme la pertinence des variables choisies. Cependant, certaines limites persistent, notamment le besoin de tester le modèle sur un jeu de données plus diversifié pour évaluer sa généralisation.
 
 
-### 5.2 SVM
+## 5.2 SVM
 
 ![Final breakpoints](lib/etude_svm/confusion_matrix.png)
 
@@ -217,27 +217,27 @@ Le SVM cherche à trouver l'**hyperplan** qui sépare au mieux les données en f
 - **Vecteurs de support** : Les points de données les plus proches de l'hyperplan, qui influencent sa position.
 
 
-### 5.3 Randon Forest
+## 5.3 Randon Forest
 TODO
 
 
 
-## 6. Enjeux environnementaux et sociétaux
+# 6. Enjeux environnementaux et sociétaux
 
-### 6.1. Enjeux sociétaux
+## 6.1. Enjeux sociétaux
 
 Le ski de bosses, bien moins médiatisé que d'autres sports, dispose de ressources limitées pour des analyses avancées. L'introduction d'un outil basé sur l'IA offrirait une aide précieuse aux entraîneurs et athlètes, en optimisant les performances et en renforçant la compétitivité, même dans des disciplines moins populaires.
 
 Nos observations via des études Open Data montrent une relative parité hommes-femmes dans ce sport, bien que les hommes restent majoritaires. Ces données permettent de mettre en lumière des pistes pour promouvoir davantage l’inclusion et l’équité dans la discipline, contribuant à des avancées sociétales durables dans le sport de haut niveau.
 ![Proportion H/F](lib/etude_clusters/prop-HF.png)
 
-### 6.2. Enjeux environnementaux
+## 6.2. Enjeux environnementaux
 
 Grâce à une base de données légère, ce projet a une faible empreinte énergétique, rendant son déploiement respectueux de l’environnement. Par ailleurs, des applications futures pourraient inclure l’optimisation des infrastructures sportives ou la réduction des déplacements des équipes, participant ainsi à des pratiques sportives plus durables.
 
 En combinant progrès technologique, équité sociétale et respect de l’environnement, ce projet démontre que performance et responsabilité peuvent aller de pair.
 
-## 7. Bibliographie
+# 7. Bibliographie
 
 - [Apprentissage non-supervisé avec Python](https://www.youtube.com/watch?v=FTtzd31IAOw)
 - [Régression logistique avec Python](https://www.datacamp.com/fr/tutorial/understanding-logistic-regression-python)

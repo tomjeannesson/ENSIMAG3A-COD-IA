@@ -159,7 +159,6 @@ TODO : ajouter l'analyse
 
 ![Final breakpoints](lib/etude_regLog/courbe_roc.png)
 
-
 Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
 
 ## 4. Enjeux environnementaux et sociétaux
@@ -182,3 +181,4 @@ En combinant progrès technologique, équité sociétale et respect de l’envir
 - [Apprentissage non-supervisé avec Python](https://www.youtube.com/watch?v=FTtzd31IAOw)
 - [Régression logistique avec Python](https://www.datacamp.com/fr/tutorial/understanding-logistic-regression-python)
 - [Clustering avec Sklearn](https://scikit-learn.org/1.5/modules/clustering.html)
+- [Documentation Matplotlib](https://matplotlib.org/stable/index.html)

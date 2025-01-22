@@ -158,8 +158,23 @@ TODO : ajouter l'analyse
 
 ![Final breakpoints](lib/etude_regLog/courbe_roc.png)
 
-
 Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+
+### 3.2.5 SVM
+
+![Final breakpoints](lib/etude_svm/confusion_matrix.png)
+
+Un **SVM** (*Support Vector Machine*, ou **machine à vecteurs de support** en français) est un algorithme d'apprentissage supervisé utilisé en **apprentissage automatique** pour résoudre des problèmes de classification et de régression. Il est particulièrement adapté pour :
+
+- Les jeux de données de petite ou moyenne taille.
+- Les problèmes où les classes sont bien séparées.
+
+![alt text](40282.png)
+
+Le SVM cherche à trouver l'**hyperplan** qui sépare au mieux les données en fonction de leurs catégories (dans un problème de classification). Cet hyperplan est choisi de manière à maximiser la **marge**, c'est-à-dire la distance entre l'hyperplan et les points de données les plus proches, appelés **vecteurs de support**.
+
+- **Hyperplan** : Une surface de séparation dans un espace multidimensionnel (par exemple, une ligne en 2D, un plan en 3D, etc.).
+- **Vecteurs de support** : Les points de données les plus proches de l'hyperplan, qui influencent sa position.
 
 ## 4. Enjeux environnementaux et sociétaux
 
@@ -181,3 +196,4 @@ En combinant progrès technologique, équité sociétale et respect de l’envir
 - [Apprentissage non-supervisé avec Python](https://www.youtube.com/watch?v=FTtzd31IAOw)
 - [Régression logistique avec Python](https://www.datacamp.com/fr/tutorial/understanding-logistic-regression-python)
 - [Clustering avec Sklearn](https://scikit-learn.org/1.5/modules/clustering.html)
+- [Documentation Matplotlib](https://matplotlib.org/stable/index.html)

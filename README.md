@@ -150,8 +150,6 @@ Pour cette partie, nous nous demandons à quel point il est possible de prédire
 Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
 ![Final breakpoints](lib/etude_ranks/plot.png)
 
-Dans un premier temps, on a entrainé un modèle de prédictin à l'aide d'une random forest. On a une précision atteinte de 89%.
-
 ### 3.2.4 Régression logistique
 
 Rien à dire pour le moment

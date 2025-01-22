@@ -69,23 +69,22 @@ Ce projet utilise des techniques de clustering (K-Means) et de réduction de dim
 
 ---
 
-## 3.2. Cluster
 
-### 3.2.1 Clustering avec 3 clusters
+## 3.2 Clustering avec 3 clusters
 
-#### 3.2.1.1 Pair Plot
+### 3.2.1 Pair Plot
 
 Ce graphique montre les relations entre toutes les variables, avec les clusters colorés en fonction des résultats du modèle.
 
 ![Pair Plot 3 Clusters](lib/etude_clusters/multi_dimensions_cluster_3.png)
 
-#### 3.2.1.2 PCA à 2 dimensions
+### 3.2.2 PCA à 2 dimensions
 
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 3 Clusters](lib/etude_clusters/two_dimensions_cluster_3.png)
 
-#### 3.2.1.2 Analyse
+### 3.2.2 Analyse
 
 L'analyse des 3 clusters confirme une répartition logique des athlètes en fonction de leurs performances. Les clusters identifiés reflètent trois groupes bien distincts :
 
@@ -97,25 +96,25 @@ Bien que ces observations ne révèlent rien de nouveau, elles valident que la s
 
 ---
 
-### 3.2.2 Clustering avec 4 clusters
+## 3.3 Clustering avec 4 clusters
 
 L'analyse avec 3 clusters nous a permis de confirmer une répartition assez simple des athlètes, mais elle n'a pas vraiment apporté de nouvelles informations. Pour affiner l'analyse, nous avons décidé de tester avec 4 clusters. Cette segmentation plus détaillée permet de mieux capturer les différences subtiles entre les athlètes et offre une vision plus précise de leurs performances.
 
-#### 3.2.2.1 Pair Plot
+### 3.3.1 Pair Plot
 
 Ce graphique montre les relations entre toutes les variables, avec les clusters colorés en fonction des résultats du modèle.
 
 ![Pair Plot 4 Clusters](lib/etude_clusters/multi_dimensions_cluster_4.png)
 
-#### 3.2.2.2 PCA à 2 dimensions
+### 3.3.2 PCA à 2 dimensions
 
 Les clusters sont représentés dans un espace réduit à 2 dimensions à l'aide de la PCA.
 
 ![PCA 2D 4 Clusters](lib/etude_clusters/two_dimensions_cluster_4.png)
 
-#### 3.2.2.3 Analyse
+### 3.3.3 Analyse
 
-##### Analyse Pair Plot
+#### Analyse Pair Plot
 
 Cette analyse avec 4 clusters s'avère bien plus pertinente que la précédente, car elle permet d'identifier des groupes de skieurs supplémentaires, offrant une compréhension plus fine des performances. On retrouve toujours un **groupe d'athlètes très performants** (excellents dans tous les domaines) et un **groupe moins performant**, mais ce sont les deux groupes intermédiaires qui rendent cette analyse particulièrement intéressante.
 
@@ -128,12 +127,14 @@ Ces skieurs se démarquent par d'excellents `time_points`, témoignant d'une gra
 
 Ces deux catégories de skieurs de niveau moyen illustrent une tendance intéressante : pour atteindre un niveau intermédiaire, les athlètes semblent se spécialiser soit dans la **vitesse**, au détriment de la technique, soit dans une **meilleure exécution des sauts**, mais avec une descente plus lente. Ces observations pourraient fournir des pistes précieuses pour adapter les stratégies d'entraînement selon les profils des athlètes.
 
-##### Analyse PCA
+#### Analyse PCA
 
 Ces observations sont confirmées par l’analyse en composantes principales (PCA) en 2 dimensions. Le graphique met en évidence les **trois groupes principaux** : très performants, moyens et moins performants.
 Comme indiqué précédemment, le groupe des athlètes moyens se scinde en **deux sous-groupes distincts**, correspondant aux profils déjà identifiés : les skieurs axés sur la vitesse et ceux axés sur la technique de saut.
 
-### 3.3 Calculs de corrélation
+
+
+## 4. Calculs de corrélation
 
 Avant de nous pencher sur des algorithmes de prédiction, nous avons décidé d'étudier la corrélation entre les différentes features de notre jeu de données, afin de bien comprendre comment elles interragissent entre elles.
 
@@ -150,17 +151,56 @@ Pour cette partie, nous nous demandons à quel point il est possible de prédire
 Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
 ![Final breakpoints](lib/etude_ranks/plot.png)
 
-### 3.2.4 Régression logistique
+## 5. Modèles de prédiction
 
-Rien à dire pour le moment
-TODO : ajouter l'analyse
+### 5.1 Régression logistique
+
+Notre objectif ici est d'essayer de prédire si un athlète serait qualifié ou non lors d'une compétition, en se basant sur ses résultats. Pour prédire ses résultats on utilise les points de notation principaux: `top_air_points`, `bottom_air_points`, `time_points`, `ski_deduction_total`, `ski_base`. Et nous voulong prédire la variable `qualified`.
+Le problème a été modélisé comme un problème de classification binaire, où la variable cible est « qualifié » (1) ou « non qualifié » (0).
+Concernant la régression logistique...
+
+#### Pré-traitement des données
+Pour faire d ela prédiction, il nous faut des données d'entrainement. Ce que nous avons fait, c'est comme pour les autres études, au départ simplement la récupération de tous les résultats en WorlCup des hommes. Puis on néttoie un peu les données pour garder les variables qu'on veut (cf. paragraphe d'avant).
+Pour uniformiser les données, une normalisation a été appliquée à chaque colonne (valeurs transformées entre 0 et 1). La variable cible `qualified` a été créée en comparant le classement final: `result`. Si le résultat est inférieur à 16, `result = 1`, sinon `result = 0` (16 est le classement minimal pour passer en Finale).
+
+#### Modèle Utilisé
+Nous avons utilisé un modèle de régression logistique pour effectuer cette classification binaire. Ce modèle est particulièrement adapté pour ce type de problème, car il permet de calculer la probabilité qu'un athlète appartienne à une catégorie (être qualifié ou non).
+
+Les étapes du processus sont les suivantes :
+1. Division des données : Le jeu de données a été divisé en un ensemble d'entraînement (80 %) et un ensemble de test (20 %).
+2. Entraînement du modèle : Le modèle a été ajusté à l'aide de l'ensemble d'entraînement.
+3. Prédictions : Les prédictions ont été réalisées sur l'ensemble de test, en générant à la fois les étiquettes prédites et les probabilités associées.
+
+Tout ceci est réalisé dans le script *etude_reg_log.py*.
+#### Etude des résultats
+L'évaluation du modèle a été réalisée à l'aide de plusieurs métriques :
 ![Final breakpoints](lib/etude_regLog/confusion_matrix.png)
+
+Sur ce premier graphique, on peut observer les réaultats sur les prédictions et surtout, leur précision.
+- **Précision** : Le modèle a atteint une précision de **~85%**, indiquant une capacité à différencier correctement les athlètes qualifiés des non qualifiés dans la majorité des cas.
+
+En étudiant la matrice de confusion (graphique du dessus), on peut voir son taux de réussité en fonction du réaultat attendu:
+- Sur **136 résultats négatifs attendus**, nous en avons obtenu **127**, ce qui nous fait seulement **9 faux positifs**.
+- Sur **72 résultats positifs attedus**, nous en avons obtenu **52**, ce qui nous fait **20 faux négatifs**.
+
+Ce qui est un résultat assez encourageant concernant la prédiction de résultat pour un athlète.
+Le majorité des athlètes ne passant pas en phase finale, nous avons un plus grand de jeu de données d'entrainement pour les résultats négatifs (pas qualifié). Ce qui explique une meilleure précision.
+
+En général, nous avons les précisions suivantes pour positif/négatif:
+- **88%** : de précision pour les négatifs (prédeiction non-qualifié)
+- **76%** : de précision pour les positifs (prédiction qualifié)
+
+Ce qui est plus intéressant car on préfère dire à un athlète qu'il ne sera pas qualifié et au final il l'est (faux négatif), que l'inverse, on lui dit qu'il sera qualifié alors que non...(faux positif)
 
 ![Final breakpoints](lib/etude_regLog/courbe_roc.png)
 
-Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+La courbe ROC montre la performance du modèle à différents seuils de classification. Nous pouvons voir qu'avec une aire sous la courbe (AUC) de **~0.9390**, notre modèle a une très bonne capacité à distinguer les athlètes qualifiés des non qualifiés.
 
-### 3.2.5 SVM
+#### Clonclusion
+Le modèle de régression logistique a permis de prédire avec succès la qualification des athlètes en fonction de leurs performances. Les résultats montrent une bonne précision et des scores équilibrés pour les deux classes, ce qui confirme la pertinence des variables choisies. Cependant, certaines limites persistent, notamment le besoin de tester le modèle sur un jeu de données plus diversifié pour évaluer sa généralisation.
+
+
+### 5.2 SVM
 
 ![Final breakpoints](lib/etude_svm/confusion_matrix.png)
 
@@ -176,22 +216,28 @@ Le SVM cherche à trouver l'**hyperplan** qui sépare au mieux les données en f
 - **Hyperplan** : Une surface de séparation dans un espace multidimensionnel (par exemple, une ligne en 2D, un plan en 3D, etc.).
 - **Vecteurs de support** : Les points de données les plus proches de l'hyperplan, qui influencent sa position.
 
-## 4. Enjeux environnementaux et sociétaux
 
-### 4.1. Enjeux sociétaux
+### 5.3 Randon Forest
+TODO
+
+
+
+## 6. Enjeux environnementaux et sociétaux
+
+### 6.1. Enjeux sociétaux
 
 Le ski de bosses, bien moins médiatisé que d'autres sports, dispose de ressources limitées pour des analyses avancées. L'introduction d'un outil basé sur l'IA offrirait une aide précieuse aux entraîneurs et athlètes, en optimisant les performances et en renforçant la compétitivité, même dans des disciplines moins populaires.
 
 Nos observations via des études Open Data montrent une relative parité hommes-femmes dans ce sport, bien que les hommes restent majoritaires. Ces données permettent de mettre en lumière des pistes pour promouvoir davantage l’inclusion et l’équité dans la discipline, contribuant à des avancées sociétales durables dans le sport de haut niveau.
 ![Proportion H/F](lib/etude_clusters/prop-HF.png)
 
-### 4.2. Enjeux environnementaux
+### 6.2. Enjeux environnementaux
 
 Grâce à une base de données légère, ce projet a une faible empreinte énergétique, rendant son déploiement respectueux de l’environnement. Par ailleurs, des applications futures pourraient inclure l’optimisation des infrastructures sportives ou la réduction des déplacements des équipes, participant ainsi à des pratiques sportives plus durables.
 
 En combinant progrès technologique, équité sociétale et respect de l’environnement, ce projet démontre que performance et responsabilité peuvent aller de pair.
 
-## 5. Bibliographie
+## 7. Bibliographie
 
 ### 5.1. Cluster
 

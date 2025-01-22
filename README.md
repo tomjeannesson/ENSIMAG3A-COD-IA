@@ -57,6 +57,7 @@ Ce projet utilise des techniques de clustering (K-Means) et de réduction de dim
 4. Visualisation des clusters dans :
    - L'espace des variables originales (pair plots).
    - Un espace réduit à 2 dimensions grâce à la PCA.
+5. Calcul de probabilités du passage de la prochaine étape
 
 ### 3.1.2. Bibliothèques utilisées
 
@@ -68,7 +69,7 @@ Ce projet utilise des techniques de clustering (K-Means) et de réduction de dim
 
 ---
 
-## 3.2. Résultats
+## 3.2. Cluster
 
 ### 3.2.1 Clustering avec 3 clusters
 
@@ -132,7 +133,7 @@ Ces deux catégories de skieurs de niveau moyen illustrent une tendance intéres
 Ces observations sont confirmées par l’analyse en composantes principales (PCA) en 2 dimensions. Le graphique met en évidence les **trois groupes principaux** : très performants, moyens et moins performants.
 Comme indiqué précédemment, le groupe des athlètes moyens se scinde en **deux sous-groupes distincts**, correspondant aux profils déjà identifiés : les skieurs axés sur la vitesse et ceux axés sur la technique de saut.
 
-### 3.2.3 Calculs de corrélation
+### 3.3 Calculs de corrélation
 
 Avant de nous pencher sur des algorithmes de prédiction, nous avons décidé d'étudier la corrélation entre les différentes features de notre jeu de données, afin de bien comprendre comment elles interragissent entre elles.
 
@@ -143,13 +144,13 @@ Voici la correlation entre les six principales features du dataset.
 Et voici les correlations entre toutes les features:
 ![Corrplot all](lib/etude_corrplot/corr-all.png)
 
-### 3.2.4 Probabilités de qualification en finale
+### 3.4 Probabilités de qualification en finale
 
 Pour cette partie, nous nous demandons à quel point il est possible de prédire les chances qu'a un athlète de se qualifier en finale d'une coupe du monde.
 Le travail préalable consiste à s'intéresser au "breakpoints" de points d'entrée en finale et super-finale, visibles sur cette figure:
 ![Final breakpoints](lib/etude_ranks/plot.png)
 
-Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+Dans un premier temps, on a entrainé un modèle de prédictin à l'aide d'une random forest. On a une précision atteinte de 89%.
 
 ### 3.2.4 Régression logistique
 

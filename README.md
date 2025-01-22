@@ -196,7 +196,7 @@ Ce qui est plus intéressant car on préfère dire à un athlète qu'il ne sera 
 
 La courbe ROC montre la performance du modèle à différents seuils de classification. Nous pouvons voir qu'avec une aire sous la courbe (AUC) de **~0.9390**, notre modèle a une très bonne capacité à distinguer les athlètes qualifiés des non qualifiés.
 
-#### Clonclusion
+#### Conclusion
 Le modèle de régression logistique a permis de prédire avec succès la qualification des athlètes en fonction de leurs performances. Les résultats montrent une bonne précision et des scores équilibrés pour les deux classes, ce qui confirme la pertinence des variables choisies. Cependant, certaines limites persistent, notamment le besoin de tester le modèle sur un jeu de données plus diversifié pour évaluer sa généralisation.
 
 

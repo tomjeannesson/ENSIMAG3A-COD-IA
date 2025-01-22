@@ -153,14 +153,50 @@ Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronn
 
 ### 3.2.4 Régression logistique
 
-Rien à dire pour le moment
-TODO : ajouter l'analyse
+Notre objectif ici est d'essayer de prédire si un athlète serait qualifié ou non lors d'une compétition, en se basant sur ses résultats. Pour prédire ses résultats on utilise les points de notation principaux: `top_air_points`, `bottom_air_points`, `time_points`, `ski_deduction_total`, `ski_base`. Et nous voulong prédire la variable `qualified`.
+Le problème a été modélisé comme un problème de classification binaire, où la variable cible est « qualifié » (1) ou « non qualifié » (0).
+Concernant la régression logistique...
+
+#### Pré-traitement des données
+Pour faire d ela prédiction, il nous faut des données d'entrainement. Ce que nous avons fait, c'est comme pour les autres études, au départ simplement la récupération de tous les résultats en WorlCup des hommes. Puis on néttoie un peu les données pour garder les variables qu'on veut (cf. paragraphe d'avant).
+Pour uniformiser les données, une normalisation a été appliquée à chaque colonne (valeurs transformées entre 0 et 1). La variable cible `qualified` a été créée en comparant le classement final: `result`. Si le résultat est inférieur à 16, `result = 1`, sinon `result = 0` (16 est le classement minimal pour passer en Finale).
+
+#### Modèle Utilisé
+Nous avons utilisé un modèle de régression logistique pour effectuer cette classification binaire. Ce modèle est particulièrement adapté pour ce type de problème, car il permet de calculer la probabilité qu'un athlète appartienne à une catégorie (être qualifié ou non).
+
+Les étapes du processus sont les suivantes :
+1. Division des données : Le jeu de données a été divisé en un ensemble d'entraînement (80 %) et un ensemble de test (20 %).
+2. Entraînement du modèle : Le modèle a été ajusté à l'aide de l'ensemble d'entraînement.
+3. Prédictions : Les prédictions ont été réalisées sur l'ensemble de test, en générant à la fois les étiquettes prédites et les probabilités associées.
+
+Tout ceci est réalisé dans le script *etude_reg_log.py*.
+#### Etude des résultats
+L'évaluation du modèle a été réalisée à l'aide de plusieurs métriques :
 ![Final breakpoints](lib/etude_regLog/confusion_matrix.png)
+
+Sur ce premier graphique, on peut observer les réaultats sur les prédictions et surtout, leur précision.
+- **Précision** : Le modèle a atteint une précision de **~85%**, indiquant une capacité à différencier correctement les athlètes qualifiés des non qualifiés dans la majorité des cas.
+
+En étudiant la matrice de confusion (graphique du dessus), on peut voir son taux de réussité en fonction du réaultat attendu:
+- Sur **136 résultats négatifs attendus**, nous en avons obtenu **127**, ce qui nous fait seulement **9 faux positifs**.
+- Sur **72 résultats positifs attedus**, nous en avons obtenu **52**, ce qui nous fait **20 faux négatifs**.
+
+Ce qui est un résultat assez encourageant concernant la prédiction de résultat pour un athlète.
+Le majorité des athlètes ne passant pas en phase finale, nous avons un plus grand de jeu de données d'entrainement pour les résultats négatifs (pas qualifié). Ce qui explique une meilleure précision.
+
+En général, nous avons les précisions suivantes pour positif/négatif:
+- **88%** : de précision pour les négatifs (prédeiction non-qualifié)
+- **76%** : de précision pour les positifs (prédiction qualifié)
+
+Ce qui est plus intéressant car on préfère dire à un athlète qu'il ne sera pas qualifié et au final il l'est (faux négatif), que l'inverse, on lui dit qu'il sera qualifié alors que non...(faux positif)
 
 ![Final breakpoints](lib/etude_regLog/courbe_roc.png)
 
+La courbe ROC montre la performance du modèle à différents seuils de classification. Nous pouvons voir qu'avec une aire sous la courbe (AUC) de **~0.9390**, notre modèle a une très bonne capacité à distinguer les athlètes qualifiés des non qualifiés.
 
-Nous comptons ensuite prolonger cette étude en entrainant un réseau de neuronnes afin d'effectuer ces prédictions.
+#### Clonclusion
+Le modèle de régression logistique a permis de prédire avec succès la qualification des athlètes en fonction de leurs performances. Les résultats montrent une bonne précision et des scores équilibrés pour les deux classes, ce qui confirme la pertinence des variables choisies. Cependant, certaines limites persistent, notamment le besoin de tester le modèle sur un jeu de données plus diversifié pour évaluer sa généralisation.
+
 
 ## 4. Enjeux environnementaux et sociétaux
 

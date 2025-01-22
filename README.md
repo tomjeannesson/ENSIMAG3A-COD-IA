@@ -220,9 +220,47 @@ Le SVM cherche à trouver l'**hyperplan** qui sépare au mieux les données en f
 - **Hyperplan** : Une surface de séparation dans un espace multidimensionnel (par exemple, une ligne en 2D, un plan en 3D, etc.).
 - **Vecteurs de support** : Les points de données les plus proches de l'hyperplan, qui influencent sa position.
 
-## 5.3 Randon Forest
+## 5.3 Random Forest
 
-TODO
+Un **Random Forest** (*Forêt Aléatoire*) est un algorithme d’apprentissage supervisé combinant plusieurs arbres de décision pour améliorer la précision et la robustesse des prédictions. Il s’appuie sur deux principes clés :
+
+1. **Bootstrap** : Chaque arbre est entraîné sur un échantillon aléatoire (tiré avec remise) des données d’entraînement.
+2. **Subsampling des features** : À chaque nœud, un sous-ensemble aléatoire des *features* est utilisé pour choisir la meilleure séparation.
+
+### 5.3.1 Principe général
+
+1. **Création d'arbres indépendants**  
+   Chaque arbre est construit en utilisant :
+   - Un échantillon bootstrap des données d’entraînement.
+   - Une sélection aléatoire des *features* à chaque nœud pour éviter la corrélation entre arbres.
+
+2. **Construction récursive**  
+   Les arbres sont construits récursivement en divisant les données selon le meilleur critère (basé sur le gain d'information ou l'entropie), jusqu'à ce que l’une des conditions d’arrêt soit remplie :
+   - La profondeur maximale (*max_depth*) est atteinte.
+   - Le nombre d’échantillons dans un nœud est inférieur à un seuil minimal (*min_samples_split*).
+
+3. **Prédiction par vote majoritaire**  
+   Pour classer un nouvel échantillon, chaque arbre effectue une prédiction. La classe finale est déterminée par un vote majoritaire des prédictions des arbres.
+
+### 5.3.2 Implémentation
+
+Le code implémente un Random Forest à partir de zéro. Les éléments principaux incluent :
+
+- **Node** : Représente un nœud de l’arbre. Il stocke la *feature* utilisée pour la séparation, le *threshold* (seuil de séparation), les sous-arbres (*left*, *right*), et une valeur de prédiction si le nœud est une feuille.
+- **RandomForest** : Gère l’entraînement et les prédictions de la forêt. Les étapes principales sont :
+  - **Fit** : Construire plusieurs arbres en utilisant des échantillons bootstrap et des *features* sélectionnées aléatoirement.
+  - **Predict** : Traverser chaque arbre pour prédire la classe d’un échantillon, puis appliquer un vote majoritaire pour la prédiction finale.
+
+### 5.3.3 Avantages et inconvénients
+
+- **Avantages** :
+  - Robuste aux données bruitées ou non linéaires.
+  - Réduit les risques de surapprentissage grâce à l’agrégation de prédictions.
+  - Facilement parallélisable.
+
+- **Inconvénients** :
+  - Peut être plus lent à entraîner que d'autres modèles (comme les régressions simples).
+  - Moins interprétable qu’un seul arbre de décision.
 
 # 6. Enjeux environnementaux et sociétaux
 
@@ -263,7 +301,6 @@ En combinant progrès technologique, équité sociétale et respect de l’envir
 
 ### 7.5. Random Forest
 
-- [Random Forest avec Sklearn](https://scikit-learn.org/stable/modules/ensemble.html#forest)
 - [Random Forest Classifier expliqué](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
 
 ### 7.6. Divers

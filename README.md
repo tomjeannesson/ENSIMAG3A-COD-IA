@@ -1,3 +1,5 @@
+*Note: tous les scripts et documents liée au traitement des données sont dans **/lib***
+
 # Rapport projet IA
 
 Hugo BRUCKER, Tom JEANNESON, Adame ABDELAZIZ, Julian COUX

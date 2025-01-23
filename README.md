@@ -1,4 +1,4 @@
-*Note: tous les scripts et documents liée au traitement des données sont dans **/lib***
+*Note: tous les scripts et documents liés au traitement des données sont dans **/lib**. Les exécutions doivent se faire depuis la racine du projet.*
 
 # Rapport projet IA
 
